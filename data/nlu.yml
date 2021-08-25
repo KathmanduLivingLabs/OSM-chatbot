@@ -1,10 +1,9 @@
 version: "2.0"
-
 nlu:
 - intent: greet
   examples: |
     - Bom dia
-    - Bonjour   
+    - Bonjour
     - Good Morning
     - Good morning
     - Good mourning
@@ -121,7 +120,7 @@ nlu:
     - merhaba
     - Namaste
     - Namaskar
-    - ola 
+    - ola
     - rasa hello
     - salut
     - sup
@@ -134,7 +133,6 @@ nlu:
     - yoo
     - ssup?
     - helleo
-
 - intent: goodbye
   examples: |
     - cu
@@ -154,7 +152,6 @@ nlu:
     - stop
     - exit
     - cia
-
 - intent: affirm
   examples: |
     - yes
@@ -170,7 +167,6 @@ nlu:
     - correct
     - great choice
     - sounds really good
-    - yup
     - ya
     - Cool. Thanks
     - Great, thanks
@@ -211,7 +207,6 @@ nlu:
     - yes thanks
     - thanks for your information
     - thanks for helping me
-
 - intent: deny
   examples: |
     - no
@@ -238,7 +233,6 @@ nlu:
     - disappointed
     - not very good
     - not good
-
 - intent: bot_challenge
   examples: |
     - hey are you human
@@ -334,7 +328,6 @@ nlu:
     - what are you?
     - why do you exist?
     - tell me more about yourself
-
 - intent: out_of_scope
   examples: |
     - Can you book me a restaurant
@@ -349,56 +342,6 @@ nlu:
     - Tell me about cow
     - tell me about dog
     - Do you love dogs?
-
-# - intent: chitchat/mood_great
-#   examples: |
-#     - perfect
-#     - great
-#     - amazing
-#     - feeling like a king
-#     - wonderful
-#     - I am feeling very good
-#     - I am great
-#     - I am amazing
-#     - I am going to save the world
-#     - super stoked
-#     - extremely good
-#     - so so perfect
-#     - so good
-#     - so perfect
-
-# - intent: chitchat/mood_unhappy
-#   examples: |
-#     - my day was horrible
-#     - I am sad
-#     - I don't feel very well
-#     - I am disappointed
-#     - super sad
-#     - I'm so sad
-#     - sad
-#     - very sad
-#     - unhappy
-#     - not good
-#     - not very good
-#     - extremly sad
-#     - so saad
-#     - so sad
-
-# - intent: chitchat/telljoke
-#   examples: |
-#     - could you please tell a joke
-#     - tell me a joke
-#     - hey tell me a joke
-#     - can you tell a joke
-#     - could u tell a joke
-#     - joke
-#     - speak a joke
-#     - tell me a funny joke
-#     - make me laugh
-#     - can u make me laugh
-#     - can u make me happe?
-#     - please chill my mind
-
 - intent: faq/osm_intro
   examples: |
     - What is OpenStreetMap?
@@ -420,7 +363,7 @@ nlu:
     - Can you help me telling what is osm?
     - What do you mean by OpenStreetMap?
     - What do you mean by OSM?
-
+    - what is openstreetmap?
 - intent: faq/osm_motive
   examples: |
     - Why was OpenStreetMap created?
@@ -432,12 +375,9 @@ nlu:
     - Could you tell me purpose of starting OpenStreetMap movement?
     - Why osm was created?
     - Reason of creating openstreetmap?
-
-
 responses:
   utter_faq/osm_intro:
   - text: OpenStreetMap is a free digital map of the world, created by an ever growing community of mappers. It can be accessed through www.openstreetmap.org.
-
   utter_faq/osm_motive:
   - text: OpenStreetMap(OSM) was established to encourage the growth, development and distribution of free geospatial data and to provide geospatial data for anybody to use and share​.
   - text: The creation and growth of OSM has been motivated by restrictions on use or availability of map data across much of the world.
