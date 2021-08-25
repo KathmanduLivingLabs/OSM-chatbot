@@ -92,7 +92,6 @@ pytz==2021.1
 questionary==1.5.2
 rasa==2.8.2
 rasa-sdk==2.8.1
-rasa-x==0.42.0
 redis==3.5.3
 regex==2021.7.6
 requests==2.26.0
