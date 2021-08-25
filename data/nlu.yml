@@ -1,0 +1,443 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Bom dia
+    - Bonjour   
+    - Good Morning
+    - Good morning
+    - Good mourning
+    - Guten Morgen
+    - HELLO
+    - HEY
+    - HEllo
+    - HI
+    - Hallo
+    - Hei
+    - Hellllooooooo
+    - Hello
+    - Hello Bot
+    - Hello Rasa
+    - Hello!
+    - Hey
+    - Hey Sara
+    - Hey bot
+    - Heya
+    - Heylo
+    - Hi
+    - Hi bot
+    - Hi man
+    - Hi rasa
+    - Hi there
+    - Hi!
+    - Hi'
+    - Hi,
+    - Hi, bot
+    - Hieee
+    - Hieeeeeeeeeeeee
+    - Hola
+    - I said, helllllloooooO!!!!
+    - Well hello there ;)
+    - What is up?
+    - Whats up
+    - Whats up my bot
+    - Whats up?
+    - ayyyy whaddup
+    - bonjour
+    - ey boss
+    - good evening
+    - good moring
+    - good morning
+    - greet
+    - greetings
+    - hai
+    - hallo
+    - halloo
+    - halloooo
+    - halo
+    - heeey
+    - heelio
+    - hell9o
+    - hellio
+    - hello
+    - hello everybody
+    - hello friend
+    - hello hi
+    - hello is anybody there
+    - hello it is me again
+    - hello robot
+    - hello sweatheart
+    - hello sweet boy
+    - hello there
+    - hello world
+    - hello?
+    - hello]
+    - hellooo
+    - helloooo
+    - helo
+    - hey
+    - hey bot
+    - hey bot!
+    - hey dude
+    - hey hey
+    - hey let's talk
+    - hey rasa
+    - hey ther
+    - hey there
+    - hey there boy
+    - hey there..
+    - hey, let's talk
+    - heya
+    - heyho
+    - heyo
+    - hhola
+    - hi
+    - hi !
+    - hi Mister
+    - hi again
+    - hi can you speak ?
+    - hi folks
+    - hi friend
+    - hi friends
+    - hi hi
+    - hi mrs rasa
+    - hi pal!
+    - hi there
+    - hi there it's me
+    - hi!
+    - hi.........................................................
+    - hi?
+    - hieee
+    - hii
+    - hiihihi
+    - hiii
+    - hlo
+    - hola
+    - howdy
+    - jojojo
+    - jop
+    - konichiwa
+    - merhaba
+    - Namaste
+    - Namaskar
+    - ola 
+    - rasa hello
+    - salut
+    - sup
+    - wasssup
+    - wasssup!
+    - what up
+    - whats popping
+    - whats up
+    - yo
+    - yoo
+    - ssup?
+    - helleo
+
+- intent: goodbye
+  examples: |
+    - cu
+    - thanks
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - have a good day
+    - good bye
+    - end
+    - stop
+    - exit
+    - cia
+
+- intent: affirm
+  examples: |
+    - yes
+    - yup
+    - yess
+    - yep
+    - yeah
+    - indeed
+    - that's right
+    - ok
+    - great
+    - right, thank you
+    - correct
+    - great choice
+    - sounds really good
+    - yup
+    - ya
+    - Cool. Thanks
+    - Great, thanks
+    - Thank you
+    - Thank you Sara
+    - Thank you so much
+    - Thank's!
+    - Thanks
+    - Thanks bot
+    - Thanks for that
+    - Thanks!
+    - amazing, thanks
+    - cheers
+    - cheers bro
+    - cool thank you
+    - cool thanks
+    - cool, thanks
+    - danke
+    - great thanks
+    - ok thanks
+    - ok thanks sara
+    - ok thanks!
+    - perfect thank you
+    - thank u
+    - thank you
+    - thank you anyways
+    - thanks
+    - thanks a bunch for everything
+    - thanks a lot
+    - thanks for forum link, I'll check it out
+    - thanks for the help
+    - thanks this is great news
+    - thanks you
+    - thanks!
+    - thankyou
+    - thnks
+    - thx
+    - yes thanks
+    - thanks for your information
+    - thanks for helping me
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - no. thanks
+    - noo
+    - nope
+    - no. not required
+    - thanks. but not required
+    - naa
+    - i don't require it over mail. thanks
+    - incorrect
+    - you are wrong
+    - It didnt help
+    - No, it didn't help
+    - Your answer is not right
+    - You are incorrect
+    - Wrong answer
+    - disappointed
+    - not very good
+    - not good
+
+- intent: bot_challenge
+  examples: |
+    - hey are you human
+    - are u human
+    - r u a human
+    - are you real human?
+    - you are a human
+    - Rara, are you a human?
+    - you are bot or human?
+    - are you human
+    - ok, i know i confused you there being a human! :)
+    - you are human or bot
+    - Are you human?
+    - are you a human ?
+    - Are you human ?
+    - Are you a human being?
+    - sara, are you a robot or human?
+    - r u real?
+    - are you a real person
+    - are u a real person?
+    - Are you a real person?
+    - are you a real person?
+    - are you real person or chat bot?
+    - So I'm here Today to ask one very simple question, what are you ?
+    - you sound like a real human
+    - wow you sound like real human
+    - are you human ?
+    - Ar you a bot ?
+    - Are you a bot
+    - Are you a chat bot?
+    - Are you the bot?
+    - Hi there, are you the bot?
+    - are you a BOT
+    - are you a Skynet ?
+    - are you a bot
+    - are you a bot ?
+    - are you a bot?
+    - are you a chatbot
+    - are you a rasa bot?
+    - are you a real bot?
+    - are you a robot
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - are you bot
+    - are you bot?
+    - are you rasa bot?
+    - are you real
+    - are you real lol
+    - are you really a bot
+    - are you robot
+    - are you sure that you're a bot?
+    - bot?
+    - cuz you are a bot
+    - i guess you are a chatbot
+    - oh are you chatbot?
+    - tell me, are you a bot?
+    - what are you, a bot?
+    - you are a robot
+    - you are ai
+    - you are chatbot
+    - you're a bot
+    - real bot then?
+    - are you really a bbot?
+    - what is your name?
+    - May I know your name?
+    - What do people call you?
+    - Do you have a name for yourself?
+    - Tell me something about yourself?
+    - could you tell me your name?
+    - please tell me your name?
+    - introduce yourself
+    - give me your introduction
+    - Please introduce yourself
+    - To whom am I talking to?
+    - What’s your name?
+    - why are you here?
+    - talk about yourself
+    - tell me some stuff about you
+    - talk some stuff about yourself
+    - I want to know you better
+    - I want to know more about you
+    - tell me about you
+    - tell me about yourself
+    - describe yourself
+    - say about you
+    - define yourself
+    - all about you
+    - what are you upto?
+    - who the hell are you?
+    - Are you male or female?
+    - who are you?
+    - what are you?
+    - why do you exist?
+    - tell me more about yourself
+
+- intent: out_of_scope
+  examples: |
+    - Can you book me a restaurant
+    - Could you please tell e where is sanfransico
+    - I need advise on my startup
+    - How to become rich ?
+    - how to start new business without risk ?
+    - what about my order?
+    - who is Bill Gates?
+    - What is Amazon?
+    - What is Apple?
+    - Tell me about cow
+    - tell me about dog
+    - Do you love dogs?
+
+# - intent: chitchat/mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+# - intent: chitchat/mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+# - intent: chitchat/telljoke
+#   examples: |
+#     - could you please tell a joke
+#     - tell me a joke
+#     - hey tell me a joke
+#     - can you tell a joke
+#     - could u tell a joke
+#     - joke
+#     - speak a joke
+#     - tell me a funny joke
+#     - make me laugh
+#     - can u make me laugh
+#     - can u make me happe?
+#     - please chill my mind
+
+- intent: faq/osm_intro
+  examples: |
+    - What is OpenStreetMap?
+    - What is OSM?
+    - Describe OSM
+    - Describe OpenStreetMap
+    - What does OSM mean?
+    - do you know about osm?
+    - can you tell me about osm?
+    - can you tell me about openstreetmap?
+    - openstreetmap
+    - osm
+    - Explain about OSM
+    - Explain about OpenStreetMap
+    - Could you please explain about OpenStreetMap
+    - Tell me something about OpenStreetMap
+    - I want to learn about OpenStreetMap
+    - I want to know about OSM
+    - Can you help me telling what is osm?
+    - What do you mean by OpenStreetMap?
+    - What do you mean by OSM?
+
+- intent: faq/osm_motive
+  examples: |
+    - Why was OpenStreetMap created?
+    - Why are you making OpenStreetMap?
+    - What is the purpose of OpenStreetMap?
+    - What is the motivation of creating OpenStreetMap?
+    - Why was open street map founded?
+    - Can you tell me founding motivation of openstreetmap?
+    - Could you tell me purpose of starting OpenStreetMap movement?
+    - Why osm was created?
+    - Reason of creating openstreetmap?
+
+
+responses:
+  utter_faq/osm_intro:
+  - text: OpenStreetMap is a free digital map of the world, created by an ever growing community of mappers. It can be accessed through www.openstreetmap.org.
+
+  utter_faq/osm_motive:
+  - text: OpenStreetMap(OSM) was established to encourage the growth, development and distribution of free geospatial data and to provide geospatial data for anybody to use and share​.
+  - text: The creation and growth of OSM has been motivated by restrictions on use or availability of map data across much of the world.
