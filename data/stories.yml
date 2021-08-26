@@ -41,6 +41,24 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
+- story: happy chitchat path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: affirm
+  - action: utter_welcome
+
+- story: sad chitchat path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: deny
+ - action: utter_sorry
+
 - story: affirm without help path 1
   steps:
   - intent: greet
@@ -64,3 +82,5 @@ stories:
   steps:
   - intent: affirm
   - action: utter_welcome
+
+  
