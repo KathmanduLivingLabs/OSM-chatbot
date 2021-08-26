@@ -120,7 +120,6 @@ tabulate==0.8.9
 tensorboard==2.6.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.0
-tensorflow==2.3.4
 tensorflow-addons==0.13.0
 tensorflow-estimator==2.3.0
 tensorflow-hub==0.12.0
