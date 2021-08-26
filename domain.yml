@@ -21,7 +21,14 @@ intents:
     use_entities: true
 - chitchat:
     use_entities: true
-entities: []
+- not_happy_with:
+    use_entities: true
+- random_typing:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities:
+- location
 slots: {}
 responses:
   utter_greet:
@@ -38,7 +45,7 @@ responses:
   - text: So, what else you want to know about OpenStreetMap?
   utter_welcome:
   - text: My pleasure !! 😊
-  - text: Welcome !! Happy to help 😊 
+  - text: Welcome !! Happy to help 😊
   utter_did_that_help:
   - text: Did that help you?
   - text: Was it helpful?
