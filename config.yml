@@ -22,6 +22,7 @@ pipeline:
   #   threshold: 0.3
   #   ambiguity_threshold: 0.1
   - name: SpacyNLP
+    model: en_core_web_sm
   - name: SpacyTokenizer
   - name: SpacyFeaturizer
   - name: RegexFeaturizer
