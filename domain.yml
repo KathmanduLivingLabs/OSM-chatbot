@@ -76,6 +76,8 @@ responses:
   - text: Why did the robot cross the road? - Because he was programmed to.
   utter_chitchat/ask_about:
   - text: I am good! serving users with OpenStreetMap queries.
+  utter_please_rephrase:
+  - text: I'm sorry , I din't quite understand that. Could you rephrase?
   utter_chitchat/ask_howold:
   - text: Old enough to be a bot!
   - text: '42'

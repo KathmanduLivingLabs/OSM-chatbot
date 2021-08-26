@@ -28,7 +28,6 @@ stories:
   - intent: affirm
   - action: utter_what_else
 
-
 - story: sad faq path 1
   steps:
   - intent: greet
@@ -42,4 +41,26 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
+- story: affirm without help path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_welcome
 
+- story: affirm without help path 2
+  steps:
+  - intent: affirm
+  - action: utter_welcome
+
+- story: deny without help path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_goodbye
+
+- story: deny without help path 2
+  steps:
+  - intent: affirm
+  - action: utter_welcome

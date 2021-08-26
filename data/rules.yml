@@ -38,3 +38,7 @@ rules:
   - intent: chitchat
   - action: utter_chitchat
 
+- rule: Ask user to rephrase whenever they send message with low confidence score
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
