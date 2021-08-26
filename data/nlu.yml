@@ -362,6 +362,7 @@ nlu:
     - What do you mean by OpenStreetMap?
     - What do you mean by OSM?
     - what is openstreetmap?
+    - what is openstreetmap
 - intent: faq/osm_motive
   examples: |
     - Why was OpenStreetMap created?
