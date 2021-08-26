@@ -340,6 +340,11 @@ nlu:
     - Tell me about cow
     - tell me about dog
     - Do you love dogs?
+    - who created cow>
+    - what does cow give?
+    - what is nepal?
+    - what makes cow?
+    - who is donald trump?
 - intent: faq/osm_intro
   examples: |
     - What is OpenStreetMap?
@@ -363,6 +368,7 @@ nlu:
     - What do you mean by OSM?
     - what is openstreetmap?
     - what is openstreetmap
+    - what is osm?
 - intent: faq/osm_motive
   examples: |
     - Why was OpenStreetMap created?
@@ -509,6 +515,8 @@ nlu:
     - How can i extract schools from OpenStreetMap?
     - How can i extract hospitals from OSM?
 responses:
+  utter_faq/osm_can_use_data:
+  - text: Yes! You must follow rules. Typically it means that you must provide an attribution.
   utter_faq/osm_intro:
   - text: OpenStreetMap is a free digital map of the world, created by an ever growing community of mappers. It can be accessed through www.openstreetmap.org.
   utter_faq/osm_motive:
@@ -538,8 +546,6 @@ responses:
   - text: No we have numerous data sources that can be used to determine an accurate position, including aerial imagery from Bing, and of course the existing OpenStreetMap data.
   utter_faq/osm_satellite_image_resolution:
   - text: OpenStreetMap neither controls nor owns the satellite imagery. The Aerial Imagery is from a variety of sources that we have permission to use - Bing and Maxar are the most popular and have the largest coverage. So we cannot make or request updates.
-  utter_faq/osm_can_use_data:
-  - text: Yes! You must follow rules. Typically it means that you must provide an attribution.
   utter_faq/osm_map_download:
   - text: Use the 'Share' button to download in PNG, JPEG, SVG or PDF format. If you need other formats, see the https://wiki.openstreetmap.org/wiki/Export page.
   utter_faq/osm_download_data:
