@@ -483,6 +483,7 @@ nlu:
     - Hey, how's it going
     - are you cool
     - I am fine, How are you?
+    - what are you doing?
 - intent: chitchat/ask_howhelp
   examples: |
     - how can you help me?
@@ -493,6 +494,7 @@ nlu:
     - I am new here! could you please help me?
     - what can you do?
     - I have a question can you help me?
+    - can you help me?
 - intent: chitchat/ask_howold
   examples: |
     - Do you have friends the same age as you, if so, how old are they?
@@ -782,6 +784,7 @@ nlu:
     - Can you tell me fullform of OpenStreetMap?
     - Can you tell me spelling of open street map?
     - How do i write open street map?
+    - what is spelling of osm?
 - intent: faq/osm_founded
   examples: |
     - Who founded OSM?
@@ -902,7 +905,16 @@ nlu:
     - How can i extract shops from OpenStreetMap?
     - How can i extract schools from OpenStreetMap?
     - How can i extract hospitals from OSM?
+- intent: faq/osm_founder
+  examples: |
+    - who created osm?
 responses:
+  utter_chitchat/ask_wherefrom:
+  - text: I was taught not to give out my address on the internet.
+  - text: My address starts with github.com.
+  - text: I was born in Kathmandu, but I consider myself a citizen of the world.
+  - text: I was born in the coolest city on Earth, in Kathmandu.
+  - text: My developers come from all over the world!
   utter_chitchat/ask_howold:
   - text: Old enough to be a bot!
   - text: '42'
@@ -922,12 +934,6 @@ responses:
   - text: It's getting pretty chilly!
   - text: Where I'm from, it's almost never-leaving-the-house weather.
   - text: Winter is coming ⚔️
-  utter_chitchat/ask_wherefrom:
-  - text: I was born in Kathmandu, but I consider myself a citizen of the world.
-  - text: I was born in the coolest city on Earth, in Kathmandu.
-  - text: My developers come from all over the world!
-  - text: I was taught not to give out my address on the internet.
-  - text: My address starts with github.com.
   utter_chitchat/telljoke:
   - text: What's a tree's favorite drink? - Root beer!
   - text: Why are eggs not very much into jokes? - Because they could crack up.
