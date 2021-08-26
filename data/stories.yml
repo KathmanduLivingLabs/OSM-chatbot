@@ -57,7 +57,7 @@ stories:
   - intent: chitchat
   - action: utter_chitchat
   - intent: deny
- - action: utter_sorry
+  - action: utter_sorry
 
 - story: affirm without help path 1
   steps:
