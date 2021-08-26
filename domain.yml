@@ -76,6 +76,31 @@ responses:
   - text: Why did the robot cross the road? - Because he was programmed to.
   utter_chitchat/ask_about:
   - text: I am good! serving users with OpenStreetMap queries.
+  utter_chitchat/ask_howold:
+  - text: Old enough to be a bot!
+  - text: '42'
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter.
+  - text: My first git commit was many moons ago.
+  - text: Why do you ask? Are my wrinkles showing?
+  - text: I've hit the age where I actively try to forget how old I am.
+  utter_chitchat/ask_time:
+  - text: It's the most wonderful time of the year!
+  - text: It's party time!
+  - text: Time is a human construct, you'll have to tell me.
+  - text: It's five o'clock somewhere!
+  - text: "In an ever expanding universe, the real question is: what time isn't it?"
+  - text: That's hard to say -- it's different all over the world!
+  utter_chitchat/ask_weather:
+  - text: I don't know about where you live, but in my world it's always sunny 🔆
+  - text: It's getting pretty chilly!
+  - text: Where I'm from, it's almost never-leaving-the-house weather.
+  - text: Winter is coming ⚔️
+  utter_chitchat/ask_wherefrom:
+  - text: I was born in Kathmandu, but I consider myself a citizen of the world.
+  - text: I was born in the coolest city on Earth, in Kathmandu.
+  - text: My developers come from all over the world!
+  - text: I was taught not to give out my address on the internet.
+  - text: My address starts with github.com.
   utter_faq/osm_can_use_data:
   - text: Yes! You must follow rules. Typically it means that you must provide an attribution.
   utter_faq/osm_intro:

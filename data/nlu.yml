@@ -493,6 +493,246 @@ nlu:
     - I am new here! could you please help me?
     - what can you do?
     - I have a question can you help me?
+- intent: chitchat/ask_howold
+  examples: |
+    - Do you have friends the same age as you, if so, how old are they?
+    - How long have you been alive?
+    - How long have you been around?
+    - How long have you occupied the earth?
+    - How many candles were on your last birthday cake?
+    - How many years have you been alive?
+    - How many years have you lived?
+    - How old are you?
+    - How old were you on your last birthday?
+    - How old will you be on your next birthday?
+    - Tell me your day, month and year of birth.
+    - What is your age?
+    - What is your birthdate?
+    - What is your count of years being alive so far?
+    - What was your age on your last birthday?
+    - What will be your age on your next birthday?
+    - What year were you born?
+    - Whats your age?
+    - When do you celebrate your day of birth?
+    - and you are how many years old?
+    - can you tell me exactly how old you are?
+    - can you tell me what number represents your age?
+    - can you tell me your age?
+    - do you know how old you are?
+    - give me your age?
+    - how about your age
+    - how aold are you
+    - how many ages?
+    - how many years old are you?
+    - how old are u
+    - how old are you
+    - how old are you?
+    - how old were you on your last birthday?
+    - how old were you when you celebrated your last birthday?
+    - how old will you be this year?
+    - how old?
+    - in what year were you born?
+    - tell me how old you are?
+    - tell me your age number?
+    - tell me your age?
+    - what age are you
+    - what age were you when you celebrated your last birthday?
+    - what is your age?
+    - what is your birthday?
+    - what is your exact age?
+    - what number represents your age?
+    - what year were you born?
+    - what's your age?
+    - whats your age?
+    - whats your birth year?
+    - when is your birthday?
+    - when were you born?
+    - when you were bon
+    - What's your age?
+- intent: chitchat/ask_time
+  examples: |
+    - Can you give me the time?
+    - Can you tell me the time?
+    - Can you tell me what time it is?
+    - Can you tell the time?
+    - Could you tell me the time, please?
+    - Could you tell me the time?
+    - Could you tell me what time is it?
+    - Do you have the time?
+    - Do you know the time?
+    - Do you know what time it is?
+    - Excuse me, what time is it?
+    - Give me the time.
+    - Hi, I need the time.
+    - I need to know what time it is.
+    - Pardon me, but do you know the time?
+    - Tell me the time.
+    - Time, please!
+    - Time?
+    - What is the current time?
+    - What is the exact time?
+    - What is the hour and minute right now?
+    - What is the time?
+    - What might the time be?
+    - What time do we have?
+    - What time have we got?
+    - What time is it in [Berlin](location)?
+    - What time is it right now?
+    - What's the current time?
+    - What's the time right now?
+    - What's the time?
+    - Would you tell me what time it is?
+    - do you have the time?
+    - do you know the current time?
+    - tell me the current time.
+    - tell me the time it is.
+    - tell me the time.
+    - tell me what time you have.
+    - that's true. do you know what time it is?
+    - what is the current time?
+    - what is the time ?
+    - what is the time in [Sydney](location)?
+    - what is the time?
+    - what is time in US ?
+    - what is time is US ?
+    - what is time is USA ?
+    - what time do you have?
+    - what time is it
+    - what time is it?
+    - what time it is
+    - what's the time
+    - whats the time now
+- intent: chitchat/ask_weather
+  examples: |
+    - Are there any meteorological changes that I need to be aware of?
+    - Are we in for a scorcher?
+    - Beautiful day, isn't it?
+    - Can I ask you something about weather
+    - Can we expect any thunderstorms?
+    - Do you have good weather?
+    - How is the weather today?
+    - How is the weather?
+    - How is weather today
+    - Is it hot or cold?
+    - Is it humid out there today?
+    - Is it quite breezy outside?
+    - Is it raining
+    - Is it raining?
+    - Looks like a beautiful day hey?
+    - Nice day out today?
+    - Weather?
+    - What is the temperature today?
+    - What is the weather at your place?
+    - What is the weather for tomorrow?
+    - What is the weather in newyork?
+    - What's it like out there?
+    - What's the weather forecast?
+    - What's the weather like over there?
+    - What's the weather like where I am right now?
+    - What's the weather like?
+    - Will I require my raincoat today?
+    - Will the skies be clear today?
+    - Will we build a snowman today?
+    - excellent - is it hot in [Berlin](location)?
+    - how is the weather
+    - how is the weather ?
+    - how is the weather in [berlin](location)?
+    - how is the weather?
+    - how's the weather ?
+    - how's the weather in [berlin](location)
+    - how's the weather?
+    - how's weather
+    - hows the waether
+    - hows the weather in bot world
+    - hows the weather today in [berlin](location)?
+    - is it hot ?
+    - is it hot outside ?
+    - is it sunny
+    - is the sun out where you are?
+    - is the sun out where zou are?
+    - it is cold
+    - temperature?
+    - the weather today
+    - weatger
+    - weather
+    - weather?
+    - well, if you wish: what about the weather
+    - what about the weather in [Lüneburg](location)
+    - what is the temperature
+    - what is the wather
+    - what is the weatehr
+    - what is the weather
+    - what is the weather in [Berlin](location)
+    - what is the weather in [zurich](location)?
+    - what is the weather like where you are?
+    - what is the weather like?
+    - what is the whether today
+    - what the wheather like?
+    - what"s the weather
+    - what's the weather
+    - what's the weather like
+    - what's the weather like in [LA](location)
+    - what's the weather like where you are?
+    - what's the weather like?
+    - what's the weather today
+    - what's the weather today?
+    - whats the temperature
+    - whats the temperature in [delhi](location)?
+    - whats the weather in [berlin](location)?
+    - whats the weather like tomorrow?
+    - wheather at you location?
+    - wheather be like at your place?
+- intent: chitchat/ask_wherefrom
+  examples: |
+    - Are you from around here?
+    - Around where are you from?
+    - Do you know where you come from?
+    - From where did you come?
+    - So where are you from
+    - What area are you from?
+    - What citizenship do you lay claim to?
+    - What city are you in?
+    - What city do you claim to for your birth?
+    - What city were you born in?
+    - What country are you from?
+    - What country were you born in?
+    - What is your birthplace?
+    - What is your heritage?
+    - What is your origin?
+    - What is your original location?
+    - What is your root?
+    - What location are you from?
+    - What state were you born in?
+    - What's the name of the place you came from?
+    - Where are you located?
+    - Where are you?
+    - Where are your origins?
+    - Where are your roots?
+    - Where did you come from?
+    - Where did you grow up?
+    - Where did you originate?
+    - Where do you come from?
+    - Where do you consider home?
+    - Where do you live?
+    - Where from?
+    - Where might you be from?
+    - Where were you at before you were here?
+    - Where were you born?
+    - You live around here?
+    - You were conceived in what location?
+    - are you from around here?
+    - what country are you from?
+    - where are from
+    - where are you from
+    - where are you from?
+    - where are your parents from?
+    - where did you come from?
+    - where did you grow up?
+    - where did you spend your youth?
+    - where do you come from?
+    - where do you live
+    - where do you live?
+    - where's your home town?
 - intent: faq/osm_intro
   examples: |
     - What is OpenStreetMap?
@@ -663,6 +903,31 @@ nlu:
     - How can i extract schools from OpenStreetMap?
     - How can i extract hospitals from OSM?
 responses:
+  utter_chitchat/ask_howold:
+  - text: Old enough to be a bot!
+  - text: '42'
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter.
+  - text: My first git commit was many moons ago.
+  - text: Why do you ask? Are my wrinkles showing?
+  - text: I've hit the age where I actively try to forget how old I am.
+  utter_chitchat/ask_time:
+  - text: It's the most wonderful time of the year!
+  - text: It's party time!
+  - text: Time is a human construct, you'll have to tell me.
+  - text: It's five o'clock somewhere!
+  - text: "In an ever expanding universe, the real question is: what time isn't it?"
+  - text: That's hard to say -- it's different all over the world!
+  utter_chitchat/ask_weather:
+  - text: I don't know about where you live, but in my world it's always sunny 🔆
+  - text: It's getting pretty chilly!
+  - text: Where I'm from, it's almost never-leaving-the-house weather.
+  - text: Winter is coming ⚔️
+  utter_chitchat/ask_wherefrom:
+  - text: I was born in Kathmandu, but I consider myself a citizen of the world.
+  - text: I was born in the coolest city on Earth, in Kathmandu.
+  - text: My developers come from all over the world!
+  - text: I was taught not to give out my address on the internet.
+  - text: My address starts with github.com.
   utter_chitchat/telljoke:
   - text: What's a tree's favorite drink? - Root beer!
   - text: Why are eggs not very much into jokes? - Because they could crack up.
