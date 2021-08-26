@@ -19,6 +19,8 @@ intents:
     use_entities: true
 - faq:
     use_entities: true
+- chitchat:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -58,7 +60,23 @@ responses:
   - text: Sorry! I didnt get you. Could you please reframe your question so that I can understand better 🤨
   utter_iamabot:
   - text: I am OSM Chatbot, developed by Kathmandu Living Labs. I am here to help you in OpenStreetMap related queries.
-   utter_faq/osm_can_use_data:
+  utter_chitchat/nicetomeetyou:
+  - text: Likewise!
+  - text: Thank you. It is a pleasure to meet you as well!
+  - text: It is nice to meet you too!
+  - text: Pleased to meet you too!
+  - text: It's always a pleasure to meet new people!
+  - text: Nice to meet you too! Happy to be of help.
+  utter_chitchat/telljoke:
+  - text: Why are eggs not very much into jokes? - Because they could crack up.
+  - text: What's a tree's favorite drink? - Root beer!
+  - text: Why do the French like to eat snails so much? - They can't stand fast food.
+  - text: Why did the robot get angry? - Because someone kept pushing its buttons.
+  - text: What do you call a pirate droid? - Arrrr-2-D2
+  - text: Why did the robot cross the road? - Because he was programmed to.
+  utter_chitchat/ask_about:
+  - text: I am good! serving users with OpenStreetMap queries.
+  utter_faq/osm_can_use_data:
   - text: Yes! You must follow rules. Typically it means that you must provide an attribution.
   utter_faq/osm_intro:
   - text: OpenStreetMap is a free digital map of the world, created by an ever growing community of mappers. It can be accessed through www.openstreetmap.org.

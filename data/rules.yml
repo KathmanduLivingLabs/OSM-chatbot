@@ -33,8 +33,8 @@ rules:
   - action: utter_faq
   - action: utter_did_that_help
 
-# - rule: respond to chitchat
-#   steps:
-#   - intent: chitchat
-#   - action: utter_chitchat
+- rule: respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
 

@@ -340,7 +340,6 @@ nlu:
     - Tell me about cow
     - tell me about dog
     - Do you love dogs?
-<<<<<<< HEAD
 - intent: random_typing
   examples: |
     - hikhdgauygdcjhzcbjzxhf
@@ -357,13 +356,142 @@ nlu:
     - huishfsfkopdieruetwag
     - hafdtfsfsklge;gr
     - bfgbusgbuweguegusdgfusdfggheg
-=======
     - who created cow>
     - what does cow give?
     - what is nepal?
     - what makes cow?
     - who is donald trump?
->>>>>>> bdbc95b57cf0e639940cf8d87ab8fcd505ec953e
+- intent: chitchat/nicetomeetyou
+  examples: |
+    - Its really nice to meet you
+    - Nice talking
+    - its a nice feeling talking to you
+    - it was nice talking to you
+    - nice to meet you
+- intent: chitchat/telljoke
+  examples: |
+    - could you please tell a joke
+    - tell me a joke
+    - hey tell me a joke
+    - can you tell a joke
+    - could u tell a joke
+    - joke
+    - speak a joke
+    - tell me a funny joke
+    - make me laugh
+    - can u make me laugh
+    - can u make me happe?
+    - can you make me happy?
+    - please chill my mind
+- intent: chitchat/ask_about
+  examples: |
+    - how's you?
+    - how are you buddy?
+    - how are you man?
+    - Ahoy matey how are you?
+    - Are you ok?
+    - Do you feel good?
+    - Do you have a great day?
+    - HI Moltron, what are you up to?
+    - Hi Moltron! How are you?
+    - How are You?
+    - How are things?
+    - How are you
+    - How are you men?
+    - How are you today?
+    - How are you?
+    - How was your day?
+    - How you doing?
+    - How's it going
+    - How's it hanging?
+    - How's life treating you friend?
+    - How've you been?
+    - Hows it going
+    - I'm fine and you
+    - Is everything ok?
+    - What's going on?
+    - What's new?
+    - What's up
+    - What's up man
+    - and you
+    - are you alright
+    - are you happy
+    - are you having a good day
+    - are you ok
+    - are you okay
+    - h r u ?
+    - hello, how are you?
+    - hey how are you?
+    - hi how are you?
+    - hi how u doing
+    - hi moltron, how are you?
+    - how ?
+    - how are things going
+    - how are things with you?
+    - how are u
+    - how are u?
+    - how are xou
+    - how are you
+    - how are you ?
+    - how are you doing
+    - how are you doing this morning
+    - how are you doing today my sweet friend
+    - how are you doing today?
+    - how are you doing?
+    - how are you feeling
+    - how are you today
+    - how are you'
+    - how are you?
+    - how are you????
+    - how are yuo
+    - how do you do?
+    - how have you been
+    - how is it going
+    - how is your day
+    - how is your day going
+    - how is your evening
+    - how r u
+    - how r u ?
+    - how r u>
+    - how you doing
+    - how you doing?
+    - how's it going?
+    - how's life
+    - how's life been treating you?
+    - how's your day going
+    - howareyou
+    - hw r u?
+    - is everything all right
+    - is everything okay
+    - nah, I'm good - how are you doing?
+    - okay hi how are you?
+    - wassup>
+    - what about your day
+    - what are you up to?
+    - what's good
+    - what's up
+    - what's up sara
+    - what's up?
+    - whatchcha doing
+    - whatchya upto ?
+    - whats goin on
+    - whats new
+    - whatsapp
+    - yow are you
+    - how are you Rasa
+    - Hey, how's it going
+    - are you cool
+    - I am fine, How are you?
+- intent: chitchat/ask_howhelp
+  examples: |
+    - how can you help me?
+    - i need some details
+    - what can you do for me?
+    - In what way you can help me?
+    - can you assist me here?
+    - I am new here! could you please help me?
+    - what can you do?
+    - I have a question can you help me?
 - intent: faq/osm_intro
   examples: |
     - What is OpenStreetMap?
@@ -534,6 +662,24 @@ nlu:
     - How can i extract schools from OpenStreetMap?
     - How can i extract hospitals from OSM?
 responses:
+  utter_chitchat/nicetomeetyou:
+  - text: Likewise!
+  - text: Thank you. It is a pleasure to meet you as well!
+  - text: It is nice to meet you too!
+  - text: Pleased to meet you too!
+  - text: It's always a pleasure to meet new people!
+  - text: Nice to meet you too! Happy to be of help.
+  utter_chitchat/telljoke:
+  - text: Why are eggs not very much into jokes? - Because they could crack up.
+  - text: What's a tree's favorite drink? - Root beer!
+  - text: Why do the French like to eat snails so much? - They can't stand fast food.
+  - text: Why did the robot get angry? - Because someone kept pushing its buttons.
+  - text: What do you call a pirate droid? - Arrrr-2-D2
+  - text: Why did the robot cross the road? - Because he was programmed to.
+  utter_chitchat/ask_about:
+  - text: I am good! serving users with OpenStreetMap queries.
+  utter_chitchat/ask_howhelp:
+  - text: I can help you in answering your OpenStreetMap queries.
   utter_faq/osm_can_use_data:
   - text: Yes! You must follow rules. Typically it means that you must provide an attribution.
   utter_faq/osm_intro:
