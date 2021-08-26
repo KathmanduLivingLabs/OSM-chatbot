@@ -542,7 +542,7 @@ nlu:
     - Can you tell me fullform of OpenStreetMap?
     - Can you tell me spelling of open street map?
     - How do i write open street map?
-- intent: faq/osm_founder
+- intent: faq/osm_founded
   examples: |
     - Who founded OSM?
     - Who founded OpenStreetMap?
