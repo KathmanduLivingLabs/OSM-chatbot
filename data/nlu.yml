@@ -340,6 +340,7 @@ nlu:
     - Tell me about cow
     - tell me about dog
     - Do you love dogs?
+    - who is rabbit macnair?
 - intent: random_typing
   examples: |
     - hikhdgauygdcjhzcbjzxhf
@@ -662,6 +663,13 @@ nlu:
     - How can i extract schools from OpenStreetMap?
     - How can i extract hospitals from OSM?
 responses:
+  utter_chitchat/telljoke:
+  - text: What's a tree's favorite drink? - Root beer!
+  - text: Why are eggs not very much into jokes? - Because they could crack up.
+  - text: Why do the French like to eat snails so much? - They can't stand fast food.
+  - text: Why did the robot get angry? - Because someone kept pushing its buttons.
+  - text: What do you call a pirate droid? - Arrrr-2-D2
+  - text: Why did the robot cross the road? - Because he was programmed to.
   utter_chitchat/nicetomeetyou:
   - text: Likewise!
   - text: Thank you. It is a pleasure to meet you as well!
@@ -669,13 +677,6 @@ responses:
   - text: Pleased to meet you too!
   - text: It's always a pleasure to meet new people!
   - text: Nice to meet you too! Happy to be of help.
-  utter_chitchat/telljoke:
-  - text: Why are eggs not very much into jokes? - Because they could crack up.
-  - text: What's a tree's favorite drink? - Root beer!
-  - text: Why do the French like to eat snails so much? - They can't stand fast food.
-  - text: Why did the robot get angry? - Because someone kept pushing its buttons.
-  - text: What do you call a pirate droid? - Arrrr-2-D2
-  - text: Why did the robot cross the road? - Because he was programmed to.
   utter_chitchat/ask_about:
   - text: I am good! serving users with OpenStreetMap queries.
   utter_chitchat/ask_howhelp:
