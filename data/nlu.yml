@@ -133,6 +133,8 @@ nlu:
     - yoo
     - ssup?
     - helleo
+    - heyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+    - Whass up cutie?
 - intent: goodbye
   examples: |
     - cu
@@ -152,6 +154,7 @@ nlu:
     - stop
     - exit
     - cia
+    - have a good day dost
 - intent: affirm
   examples: |
     - yes
@@ -207,6 +210,9 @@ nlu:
     - yes thanks
     - thanks for your information
     - thanks for helping me
+    - ok great thanks
+    - Yes
+    - thanks for the information
 - intent: deny
   examples: |
     - no
@@ -233,6 +239,7 @@ nlu:
     - disappointed
     - not very good
     - not good
+    - nothing
 - intent: bot_challenge
   examples: |
     - hey are you human
@@ -314,6 +321,8 @@ nlu:
     - what are you?
     - why do you exist?
     - tell me more about yourself
+    - who are you
+    - What is your name?
 - intent: not_happy_with
   examples: |
     - You are shit
@@ -362,6 +371,7 @@ nlu:
     - what is nepal?
     - what makes cow?
     - who is donald trump?
+    - abcd
 - intent: chitchat/nicetomeetyou
   examples: |
     - Its really nice to meet you
@@ -684,6 +694,7 @@ nlu:
     - whats the weather like tomorrow?
     - wheather at you location?
     - wheather be like at your place?
+    - how is waether?
 - intent: chitchat/ask_wherefrom
   examples: |
     - Are you from around here?
@@ -759,6 +770,13 @@ nlu:
     - what is openstreetmap?
     - what is openstreetmap
     - what is osm?
+    - what can you tell me about osm
+    - what is osm
+    - what is OSM?
+    - What is OSM
+    - then tell me what is osm?
+    - What is osm
+    - What osm?
 - intent: faq/osm_motive
   examples: |
     - Why was OpenStreetMap created?
@@ -773,6 +791,7 @@ nlu:
     - Why are you contributing to osm?
     - Why are people contributing to OpenStreetMap?
     - Why should i contribute to osm?
+    - What is the motive behind creating OSM?
 - intent: faq/osm_spelling
   examples: |
     - Is it OpenStreetMap or Open Street Maps?
@@ -799,6 +818,11 @@ nlu:
     - Tell me about creator of openstreetmap
     - Who developed OSM?
     - WHo developed open street map?
+    - Who is the founder of osm?
+    - who made osm
+    - who started osm
+    - Who created Osm
+    - who founded osm?
 - intent: faq/osm_alternatives
   examples: |
     - Why not just use Google maps or others?
@@ -815,6 +839,12 @@ nlu:
     - Why to use open street map?
     - Can you tell me difference between OSM and other maps.
     - Could you tell me difference between OpenStreetMap and other maps.
+    - why use osm instead of google
+    - osm versus google maps
+    - why osm
+    - why OSM?
+    - Why not google?
+    - Why choose OSM over Google?
 - intent: faq/osm_data_accuracy
   examples: |
     - How can a project like this create accurate maps?
@@ -855,6 +885,11 @@ nlu:
     - how can i map in osm?
     - how can i help?
     - how can i edit map?
+    - who can contribute to osm
+    - Can I map?
+    - How can I contribute to OSM?
+    - how can I contribute to this?
+    - how to contribute in osm?
 - intent: faq/osm_communicate
   examples: |
     - How do you communicate?
@@ -905,10 +940,19 @@ nlu:
     - How can i extract shops from OpenStreetMap?
     - How can i extract schools from OpenStreetMap?
     - How can i extract hospitals from OSM?
+    - how to download osm data
+    - how can i download OSM data?
 - intent: faq/osm_founder
   examples: |
     - who created osm?
 responses:
+  utter_chitchat/nicetomeetyou:
+  - text: Nice to meet you too! Happy to be of help.
+  - text: Likewise!
+  - text: Thank you. It is a pleasure to meet you as well!
+  - text: It is nice to meet you too!
+  - text: Pleased to meet you too!
+  - text: It's always a pleasure to meet new people!
   utter_chitchat/ask_wherefrom:
   - text: I was taught not to give out my address on the internet.
   - text: My address starts with github.com.
@@ -941,13 +985,6 @@ responses:
   - text: Why did the robot get angry? - Because someone kept pushing its buttons.
   - text: What do you call a pirate droid? - Arrrr-2-D2
   - text: Why did the robot cross the road? - Because he was programmed to.
-  utter_chitchat/nicetomeetyou:
-  - text: Likewise!
-  - text: Thank you. It is a pleasure to meet you as well!
-  - text: It is nice to meet you too!
-  - text: Pleased to meet you too!
-  - text: It's always a pleasure to meet new people!
-  - text: Nice to meet you too! Happy to be of help.
   utter_chitchat/ask_about:
   - text: I am good! serving users with OpenStreetMap queries.
   utter_chitchat/ask_howhelp:
