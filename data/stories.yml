@@ -5,7 +5,7 @@ stories:
 - story: happy faq path 1
   steps:
   - intent: greet
-  - action: utter_greet
+  - action: utter_greet_guide
   - intent: faq
   - action: utter_faq
   - action: utter_did_that_help
@@ -18,7 +18,7 @@ stories:
 - story: happy faq path 2
   steps:
   - intent: greet
-  - action: utter_greet
+  - action: utter_greet_guide
   - intent: faq
   - action: utter_faq
   - action: utter_did_that_help
@@ -31,7 +31,7 @@ stories:
 - story: sad faq path 1
   steps:
   - intent: greet
-  - action: utter_greet
+  - action: utter_greet_guide
   - intent: faq
   - action: utter_faq
   - action: utter_did_that_help
@@ -44,7 +44,7 @@ stories:
 - story: happy chitchat path 1
   steps:
   - intent: greet
-  - action: utter_greet
+  - action: utter_greet_guide
   - intent: chitchat
   - action: utter_chitchat
   - intent: affirm
@@ -53,7 +53,7 @@ stories:
 - story: sad chitchat path 1
   steps:
   - intent: greet
-  - action: utter_greet
+  - action: utter_greet_guide
   - intent: chitchat
   - action: utter_chitchat
   - intent: deny
@@ -62,7 +62,7 @@ stories:
 - story: affirm without help path 1
   steps:
   - intent: greet
-  - action: utter_greet
+  - action: utter_greet_guide
   - intent: affirm
   - action: utter_welcome
 
@@ -74,7 +74,7 @@ stories:
 - story: deny without help path 1
   steps:
   - intent: greet
-  - action: utter_greet
+  - action: utter_greet_guide
   - intent: deny
   - action: utter_goodbye
 
