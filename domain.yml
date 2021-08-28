@@ -31,7 +31,6 @@ entities:
 - location
 slots: {}
 responses:
-<<<<<<< HEAD
   utter_greet_guide:
   - buttons:
     - payload: Tell me about OSM
@@ -41,8 +40,6 @@ responses:
     - payload: I want to learn OSM
       title: I want to learn OSM
     text: Hi, i am OSM Chatbot. What do you want to learn about OpenStreetMap today? You can start by selecting from below options.😃
-=======
->>>>>>> 99d8adff3846efdb3d1b855c94426b031ed77c59
   utter_greet:
   - text: Hey! How are you? You can ask me anything about OpenStreetMap. 😊
   - text: Hi, i am OSM chatbot. You can ask me anything about OpenStreetMap. 😊
