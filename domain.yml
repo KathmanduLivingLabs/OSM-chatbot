@@ -41,8 +41,7 @@ responses:
       title: Why was OpenStretMap created?
     - payload: I want to learn OSM
       title: I want to learn OSM
-    text: Hi, i am OSM Chatbot. What do you want to learn about OpenStreetMap today? You
-      can start by selecting from below options.😃
+    text: Hi, i am OSM Chatbot. What do you want to learn about OpenStreetMap today? You can start by selecting from below options.😃
   utter_greet:
   - text: Hey! How are you? You can ask me anything about OpenStreetMap. 😊
   - text: Hi, i am OSM chatbot. You can ask me anything about OpenStreetMap. 😊
@@ -159,6 +158,23 @@ responses:
   - text: Use the 'Share' button to download in PNG, JPEG, SVG or PDF format. If you need other formats, see the https://wiki.openstreetmap.org/wiki/Export page.
   utter_faq/osm_download_data:
   - text: There are two ways you can get data out of the OSM database. One is by using Overpass, a separate API with a powerful query language. The second is to download the OpenStreetMap data dump and filter it according to your needs.
+  utter_faq/learn_mapping:
+  - buttons:
+    - payload: How to create OSM account?
+      title: How to create OSM account?
+    - payload: What is iD editor?
+      title: What is iD editor?
+    - payload: How to edit map using iD editor?
+      title: How to edit map using iD editor?
+    text: You can create an account ar openstreetmap.org and start editing using iD editor or any other editor of your choice.
+  utter_faq/create_osm_account:
+  - text: To register, go to http://www.openstreetmap.org/, and choose sign up in the top right-hand corner. This will take you to the following registration form.
+  - image: 'https://static.packt-cdn.com/products/9781847197504/graphics/7504_02_02.jpg'
+  utter_faq/ideditor_info:
+  - text: The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on top left corner.
+  utter_faq/how_to_use_ideditor:
+  - text: Go to openstreetmap.org and login using your account. Then pan and zoom the area you wish to edit. Click on edit button present on the top left corner. Now you can start editing map using various tools present on the editor interface. For more information about using iD editor, you can visit https://learnosm.org/en/beginner/id-editor/ 
+
 actions: []
 forms: {}
 e2e_actions: []
