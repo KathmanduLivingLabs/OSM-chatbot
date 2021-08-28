@@ -29,6 +29,8 @@ intents:
     use_entities: true
 entities:
 - location
+- person
+- time
 slots: {}
 responses:
   utter_greet_guide:
