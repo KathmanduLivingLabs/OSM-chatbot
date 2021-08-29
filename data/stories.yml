@@ -1,7 +1,5 @@
 version: "2.0"
-
 stories:
-
 - story: happy faq path 1
   steps:
   - intent: greet
@@ -14,7 +12,6 @@ stories:
   - action: utter_anything_else
   - intent: deny
   - action: utter_goodbye
-  
 - story: happy faq path 2
   steps:
   - intent: greet
@@ -27,7 +24,6 @@ stories:
   - action: utter_anything_else
   - intent: affirm
   - action: utter_what_else
-
 - story: sad faq path 1
   steps:
   - intent: greet
@@ -40,7 +36,6 @@ stories:
   - action: utter_anything_else
   - intent: deny
   - action: utter_goodbye
-
 - story: happy chitchat path 1
   steps:
   - intent: greet
@@ -49,7 +44,6 @@ stories:
   - action: utter_chitchat
   - intent: affirm
   - action: utter_welcome
-
 - story: sad chitchat path 1
   steps:
   - intent: greet
@@ -58,29 +52,42 @@ stories:
   - action: utter_chitchat
   - intent: deny
   - action: utter_sorry
-
 - story: affirm without help path 1
   steps:
   - intent: greet
   - action: utter_greet_guide
   - intent: affirm
   - action: utter_welcome
-
 - story: affirm without help path 2
   steps:
   - intent: affirm
   - action: utter_welcome
-
 - story: deny without help path 1
   steps:
   - intent: greet
   - action: utter_greet_guide
   - intent: deny
   - action: utter_goodbye
-
 - story: deny without help path 2
   steps:
   - intent: affirm
   - action: utter_welcome
-
-  
+- story: Story from Conversation ID e4ac5eea626e4ffc9f44754166255176
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_what_else
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+  - action: utter_anything_else
