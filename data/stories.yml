@@ -94,3 +94,21 @@ stories:
   - intent: deny
   - action: utter_sorry
   - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID e0db0ab6676a4a09975074ce7179ff9c
+  steps:
+  - intent: greet
+  - action: utter_greet_guide
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy_to_help
+  - action: utter_anything_else
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+  - action: utter_anything_else
