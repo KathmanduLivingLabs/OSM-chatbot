@@ -1,0 +1,21 @@
+version: "2.0"
+
+stories:
+- story: happy chitchat path 1
+  steps:
+  - intent: greet
+  - action: utter_greet_guide
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: affirm
+  - action: utter_welcome
+
+- story: sad chitchat path 1
+  steps:
+  - intent: greet
+  - action: utter_greet_guide
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: deny
+  - action: utter_sorry
+  

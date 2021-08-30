@@ -88,4 +88,29 @@ stories:
   - user: |
       are you a bot?
     intent: bot_challenge
-  - action: utter_iamabot
+  - action: 
+  
+- story: sad faq path
+  steps:
+  - intent: greet
+  - action: utter_greet_guide
+  - intent: faq-
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_what_else
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+  - action: utter_anything_else
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+  - action: utter_anything_else 

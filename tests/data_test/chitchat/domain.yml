@@ -1,0 +1,127 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_conrerefig:
+  session_expiration_trerereime: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- chitchat:
+    use_entities: true
+- not_happy_with:
+    use_entities: true
+- random_typing:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities:
+- location
+- person
+- time
+slots: {}
+responses:
+  utter_greet_guide:
+  - buttons:
+    - payload: Tell me about OSM
+      title: Tell me about OSM
+    - payload: Why was OpenStreetMap created?
+      title: Why was OpenStretMap created?
+    - payload: How can i edit map on OSM?
+      title: How can i edit map on OSM?
+    text: Hi, i am OSM Chatbot. What do you want to learn about OpenStreetMap today? You can start by selecting from below options.😃
+  utter_greet:
+  - text: Hey! How are you? You can ask me anything about OpenStreetMap. 😊
+  - text: Hi, i am OSM chatbot. You can ask me anything about OpenStreetMap. 😊
+  - text: Hi, How can i help you?
+  utter_happy_to_help:
+  - text: I am glad, I could help you. 🤓
+  - text: Thank God! I was able to help. 🤓
+  utter_sorry:
+  - text: I apologize, I promise that i will do my best to help you next time.
+  - text: I am sorry, I will try my best next time.
+  utter_what_else:
+  - text: So, what else you want to know about OpenStreetMap?
+  utter_welcome:
+  - text: My pleasure !! 😊
+  - text: Welcome !! Happy to help 😊
+  utter_did_that_help:
+  - text: Did that help you?
+  - text: Was it helpful?
+  - text: Are your doubts cleared now?
+  - text: Hope your doubts are cleared now.
+  utter_anything_else:
+  - text: What else you want to know about OpenStreetMap?😊
+  - text: Is there anything else you like to know? 😊
+  - text: Is there anything else I can help you? 😊
+  - text: Is there anything else you want to know about OpenStreetMap?😊
+  utter_ask_about:
+  - text: I am good! serving users with OpenStreetMap related queries.
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye Bye! have a great day!!
+  - text: Good Bye! have a good day!!
+  utter_please_rephrase:
+  - text: Sorry! I didnt get you. Could you please reframe your question so that I can understand better 🤨
+  - text: I'm sorry , I din't quite understand that. Could you rephrase?
+   utter_out_of_scope:
+  - text: Sorry, I can't handle that request.
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase? If rephrasing couldn't solve your problem you can ask your queries at forum.openstreetmap.org.
+  utter_iamabot:
+  - text: I am OSM Chatbot, developed by Kathmandu Living Labs. I am here to help you in OpenStreetMap related queries.
+  utter_chitchat/nicetomeetyou:
+  - text: Likewise!
+  - text: Thank you. It is a pleasure to meet you as well!
+  - text: It is nice to meet you too!
+  - text: Pleased to meet you too!
+  - text: It's always a pleasure to meet new people!
+  - text: Nice to meet you too! Happy to be of help.
+  utter_chitchat/telljoke:
+  - text: Why are eggs not very much into jokes? - Because they could crack up.
+  - text: What's a tree's favorite drink? - Root beer!
+  - text: Why do the French like to eat snails so much? - They can't stand fast food.
+  - text: Why did the robot get angry? - Because someone kept pushing its buttons.
+  - text: What do you call a pirate droid? - Arrrr-2-D2
+  - text: Why did the robot cross the road? - Because he was programmed to.
+  utter_chitchat/ask_about:
+  - text: I am good! serving users with OpenStreetMap queries.
+  utter_chitchat/ask_howold:
+  - text: Old enough to be a bot!
+  - text: '42'
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter.
+  - text: My first git commit was many moons ago.
+  - text: Why do you ask? Are my wrinkles showing?
+  - text: I've hit the age where I actively try to forget how old I am.
+  utter_chitchat/ask_time:
+  - text: It's the most wonderful time of the year!
+  - text: It's party time!
+  - text: Time is a human construct, you'll have to tell me.
+  - text: It's five o'clock somewhere!
+  - text: "In an ever expanding universe, the real question is: what time isn't it?"
+  - text: That's hard to say -- it's different all over the world!
+  utter_chitchat/ask_weather:
+  - text: I don't know about where you live, but in my world it's always sunny 🔆
+  - text: It's getting pretty chilly!
+  - text: Where I'm from, it's almost never-leaving-the-house weather.
+  - text: Winter is coming ⚔️
+  utter_chitchat/ask_wherefrom:
+  - text: I was born in Kathmandu, but I consider myself a citizen of the world.
+  - text: I was born in the coolest city on Earth, in Kathmandu.
+  - text: My developers come from all over the world!
+  - text: I was taught not to give out my address on the internet.
+  - text: My address starts with github.com.
+actions: []
+forms: {}
+e2e_actions: []

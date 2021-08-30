@@ -27,11 +27,6 @@ rules:
   - intent: not_happy_with
   - action: utter_sorry
 
-- rule: respond to FAQs
-  steps:
-  - intent: faq
-  - action: utter_faq
-
 - rule: respond to chitchat
   steps:
   - intent: chitchat
