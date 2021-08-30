@@ -77,15 +77,4 @@ stories:
   - intent: affirm
   - action: utter_welcome
 
-# - story: single action for questions with buttons
-#   steps:
-#   - intent: greet
-#   - action: utter_greet_guide
-#   - intent: faq/how_to_map
-#   - action: utter_faq/how_to_map
-#   - intent: create_osm_account
-#   - action: utter_faq/create_osm_account
-#   - intent: osm_intro
-#   - action: utter_faq/osm_intro
-#   - action: utter_did_that_help
   
