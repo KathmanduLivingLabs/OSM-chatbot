@@ -77,7 +77,7 @@ responses:
   utter_please_rephrase:
   - text: Sorry! I didnt get you. Could you please reframe your question so that I can understand better 🤨
   - text: I'm sorry , I din't quite understand that. Could you rephrase?
-   utter_out_of_scope:
+  utter_out_of_scope:
   - text: Sorry, I can't handle that request at this moment.
   - text: "I can't help you with that, I'm sorry."
   utter_default:
