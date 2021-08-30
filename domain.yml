@@ -170,8 +170,8 @@ responses:
       title: How to edit map using iD editor?
     text: You can create an account ar openstreetmap.org and start editing using iD editor or any other editor of your choice.
   utter_faq/create_osm_account:
-  - text: To register, go to http://www.openstreetmap.org/, and choose sign up in the top right-hand corner. This will take you to the following registration form.
-    image: 'https://static.packt-cdn.com/products/9781847197504/graphics/7504_02_02.jpg'
+  - image: https://static.packt-cdn.com/products/9781847197504/graphics/7504_02_02.jpg
+    text: To register, go to http://www.openstreetmap.org/, and choose sign up in the top right-hand corner. This will take you to the following registration form.
   utter_faq/ideditor_info:
   - text: The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on top left corner.
   utter_faq/how_to_use_ideditor:
@@ -204,6 +204,11 @@ responses:
     One benefit of OSM is the data are not only free but using an Open Data Commons Open Database License (ODbL) data license you can do whatever you want with the data, so there is an incentive to use and adapt the data to different purposes, which is perhaps why we are now seeing major companies such as Microsoft, Uber, Lyfe, and Apple contribute to OSM."
   - text: "Did you know?
     In OSM, there are three types of elements, which includes nodes, i.e.points, ways are lines that represent linear features such as roads and the third main type of element is a relation, which can act as a collection of nodes, ways, or even other relations defined in a membership or relationship in a given grouping."
+  utter_faq/learn_osm:
+  - text: "If you are a beginner, refer to the following guides to learn mapping in OSM.
+    1. https://learnosm.org/en/ 
+    2. https://www.youtube.com/watch?v=Ir-3K0pjwOI 
+    3. https://youtu.be/L0-a3bFBxek"
 actions: []
 forms: {}
 e2e_actions: []
