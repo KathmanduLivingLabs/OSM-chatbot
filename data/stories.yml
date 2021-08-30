@@ -27,7 +27,6 @@ stories:
   - intent: faq
   - action: utter_faq
   - action: utter_did_that_help
-  
 - story: sad faq path 1
   steps:
   - intent: greet
@@ -76,5 +75,22 @@ stories:
   steps:
   - intent: affirm
   - action: utter_welcome
-
-  
+- story: Story from Conversation ID 7db07d38e830460a90f58930b26a57a9
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_what_else
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+  - action: utter_anything_else

@@ -1,8 +1,8 @@
 version: '2.0'
 config:
   store_entities_as_slots: true
-session_conrerefig:
-  session_expiration_trerereime: 60
+session_config:
+  session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
 - greet:
@@ -31,6 +31,9 @@ entities:
 - location
 - person
 - time
+- name
+- company
+- language
 slots: {}
 responses:
   utter_greet_guide:
@@ -79,7 +82,7 @@ responses:
   - text: I'm sorry , I din't quite understand that. Could you rephrase?
   utter_out_of_scope:
   - text: Sorry, I can't handle that request at this moment.
-  - text: "I can't help you with that, I'm sorry."
+  - text: I can't help you with that, I'm sorry.
   utter_default:
   - text: Sorry I didn't get that. Can you rephrase? If rephrasing couldn't solve your problem you can ask your queries at forum.openstreetmap.org.
   utter_iamabot:
@@ -175,40 +178,22 @@ responses:
   utter_faq/ideditor_info:
   - text: The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on top left corner.
   utter_faq/how_to_use_ideditor:
-  - text: Go to openstreetmap.org and login using your account. Then pan and zoom the area you wish to edit. Click on edit button present on the top left corner. Now you can start editing map using various tools present on the editor interface. For more information about using iD editor, you can visit https://learnosm.org/en/beginner/id-editor/ 
+  - text: Go to openstreetmap.org and login using your account. Then pan and zoom the area you wish to edit. Click on edit button present on the top left corner. Now you can start editing map using various tools present on the editor interface. For more information about using iD editor, you can visit https://learnosm.org/en/beginner/id-editor/
   utter_faq/add_features:
-  - text: "To add a feature on OpenStreetMap:
-    1. Open openstreeetmap.org and click on edit button at top left corner.
-    2. Pan and zoom the location where you wnat to add a feature.
-    3. Click on point/line/area icon present on top center. (click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.)
-    4. Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point)
-    5. To finish tracing an area/line double click on the last point.
-    6. Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen.
-    8. Now save your changes with changeset comment to see the changes."
+  - text: 'To add a feature on OpenStreetMap: 1. Open openstreeetmap.org and click on edit button at top left corner. 2. Pan and zoom the location where you wnat to add a feature. 3. Click on point/line/area icon present on top center. (click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 4. Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point) 5. To finish tracing an area/line double click on the last point. 6. Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 8. Now save your changes with changeset comment to see the changes.'
   utter_faq/osm_users:
   - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.
   utter_faq/interesting_facts:
-  - text: "Did you know? 
-    The OSM map database is enhanced by individuals around the world. Some find it fun and rewarding and consider it a hobby. Others simply want a great map of an area that is important to them. Still other offer help in times of crisis, such as earthquakes and tsunamis."
-  - text: "Did you know?
-    The OSM community and others interested in free geodata gather once a year at The State of Map Conference. That’s where new ideas and initiatives, uses and updates are presented."
-  - text: "Did you know?
-    The name of the project is OpenStreetMap; the single word refers to a single database covering the entire world. It’s sometimes erroneously referred to as Open Street Map or OpenStreetMaps."
-  - text: "Did you know?
-    The OpenStreetMap Foundation manages and supports the effort but does not control or direct, OSM. OSMF is an international not-for-profit dedicated to encouraging the growth, development and distribution of free geospatial data and to providing geospatial data for anyone to use and share."
-  - text: "Did you know?
-    OpenStreetMap (OSM) is perhaps one of the largest geospatial collaborative projects in the world, where over 1.5 million contributors have helped to edit over 1 billion features. The project effectively tries to map the world using a crowdsourcing, collaborative method."
-  - text: "Did you know?
-    The idea of creating OSM was inspired by Wikipedia, using a similar community-centric contribution approach where users can simply edit, add, or submit changes to contribute to a region in the world. Since then, the project has not only grown but has also become essential to a variety of efforts, including humanitarian workers, private companies, and a wider geospatial community."
-  - text: "Did you know?
-    One benefit of OSM is the data are not only free but using an Open Data Commons Open Database License (ODbL) data license you can do whatever you want with the data, so there is an incentive to use and adapt the data to different purposes, which is perhaps why we are now seeing major companies such as Microsoft, Uber, Lyfe, and Apple contribute to OSM."
-  - text: "Did you know?
-    In OSM, there are three types of elements, which includes nodes, i.e.points, ways are lines that represent linear features such as roads and the third main type of element is a relation, which can act as a collection of nodes, ways, or even other relations defined in a membership or relationship in a given grouping."
+  - text: Did you know? The OSM map database is enhanced by individuals around the world. Some find it fun and rewarding and consider it a hobby. Others simply want a great map of an area that is important to them. Still other offer help in times of crisis, such as earthquakes and tsunamis.
+  - text: Did you know? The OSM community and others interested in free geodata gather once a year at The State of Map Conference. That’s where new ideas and initiatives, uses and updates are presented.
+  - text: Did you know? The name of the project is OpenStreetMap; the single word refers to a single database covering the entire world. It’s sometimes erroneously referred to as Open Street Map or OpenStreetMaps.
+  - text: Did you know? The OpenStreetMap Foundation manages and supports the effort but does not control or direct, OSM. OSMF is an international not-for-profit dedicated to encouraging the growth, development and distribution of free geospatial data and to providing geospatial data for anyone to use and share.
+  - text: Did you know? OpenStreetMap (OSM) is perhaps one of the largest geospatial collaborative projects in the world, where over 1.5 million contributors have helped to edit over 1 billion features. The project effectively tries to map the world using a crowdsourcing, collaborative method.
+  - text: Did you know? The idea of creating OSM was inspired by Wikipedia, using a similar community-centric contribution approach where users can simply edit, add, or submit changes to contribute to a region in the world. Since then, the project has not only grown but has also become essential to a variety of efforts, including humanitarian workers, private companies, and a wider geospatial community.
+  - text: Did you know? One benefit of OSM is the data are not only free but using an Open Data Commons Open Database License (ODbL) data license you can do whatever you want with the data, so there is an incentive to use and adapt the data to different purposes, which is perhaps why we are now seeing major companies such as Microsoft, Uber, Lyfe, and Apple contribute to OSM.
+  - text: Did you know? In OSM, there are three types of elements, which includes nodes, i.e.points, ways are lines that represent linear features such as roads and the third main type of element is a relation, which can act as a collection of nodes, ways, or even other relations defined in a membership or relationship in a given grouping.
   utter_faq/learn_osm:
-  - text: "If you are a beginner, refer to the following guides to learn mapping in OSM.
-    1. https://learnosm.org/en/ 
-    2. https://www.youtube.com/watch?v=Ir-3K0pjwOI 
-    3. https://youtu.be/L0-a3bFBxek"
+  - text: If you are a beginner, refer to the following guides to learn mapping in OSM. 1. https://learnosm.org/en/ 2. https://www.youtube.com/watch?v=Ir-3K0pjwOI 3. https://youtu.be/L0-a3bFBxek
 actions: []
 forms: {}
 e2e_actions: []
