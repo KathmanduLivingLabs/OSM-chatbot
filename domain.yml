@@ -87,7 +87,7 @@ responses:
   - text: Sorry I didn't get that. Can you rephrase? If rephrasing couldn't solve your problem you can ask your queries at forum.openstreetmap.org.
   utter_iamabot:
   - text: I am OSM Chatbot, developed by Kathmandu Living Labs. I am here to help you in OpenStreetMap related queries.
-    utter_chitchat/nicetomeetyou:
+  utter_chitchat/nicetomeetyou:
   - text: Nice to meet you too! Happy to be of help.
   - text: Likewise!
   - text: Thank you. It is a pleasure to meet you as well!
