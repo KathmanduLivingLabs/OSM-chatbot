@@ -1475,9 +1475,6 @@ nlu:
     - no. tell more
     - tell me something about osm
     - tell me more
-- intent: faq/learn_mapping
-  examples: |
-    - how to map?
 responses:
   utter_chitchat/ask_howold:
   - text: '42'
