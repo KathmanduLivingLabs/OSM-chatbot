@@ -1440,6 +1440,8 @@ nlu:
     - how to add building?
     - how to make resendential area?
     - how to make building?
+    - how to add building
+    - How to add building?
 - intent: faq/osm_users
   examples: |
     - Who uses OSM?
@@ -1477,6 +1479,20 @@ nlu:
   examples: |
     - how to map?
 responses:
+  utter_chitchat/ask_howold:
+  - text: '42'
+  - text: Old enough to be a bot!
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter.
+  - text: My first git commit was many moons ago.
+  - text: Why do you ask? Are my wrinkles showing?
+  - text: I've hit the age where I actively try to forget how old I am.
+  utter_chitchat/ask_time:
+  - text: It's five o'clock somewhere!
+  - text: Time is a human construct, you'll have to tell me.
+  - text: "In an ever expanding universe, the real question is: what time isn't it?"
+  - text: That's hard to say -- it's different all over the world!
+  - text: It's the most wonderful time of the year!
+  - text: It's party time!
   utter_chitchat/nicetomeetyou:
   - text: Nice to meet you too! Happy to be of help.
   - text: Likewise!
@@ -1490,20 +1506,6 @@ responses:
   - text: I was born in Kathmandu, but I consider myself a citizen of the world.
   - text: I was born in the coolest city on Earth, in Kathmandu.
   - text: My developers come from all over the world!
-  utter_chitchat/ask_howold:
-  - text: Old enough to be a bot!
-  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter.
-  - text: My first git commit was many moons ago.
-  - text: Why do you ask? Are my wrinkles showing?
-  - text: I've hit the age where I actively try to forget how old I am.
-  - text: '42'
-  utter_chitchat/ask_time:
-  - text: Time is a human construct, you'll have to tell me.
-  - text: It's five o'clock somewhere!
-  - text: "In an ever expanding universe, the real question is: what time isn't it?"
-  - text: That's hard to say -- it's different all over the world!
-  - text: It's the most wonderful time of the year!
-  - text: It's party time!
   utter_chitchat/ask_weather:
   - text: I don't know about where you live, but in my world it's always sunny 🔆
   - text: It's getting pretty chilly!
@@ -1589,6 +1591,14 @@ responses:
     - payload: How to edit map using iD editor?
       title: How to edit map using iD editor?
     text: You can create an account at openstreetmap.org and start editing using iD editor or any other editor of your choice.
+  utter_faq/learn_osm:
+  - text: |-
+      If you are a beginner, refer to the following guides to learn mapping in OSM.
+      1. https://learnosm.org/en
+      2. https://www.youtube.com/watch?v=Ir-3K0pjwOI
+      3. https://youtu.be/L0-a3bFBxek
+  utter_faq/osm_users:
+  - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.
   utter_faq/create_osm_account:
   - image: https://static.packt-cdn.com/products/9781847197504/graphics/7504_02_02.jpg
     text: To register, go to http://www.openstreetmap.org/, and choose sign up in the top right-hand corner. This will take you to the following registration form.
@@ -1606,11 +1616,3 @@ responses:
       7. Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 
       8. Now save your changes with changeset comment to see the changes. 
       In this way you can add features into OpenStreetMap using iD editor, you can also use other editors like JOSM to add and edit features'
-  utter_faq/learn_osm:
-  - text: |-
-      If you are a beginner, refer to the following guides to learn mapping in OSM.
-      1. https://learnosm.org/en
-      2. https://www.youtube.com/watch?v=Ir-3K0pjwOI
-      3. https://youtu.be/L0-a3bFBxek
-  utter_faq/osm_users:
-  - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.

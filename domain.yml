@@ -129,7 +129,7 @@ responses:
   utter_chitchat/ask_about:
   - text: I am good! serving users with OpenStreetMap queries.
   utter_chitchat/ask_howhelp:
-  - text: I can help you in answering your OpenStreetMap 
+  - text: I can help you in answering your OpenStreetMap
   utter_faq/osm_can_use_data:
   - text: Yes! You must follow rules. Typically it means that you must provide an attribution.
   utter_faq/osm_intro:
