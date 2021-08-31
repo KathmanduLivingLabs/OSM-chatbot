@@ -128,6 +128,8 @@ responses:
   - text: My developers come from all over the world!
   - text: I was taught not to give out my address on the internet.
   - text: My address starts with github.com.
+  utter_faq/osm_can_use_data:
+  - text: Yes! You must follow rules. Typically it means that you must provide an attribution.
   utter_faq/osm_intro:
   - text: OpenStreetMap is a free digital map of the world, created by an ever growing community of mappers. It can be accessed through www.openstreetmap.org.
   utter_faq/osm_spelling:
@@ -153,14 +155,30 @@ responses:
   utter_faq/osm_involvement:
   - text: Anyone can help by improving map data. You can create an account at openstreetmap.org and start editing data using iD editor or other editor of your choice.
   utter_faq/interesting_facts:
-  - text: Did you know? \ \n The OSM community and others interested in free geodata gather once a year at The State of Map Conference. That’s where new ideas and initiatives, uses and updates are presented.
-  - text: Did you know? \ \n The OSM map database is enhanced by individuals around the world. Some find it fun and rewarding and consider it a hobby. Others simply want a great map of an area that is important to them. Still other offer help in times of crisis, such as earthquakes and tsunamis.
-  - text: Did you know? \ \n The name of the project is OpenStreetMap; the single word refers to a single database covering the entire world. It’s sometimes erroneously referred to as Open Street Map or OpenStreetMaps.
-  - text: Did you know? \ \n The OpenStreetMap Foundation manages and supports the effort but does not control or direct, OSM. OSMF is an international not-for-profit dedicated to encouraging the growth, development and distribution of free geospatial data and to providing geospatial data for anyone to use and share.
-  - text: Did you know? \ \n OpenStreetMap (OSM) is perhaps one of the largest geospatial collaborative projects in the world, where over 1.5 million contributors have helped to edit over 1 billion features. The project effectively tries to map the world using a crowdsourcing, collaborative method.
-  - text: Did you know? \ \n The idea of creating OSM was inspired by Wikipedia, using a similar community-centric contribution approach where users can simply edit, add, or submit changes to contribute to a region in the world. Since then, the project has not only grown but has also become essential to a variety of efforts, including humanitarian workers, private companies, and a wider geospatial community.
-  - text: Did you know? \ \n One benefit of OSM is the data are not only free but using an Open Data Commons Open Database License (ODbL) data license you can do whatever you want with the data, so there is an incentive to use and adapt the data to different purposes, which is perhaps why we are now seeing major companies such as Microsoft, Uber, Lyfe, and Apple contribute to OSM.
-  - text: Did you know? \ \n In OSM, there are three types of elements, which includes nodes, i.e.points, ways are lines that represent linear features such as roads and the third main type of element is a relation, which can act as a collection of nodes, ways, or even other relations defined in a membership or relationship in a given grouping.
+  - text: |-
+      Did you know?
+      The OSM community and others interested in free geodata gather once a year at The State of Map Conference. That’s where new ideas and initiatives, uses and updates are presented.
+  - text: |-
+      Did you know?
+      The OSM map database is enhanced by individuals around the world. Some find it fun and rewarding and consider it a hobby. Others simply want a great map of an area that is important to them. Still other offer help in times of crisis, such as earthquakes and tsunamis.
+  - text: |-
+      Did you know?
+      The name of the project is OpenStreetMap; the single word refers to a single database covering the entire world. It’s sometimes erroneously referred to as Open Street Map or OpenStreetMaps.
+  - text: |-
+      Did you know?
+      The OpenStreetMap Foundation manages and supports the effort but does not control or direct, OSM. OSMF is an international not-for-profit dedicated to encouraging the growth, development and distribution of free geospatial data and to providing geospatial data for anyone to use and share.
+  - text: |-
+      Did you know?
+      OpenStreetMap (OSM) is perhaps one of the largest geospatial collaborative projects in the world, where over 1.5 million contributors have helped to edit over 1 billion features. The project effectively tries to map the world using a crowdsourcing, collaborative method.
+  - text: |-
+      Did you know?
+      The idea of creating OSM was inspired by Wikipedia, using a similar community-centric contribution approach where users can simply edit, add, or submit changes to contribute to a region in the world. Since then, the project has not only grown but has also become essential to a variety of efforts, including humanitarian workers, private companies, and a wider geospatial community.
+  - text: |-
+      Did you know?
+      One benefit of OSM is the data are not only free but using an Open Data Commons Open Database License (ODbL) data license you can do whatever you want with the data, so there is an incentive to use and adapt the data to different purposes, which is perhaps why we are now seeing major companies such as Microsoft, Uber, Lyfe, and Apple contribute to OSM.
+  - text: |-
+      Did you know?
+      In OSM, there are three types of elements, which includes nodes, i.e.points, ways are lines that represent linear features such as roads and the third main type of element is a relation, which can act as a collection of nodes, ways, or even other relations defined in a membership or relationship in a given grouping.
   utter_faq/osm_satellite_image_resolution:
   - text: OpenStreetMap neither controls nor owns the satellite imagery. The Aerial Imagery is from a variety of sources that we have permission to use - Bing and Maxar are the most popular and have the largest coverage. So we cannot make or request updates.
   utter_faq/osm_map_download:
@@ -183,7 +201,11 @@ responses:
   - text: The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on top left corner.
   - text: 'To add a feature on OpenStreetMap: 1. Open openstreeetmap.org and login to your account. 2. Pan and zoom the location where you wnat to add a feature. 2. Click on edit button at top left corner. 3. Click on point/line/area icon present on top center. (click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 4. Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point) 5. To finish tracing an area/line double click on the last point. 6. Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 8. Now save your changes with changeset comment to see the changes. In this way you can add features into OpenStreetMap using iD editor, you can also use other editors like JOSM to add and edit features'
   utter_faq/learn_osm:
-  - text: If you are a beginner, refer to the following guides to learn mapping in OSM. \ \n 1. https://learnosm.org/en/ \ \n 2. https://www.youtube.com/watch?v=Ir-3K0pjwOI \ \n 3. https://youtu.be/L0-a3bFBxek
+  - text: |- 
+      If you are a beginner, refer to the following guides to learn mapping in OSM.
+      1. https://learnosm.org/en
+      2. https://www.youtube.com/watch?v=Ir-3K0pjwOI
+      3. https://youtu.be/L0-a3bFBxek
   utter_faq/osm_users:
   - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.
 actions:
