@@ -57,6 +57,7 @@ responses:
   - text: I am sorry, I will try my best next time.
   utter_what_else:
   - text: So, what else you want to know about OpenStreetMap?
+  - text: What else you want to know about OpenStreetMap?😊
   utter_welcome:
   - text: My pleasure !! 😊
   - text: Welcome !! Happy to help 😊
@@ -66,7 +67,6 @@ responses:
   - text: Are your doubts cleared now?
   - text: Hope your doubts are cleared now.
   utter_anything_else:
-  - text: What else you want to know about OpenStreetMap?😊
   - text: Is there anything else you like to know? 😊
   - text: Is there anything else I can help you? 😊
   - text: Is there anything else you want to know about OpenStreetMap?😊
@@ -194,6 +194,7 @@ responses:
   - text: Did you know? \n In OSM, there are three types of elements, which includes nodes, i.e.points, ways are lines that represent linear features such as roads and the third main type of element is a relation, which can act as a collection of nodes, ways, or even other relations defined in a membership or relationship in a given grouping.
   utter_faq/learn_osm:
   - text: If you are a beginner, refer to the following guides to learn mapping in OSM. \n 1. https://learnosm.org/en/ \n 2. https://www.youtube.com/watch?v=Ir-3K0pjwOI \n 3. https://youtu.be/L0-a3bFBxek
-actions: []
+actions:
+- goodbye
 forms: {}
 e2e_actions: []

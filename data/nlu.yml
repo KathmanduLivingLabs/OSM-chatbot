@@ -134,6 +134,8 @@ nlu:
     - ssup?
     - helleo
     - heyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+    - hello babe
+    - hey boy
 - intent: goodbye
   examples: |
     - cu
@@ -215,6 +217,8 @@ nlu:
     - thanks for the information
     - yes, it was
     - yes, my doubts are cleared
+    - you are correct
+    - no, you are correct
 - intent: deny
   examples: |
     - no
@@ -246,6 +250,7 @@ nlu:
     - stop
     - shutup
     - shut up
+    - no thanks
 - intent: bot_challenge
   examples: |
     - hey are you human
@@ -345,6 +350,8 @@ nlu:
     - I will never come back
     - you've already said this
     - answer my question
+    - you are bad
+    - tero tauko
 - intent: out_of_scope
   examples: |
     - who is nama
@@ -752,6 +759,17 @@ nlu:
     - who is donald trump?
     - abcd
     - where is kathmandu?
+    - how to add cow?
+    - how to add hjsd area?
+    - k sodeko k vanirako xa
+    - k vanxa lou
+    - what is love?
+    - i love you
+    - tell me about sachin
+    - what makes you cry
+    - did you fart?
+    - how to make milk?
+    - who is aadesh
 - intent: chitchat/nicetomeetyou
   examples: |
     - Its really nice to meet you
@@ -774,6 +792,7 @@ nlu:
     - can u make me happe?
     - can you make me happy?
     - please chill my mind
+    - tell me a k=joke
 - intent: chitchat/ask_about
   examples: |
     - how's you?
@@ -875,6 +894,8 @@ nlu:
     - I am fine, How are you?
     - what are you doing?
     - Whass up cutie?
+    - whats up boy
+    - whass up?
 - intent: chitchat/ask_howhelp
   examples: |
     - how can you help me?
@@ -1174,6 +1195,7 @@ nlu:
     - Why are people contributing to OpenStreetMap?
     - Why should i contribute to osm?
     - What is the motive behind creating OSM?
+    - what is the purpose of creating osm?
 - intent: faq/osm_spelling
   examples: |
     - Is it OpenStreetMap or Open Street Maps?
@@ -1251,6 +1273,7 @@ nlu:
     - Who owns OSM data?
     - Who owns OpenStreetMap data?
     - Owner of OpenStreetMap
+    - who owns osm data?
 - intent: faq/osm_data_consistency
   examples: |
     - Why is the data sometimes inconsistent?
@@ -1348,6 +1371,7 @@ nlu:
     - I want to learn OSM
     - can you help me learn osm?
     - no, I am lookinh for some helpful tutorials
+    - How can i edit map on OSM?
 - intent: faq/create_osm_account
   examples: |
     - How to create OSM account?
@@ -1411,6 +1435,10 @@ nlu:
     - i need help using ideditor.
     - how to make building
     - how to edit map using id editor?
+    - how to add resendential area?
+    - how to add building?
+    - how to make resendential area?
+    - how to make building?
 - intent: faq/osm_users
   examples: |
     - Who uses OSM?
@@ -1423,6 +1451,7 @@ nlu:
     - Who are the users of OpenStreetMap
     - which organizations uses osm?
     - what organizations use osm
+    - who use osm?
 - intent: faq/interesting_facts
   examples: |
     - What else can you say about OSM?
@@ -1441,6 +1470,8 @@ nlu:
     - something new
     - Tell me something new
     - no. tell more
+    - tell me something about osm
+    - tell me more
 - intent: faq/learn_mapping
   examples: |
     - how to map?
@@ -1463,11 +1494,11 @@ responses:
   - text: My developers come from all over the world!
   utter_chitchat/ask_howold:
   - text: Old enough to be a bot!
-  - text: '42'
   - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter.
   - text: My first git commit was many moons ago.
   - text: Why do you ask? Are my wrinkles showing?
   - text: I've hit the age where I actively try to forget how old I am.
+  - text: '42'
   utter_chitchat/ask_time:
   - text: Time is a human construct, you'll have to tell me.
   - text: It's five o'clock somewhere!
@@ -1483,10 +1514,10 @@ responses:
   utter_chitchat/telljoke:
   - text: What's a tree's favorite drink? - Root beer!
   - text: Why are eggs not very much into jokes? - Because they could crack up.
-  - text: Why do the French like to eat snails so much? - They can't stand fast food.
   - text: Why did the robot get angry? - Because someone kept pushing its buttons.
   - text: What do you call a pirate droid? - Arrrr-2-D2
   - text: Why did the robot cross the road? - Because he was programmed to.
+  - text: Why do the French like to eat snails so much? - They can't stand fast food.
   utter_chitchat/ask_about:
   - text: I am good! serving users with OpenStreetMap queries.
   utter_chitchat/ask_howhelp:
@@ -1509,14 +1540,23 @@ responses:
   - text: You. The data and software is owned by you, the contributors. There is an organisation called the OpenStreetMap Foundation which exists to protect, promote, and support the project, but does not own the data.
   utter_faq/osm_data_consistency:
   - text: OpenStreetMap is a free editable map of the whole world. It is made by people like you. Which means the database will always be subject to the whims, experimentation, and mistakes of the community; this is precisely OSM's strength since, among other things, it allows our data to quickly accommodate changes in the physical world.
-  utter_faq/osm_involvement:
-  - text: Anyone can help by improving map data. You can create an account at openstreetmap.org and start editing data using iD editor or other editor of your choice.
   utter_faq/osm_communicate:
   - text: The OpenStreetMap community is large, spread across many locations, speak different languages, and focus on different areas of interest. There is a help center at help.openstreetmap.org and forum at forum.openstreetmap.org to get started.
   utter_faq/osm_see_changes:
   - text: The "standard" map appearing on OpenStreetMap.org tends to be updated after a couple of minutes, but can also be longer depending on server load.
   utter_faq/osm_need_gps:
   - text: No we have numerous data sources that can be used to determine an accurate position, including aerial imagery from Bing, and of course the existing OpenStreetMap data.
+  utter_faq/osm_involvement:
+  - text: Anyone can help by improving map data. You can create an account at openstreetmap.org and start editing data using iD editor or other editor of your choice.
+  utter_faq/interesting_facts:
+  - text: Did you know? \n The OSM community and others interested in free geodata gather once a year at The State of Map Conference. That’s where new ideas and initiatives, uses and updates are presented.
+  - text: Did you know? \n The OSM map database is enhanced by individuals around the world. Some find it fun and rewarding and consider it a hobby. Others simply want a great map of an area that is important to them. Still other offer help in times of crisis, such as earthquakes and tsunamis.
+  - text: Did you know? \n The name of the project is OpenStreetMap; the single word refers to a single database covering the entire world. It’s sometimes erroneously referred to as Open Street Map or OpenStreetMaps.
+  - text: Did you know? \n The OpenStreetMap Foundation manages and supports the effort but does not control or direct, OSM. OSMF is an international not-for-profit dedicated to encouraging the growth, development and distribution of free geospatial data and to providing geospatial data for anyone to use and share.
+  - text: Did you know? \n OpenStreetMap (OSM) is perhaps one of the largest geospatial collaborative projects in the world, where over 1.5 million contributors have helped to edit over 1 billion features. The project effectively tries to map the world using a crowdsourcing, collaborative method.
+  - text: Did you know? \n The idea of creating OSM was inspired by Wikipedia, using a similar community-centric contribution approach where users can simply edit, add, or submit changes to contribute to a region in the world. Since then, the project has not only grown but has also become essential to a variety of efforts, including humanitarian workers, private companies, and a wider geospatial community.
+  - text: Did you know? \n One benefit of OSM is the data are not only free but using an Open Data Commons Open Database License (ODbL) data license you can do whatever you want with the data, so there is an incentive to use and adapt the data to different purposes, which is perhaps why we are now seeing major companies such as Microsoft, Uber, Lyfe, and Apple contribute to OSM.
+  - text: Did you know? \n In OSM, there are three types of elements, which includes nodes, i.e.points, ways are lines that represent linear features such as roads and the third main type of element is a relation, which can act as a collection of nodes, ways, or even other relations defined in a membership or relationship in a given grouping.
   utter_faq/osm_satellite_image_resolution:
   - text: OpenStreetMap neither controls nor owns the satellite imagery. The Aerial Imagery is from a variety of sources that we have permission to use - Bing and Maxar are the most popular and have the largest coverage. So we cannot make or request updates.
   utter_faq/osm_map_download:
@@ -1538,16 +1578,7 @@ responses:
   utter_faq/ideditor_info:
   - text: The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on top left corner.
   - text: 'To add a feature on OpenStreetMap: 1. Open openstreeetmap.org and login to your account. 2. Pan and zoom the location where you wnat to add a feature. 2. Click on edit button at top left corner. 3. Click on point/line/area icon present on top center. (click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 4. Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point) 5. To finish tracing an area/line double click on the last point. 6. Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 8. Now save your changes with changeset comment to see the changes. In this way you can add features into OpenStreetMap using iD editor, you can also use other editors like JOSM to add and edit features'
-  utter_faq/osm_users:
-  - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.
-  utter_faq/interesting_facts:
-  - text: Did you know? \n The OSM map database is enhanced by individuals around the world. Some find it fun and rewarding and consider it a hobby. Others simply want a great map of an area that is important to them. Still other offer help in times of crisis, such as earthquakes and tsunamis.
-  - text: Did you know? \n The OSM community and others interested in free geodata gather once a year at The State of Map Conference. That’s where new ideas and initiatives, uses and updates are presented.
-  - text: Did you know? \n The name of the project is OpenStreetMap; the single word refers to a single database covering the entire world. It’s sometimes erroneously referred to as Open Street Map or OpenStreetMaps.
-  - text: Did you know? \n The OpenStreetMap Foundation manages and supports the effort but does not control or direct, OSM. OSMF is an international not-for-profit dedicated to encouraging the growth, development and distribution of free geospatial data and to providing geospatial data for anyone to use and share.
-  - text: Did you know? \n OpenStreetMap (OSM) is perhaps one of the largest geospatial collaborative projects in the world, where over 1.5 million contributors have helped to edit over 1 billion features. The project effectively tries to map the world using a crowdsourcing, collaborative method.
-  - text: Did you know? \n The idea of creating OSM was inspired by Wikipedia, using a similar community-centric contribution approach where users can simply edit, add, or submit changes to contribute to a region in the world. Since then, the project has not only grown but has also become essential to a variety of efforts, including humanitarian workers, private companies, and a wider geospatial community.
-  - text: Did you know? \n One benefit of OSM is the data are not only free but using an Open Data Commons Open Database License (ODbL) data license you can do whatever you want with the data, so there is an incentive to use and adapt the data to different purposes, which is perhaps why we are now seeing major companies such as Microsoft, Uber, Lyfe, and Apple contribute to OSM.
-  - text: Did you know? \n In OSM, there are three types of elements, which includes nodes, i.e.points, ways are lines that represent linear features such as roads and the third main type of element is a relation, which can act as a collection of nodes, ways, or even other relations defined in a membership or relationship in a given grouping.
   utter_faq/learn_osm:
   - text: If you are a beginner, refer to the following guides to learn mapping in OSM. \n 1. https://learnosm.org/en/ \n 2. https://www.youtube.com/watch?v=Ir-3K0pjwOI \n 3. https://youtu.be/L0-a3bFBxek
+  utter_faq/osm_users:
+  - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.
