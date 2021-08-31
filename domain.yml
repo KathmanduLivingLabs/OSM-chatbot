@@ -204,25 +204,24 @@ responses:
   - text: The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on top left corner.
   utter_faq/add_features:
   - text: |-
-     'To add a feature on OpenStreetMap: 
-     1. Open openstreeetmap.org and login to your account. 
-     2. Pan and zoom the location where you wnat to add a feature. 
-     3. Click on edit button at top left corner. 
-     4. Click on point/line/area icon present on top center. (Click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 
-     5. Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point) 
-     6. To finish tracing an area/line double click on the last point. 
-     7. Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 
-     8. Now save your changes with changeset comment to see the changes. 
-     In this way you can add features into OpenStreetMap using iD editor, you can also use other editors like JOSM to add and edit features'
+      'To add a feature on OpenStreetMap: 
+      1. Open openstreeetmap.org and login to your account. 
+      2. Pan and zoom the location where you wnat to add a feature. 
+      3. Click on edit button at top left corner. 
+      4. Click on point/line/area icon present on top center. (Click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 
+      5. Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point) 
+      6. To finish tracing an area/line double click on the last point. 
+      7. Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 
+      8. Now save your changes with changeset comment to see the changes. 
+      In this way you can add features into OpenStreetMap using iD editor, you can also use other editors like JOSM to add and edit features'
   utter_faq/learn_osm:
-  - text: |- 
+  - text: |-
       If you are a beginner, refer to the following guides to learn mapping in OSM.
       1. https://learnosm.org/en
       2. https://www.youtube.com/watch?v=Ir-3K0pjwOI
       3. https://youtu.be/L0-a3bFBxek
   utter_faq/osm_users:
   - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.
-
 actions:
 - goodbye
 forms: {}
