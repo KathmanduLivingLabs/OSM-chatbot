@@ -1593,6 +1593,7 @@ responses:
     text: To register, go to http://www.openstreetmap.org/, and choose sign up in the top right-hand corner. This will take you to the following registration form.
   utter_faq/ideditor_info:
   - text: The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on top left corner.
+  utter_faq/add_features:
   - text: |-
      'To add a feature on OpenStreetMap: 
      1. Open openstreeetmap.org and login to your account. 
