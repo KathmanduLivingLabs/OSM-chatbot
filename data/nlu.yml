@@ -1591,14 +1591,6 @@ responses:
     - payload: How to edit map using iD editor?
       title: How to edit map using iD editor?
     text: You can create an account at openstreetmap.org and start editing using iD editor or any other editor of your choice.
-  utter_faq/learn_osm:
-  - text: |-
-      If you are a beginner, refer to the following guides to learn mapping in OSM.
-      1. https://learnosm.org/en
-      2. https://www.youtube.com/watch?v=Ir-3K0pjwOI
-      3. https://youtu.be/L0-a3bFBxek
-  utter_faq/osm_users:
-  - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.
   utter_faq/create_osm_account:
   - image: https://static.packt-cdn.com/products/9781847197504/graphics/7504_02_02.jpg
     text: To register, go to http://www.openstreetmap.org/, and choose sign up in the top right-hand corner. This will take you to the following registration form.
