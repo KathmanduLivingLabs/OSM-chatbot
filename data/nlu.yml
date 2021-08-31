@@ -1359,20 +1359,14 @@ nlu:
     - Where can we learn mapping?
     - How to map?
     - How can i start mapping?
-    - How to map on OSM?
     - How can i get started mapping on OSM?
     - How can i start mapping on OSM?
     - I want to learn mapping. Can you help me?
     - Help me learn editing maps on OSM.
     - I want you to help me edit map on osm
-    - How to edit OSM map?
-    - How can i edit map?
-    - how can i edit map?
-    - how can i map in osm?
     - I want to learn OSM
     - can you help me learn osm?
     - no, I am lookinh for some helpful tutorials
-    - How can i edit map on OSM?
 - intent: faq/create_osm_account
   examples: |
     - How to create OSM account?
@@ -1442,6 +1436,12 @@ nlu:
     - how to make building?
     - how to add building
     - How to add building?
+    - How to edit OSM map?
+    - How can i edit map?
+    - how can i edit map?
+    - how can i map in osm?
+    - How to map on OSM?
+    - How can i edit map on OSM?
 - intent: faq/osm_users
   examples: |
     - Who uses OSM?
