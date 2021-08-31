@@ -42,8 +42,8 @@ responses:
       title: Tell me about OSM
     - payload: Why was OpenStreetMap created?
       title: Why was OpenStretMap created?
-    - payload: How can i edit map on OSM?
-      title: How can i edit map on OSM?
+    - payload: I want to learn OSM
+      title: I want to learn OSM
     text: Hi, i am OSM Chatbot. What do you want to learn about OpenStreetMap today? You can start by selecting from below options.😃
   utter_greet:
   - text: Hey! How are you? You can ask me anything about OpenStreetMap. 😊
