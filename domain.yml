@@ -207,7 +207,7 @@ responses:
      1. Open openstreeetmap.org and login to your account. 
      2. Pan and zoom the location where you wnat to add a feature. 
      3. Click on edit button at top left corner. 
-     4. Click on point/line/area icon present on top center. (click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 
+     4. Click on point/line/area icon present on top center. (Click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 
      5. Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point) 
      6. To finish tracing an area/line double click on the last point. 
      7. Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 
