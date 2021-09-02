@@ -75,12 +75,14 @@ responses:
   utter_goodbye:
   - text: Bye Bye! have a great day!!
   - text: Good Bye! have a good day!!
+  utter_iamabot:
+  - text: I am OSM Chatbot, developed by Kathmandu Living Labs.
   utter_please_rephrase:
   - text: Sorry! I didnt get you. Could you please reframe your question so that I can understand better 🤨
   - text: I'm sorry , I din't quite understand that. Could you rephrase?
   utter_out_of_scope/non_english:
   - text: "I only understand English, I'm sorry."
-  utter_out_of_scope/other:
+  utter_out_of_scope/others:
   - text: I can't help you with that, I'm sorry.
   - text: Sorry, I can't handle that request at this moment.
   utter_chitchat/nicetomeetyou:

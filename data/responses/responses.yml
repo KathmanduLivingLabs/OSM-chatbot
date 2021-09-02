@@ -2,7 +2,7 @@ version: "2.0"
 responses:
   utter_out_of_scope/non_english:
   - text: "I only understand English, I'm sorry."
-  utter_out_of_scope/other:
+  utter_out_of_scope/others:
   - text: I can't help you with that, I'm sorry.
   - text: Sorry, I can't handle that request at this moment.
   utter_chitchat/nicetomeetyou:
