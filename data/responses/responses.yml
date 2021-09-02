@@ -1,83 +1,5 @@
-version: '2.0'
-config:
-  store_entities_as_slots: true
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
-intents:
-- greet:
-    use_entities: true
-- goodbye:
-    use_entities: true
-- affirm:
-    use_entities: true
-- deny:
-    use_entities: true
-- out_of_scope:
-    use_entities: true
-- bot_challenge:
-    use_entities: true
-- faq:
-    use_entities: true
-- chitchat:
-    use_entities: true
-- not_happy_with:
-    use_entities: true
-- random_typing:
-    use_entities: true
-- nlu_fallback:
-    use_entities: true
-entities:
-- location
-- person
-- company
-- language
-slots: {}
+version: "2.0"
 responses:
-  utter_greet_guide:
-  - buttons:
-    - payload: Tell me about OSM
-      title: Tell me about OSM
-    - payload: Why was OpenStreetMap created?
-      title: Why was OpenStretMap created?
-    - payload: I want to learn OSM
-      title: I want to learn OSM
-    text: Hi, i am OSM Chatbot. What do you want to learn about OpenStreetMap today? You can start by selecting from below options.😃
-  utter_greet:
-  - text: Hey! How are you? You can ask me anything about OpenStreetMap. 😊
-  - text: Hi, i am OSM chatbot. You can ask me anything about OpenStreetMap. 😊
-  - text: Hi, How can i help you?
-  utter_happy_to_help:
-  - text: I am glad, I could help you. 🤓
-  - text: Thank God! I was able to help. 🤓
-  utter_sorry:
-  - text: I apologize, I promise that i will do my best to help you next time.
-  - text: I am sorry, I will try my best next time.
-  utter_what_else:
-  - text: So, what else you want to know about OpenStreetMap?
-  - text: What else you want to know about OpenStreetMap?😊
-  utter_welcome:
-  - text: My pleasure !! 😊
-  - text: Welcome !! Happy to help 😊
-  utter_did_that_help:
-  - text: Did that help you?
-  - text: Was it helpful?
-  - text: Are your doubts cleared now?
-  - text: Hope your doubts are cleared now.
-  utter_anything_else:
-  - text: Is there anything else you like to know? 😊
-  - text: Is there anything else I can help you? 😊
-  - text: Is there anything else you want to know about OpenStreetMap?😊
-  utter_ask_about:
-  - text: I am good! serving users with OpenStreetMap related queries.
-  utter_happy:
-  - text: Great, carry on!
-  utter_goodbye:
-  - text: Bye Bye! have a great day!!
-  - text: Good Bye! have a good day!!
-  utter_please_rephrase:
-  - text: Sorry! I didnt get you. Could you please reframe your question so that I can understand better 🤨
-  - text: I'm sorry , I din't quite understand that. Could you rephrase?
   utter_out_of_scope/non_english:
   - text: "I only understand English, I'm sorry."
   utter_out_of_scope/other:
@@ -268,7 +190,7 @@ responses:
   - text: |-
       The HOT Tasking Manager is an intuitive tool developed by Humanitarian OpenStreetMap Team (HOT) that mappers can use to sort an area into a grid, and work together to map an area in an organized way.
       The purpose of creating tasking manager is to allow mappers throughout the world to assist in mapping a defined region with a minimum risk of overlapping work areas, and also allows people both on the ground and working remotely to collaborate effectively, rapidly, and avoid accidental rework being required due to conflicts.
-      For getting started with tasking manager visit https://learnosm.org/en/coordination/tasking-manager/
+      For getting started and more info about tasking manager visit https://learnosm.org/en/coordination/tasking-manager/
   utter_faq/tags:
   - text: |- 
       Tags describe specific features of map elements (nodes, ways, or relations) or changesets.A tag consists of two items, a key and a value.  Conventions are agreed on the meaning and use of tags.
@@ -277,7 +199,3 @@ responses:
       • highway=residential a tag with a key of highway and a value of residential which should be used on a way to indicate a road along which people live.
       • name=Park Avenue a tag for which the value field is used to convey the name of the particular street
       For more information visit https://wiki.openstreetmap.org/wiki/Tags
-actions:
-- goodbye
-forms: {}
-e2e_actions: []

@@ -1,0 +1,427 @@
+version: "2.0"
+nlu:
+- intent: faq/osm_intro
+  examples: |
+    - What is OpenStreetMap?
+    - What is OSM?
+    - Describe OSM
+    - Describe OpenStreetMap
+    - What does OSM mean?
+    - do you know about osm?
+    - can you tell me about osm?
+    - can you tell me about openstreetmap?
+    - openstreetmap
+    - osm
+    - Explain about OSM
+    - Explain about OpenStreetMap
+    - Could you please explain about OpenStreetMap
+    - Tell me something about OpenStreetMap
+    - I want to learn about OpenStreetMap
+    - I want to know about OSM
+    - Can you help me telling what is osm?
+    - What do you mean by OpenStreetMap?
+    - What do you mean by OSM?
+    - what is openstreetmap?
+    - what is openstreetmap
+    - what is osm?
+    - what can you tell me about osm
+    - what is osm
+    - what is OSM?
+    - What is OSM
+    - then tell me what is osm?
+    - What is osm
+    - What osm?
+    - Tell me about OSM
+- intent: faq/osm_motive
+  examples: |
+    - Why was OpenStreetMap created?
+    - Why are you making OpenStreetMap?
+    - What is the purpose of OpenStreetMap?
+    - What is the motivation of creating OpenStreetMap?
+    - Why was open street map founded?
+    - Can you tell me founding motivation of openstreetmap?
+    - Could you tell me purpose of starting OpenStreetMap movement?
+    - Why osm was created?
+    - Reason of creating openstreetmap?
+    - Why are you contributing to osm?
+    - Why are people contributing to OpenStreetMap?
+    - Why should i contribute to osm?
+    - What is the motive behind creating OSM?
+    - what is the purpose of creating osm?
+- intent: faq/osm_spelling
+  examples: |
+    - Is it OpenStreetMap or Open Street Maps?
+    - Is OpenStreetMap correct?
+    - What is the full form of OSM?
+    - What is trademark of OSM?
+    - What is the correct spelling of openstreetmap?
+    - fullform of OpenStreetMap
+    - Can you tell me fullform of OpenStreetMap?
+    - Can you tell me spelling of open street map?
+    - How do i write open street map?
+    - what is spelling of osm?
+- intent: faq/osm_founder
+  examples: |
+    - who is steve coast?
+    - Who is Steve Coast?
+    - Who founded OSM?
+    - Who founded OpenStreetMap?
+    - Who is the founder of OpenStreetMap?
+    - Who is the founder of OSM?
+    - developer?
+    - who started osm?
+    - Who is the father of OSM?
+    - Who created OSM?
+    - WHo created OpenStreetMap?
+    - Tell me about creator of openstreetmap
+    - Who developed OSM?
+    - WHo developed open street map?
+    - Who is the founder of osm?
+    - who made osm
+    - who started osm
+    - Who created Osm
+    - who founded osm?
+    - who created osm?
+    - When was OpenStreetMap founded?
+    - Where was OpenStreetMap founded?
+    - When was OSM founded?
+    - OSM founded date?
+    - OSM founded region?
+- intent: faq/osm_alternatives
+  examples: |
+    - Why not just use Google maps or others?
+    - Why don't you just use Google Maps/whoever for your data?
+    - Why not just use Safari maps?
+    - Why not just use Google maps?
+    - What is OSM different from other maps?
+    - Why OpenStreetMap?
+    - Benefits of using OpenStreetMap than other maps
+    - Benefits of using OpenStreetMap
+    - What is the benefit of using OpenStreetMap?
+    - Why to use OpenStreetMap?
+    - Why to use OSM?
+    - Why to use open street map?
+    - Can you tell me difference between OSM and other maps.
+    - Could you tell me difference between OpenStreetMap and other maps.
+    - why use osm instead of google
+    - osm versus google maps
+    - why osm
+    - why OSM?
+    - Why not google?
+    - Why choose OSM over Google?
+- intent: faq/osm_data_accuracy
+  examples: |
+    - How can a project like this create accurate maps?
+    - How OpenStreetMap creates accurate maps?
+    - How accurate is OpenStreetMap?
+    - How accurate is OpenStreetMap data?
+    - How OSM creates accurate maps?
+    - How OpenStreetMap creates accurate data?
+- intent: faq/osm_data_creator
+  examples: |
+    - Where did existing map data come from?
+    - Who creates OSM data?
+    - Who creates maps on OSM?
+    - Who creates maps on OpenStreetMap?
+- intent: faq/osm_owner
+  examples: |
+    - Who is the owner of OpenStreetMap?
+    - Who owns OpenStreetMap?
+    - Who is the owner of OSM?
+    - Who controls OSM data?
+    - Who owns OSM data?
+    - Who owns OpenStreetMap data?
+    - Owner of OpenStreetMap
+    - who owns osm data?
+- intent: faq/osm_data_consistency
+  examples: |
+    - Why is the data sometimes inconsistent?
+    - Why is OSM data inaccurate sometimes?
+    - Why is OpenStreetMap data inaccurate sometimes?
+    - Why there is no data in some place?
+    - Why the map is blanck at some places?
+    - Why the map s black at some regions?
+- intent: faq/osm_involvement
+  examples: |
+    - How can i get involved?
+    - How can i contribute to OSM?
+    - How can i get involved with OpenStreetMap?
+    - How can i contribute to OpenStreetMap?
+    - how can i help?
+    - who can contribute to osm
+    - How can I contribute to OSM?
+    - how can I contribute to this?
+    - how to contribute in osm?
+- intent: faq/osm_communicate
+  examples: |
+    - How do you communicate?
+    - How to communicate or seek help related to OSM?
+    - How can i connect with other OSM contributors?
+    - How can i communicate with other OSM contributors?
+    - How to get help related to OSM?
+    - Where can i ask for help?
+    - I have some queries about OSM. Where can i ask about them?
+    - I have some queries.
+    - I have some questions.
+    - where can i join osm community
+    - osm community in nepal
+- intent: faq/osm_see_changes
+  examples: |
+    - How do I get to see my changes to the map?
+    - When my chages are made available to the map?
+    - How long does it take to see my changes?
+    - wWen my changes are applied to the map?
+- intent: faq/osm_need_gps
+  examples: |
+    - Do I need to own a GPS device to contribute to the map?
+    - Do i need a GPS device to contribute to the map?
+- intent: faq/osm_satellite_image_resolution
+  examples: |
+    - Why is the satellite imagery low resolution?
+    - Why is the satellite imagery outdated?
+    - Why is the satellite imagery old?
+    - Is there other satellite imagery that I can use that has more detail?
+    - Which satellite imagery to use?
+    - Which is more detailed satellite imagery?
+- intent: faq/osm_map_download
+  examples: |
+    - How can I download a map?
+    - How can i download desired map?
+    - How can i share my map?
+    - How can i share OSM map?
+    - How can i download OSM map?
+- intent: faq/osm_download_data
+  examples: |
+    - How can I extract information from OpenStreetMap?
+    - How can i extract POI from OpenStreetMap?
+    - How can i download data from OpenStreetMap?
+    - How can i extract shops from OpenStreetMap?
+    - How can i extract schools from OpenStreetMap?
+    - How can i extract hospitals from OSM?
+    - how to download osm data
+    - how can i download OSM data?
+- intent: faq/learn_osm
+  examples: |
+    - Can I map?
+    - I am looking for some helpful tutorials
+    - any tutorials to learn about contribution to OSM
+    - any video tutorials?
+    - How can I get started mapping?
+    - How can i learn mapping.
+    - Where can we learn mapping?
+    - How to map?
+    - How can i start mapping?
+    - How can i get started mapping on OSM?
+    - How can i start mapping on OSM?
+    - I want to learn mapping. Can you help me?
+    - Help me learn editing maps on OSM.
+    - I want you to help me edit map on osm
+    - I want to learn OSM
+    - can you help me learn osm?
+    - no, I am lookinh for some helpful tutorials
+- intent: faq/create_osm_account
+  examples: |
+    - How to create OSM account?
+    - How to create OpenStreetMap account?
+    - How can i create OSM account?
+    - I want to create OSM account help me.
+    - Help me create OSM account.
+    - Help me create OpenStreetMap account.
+    - Can you help me ntto create OpenStreetMap account.
+    - I want to create OSM account
+    - how to create osm account?
+- intent: faq/ideditor_info
+  examples: |
+    - What is iD editor?
+    - What is ideditor?
+    - What is id editor.
+    - Tell me about id editor.
+    - What do you mean by ID editor?
+    - Describe id editor.
+    - Tell me about iD editor.
+    - Tell me about ideditor.
+    - what is id editor?
+- intent: faq/add_features
+  examples: |
+    - how to add add features on OSM?
+    - how to add buildings on OSM?
+    - How to add buildings?
+    - How do i update OSM data?
+    - How to create building?
+    - How to edit building?
+    - How to map buildings?
+    - How to create river?
+    - How to create river on OSM?
+    - How to create river on OpenStreetMap?
+    - How to draw river on OSM?
+    - How to draw road on OSM?
+    - How to map road?
+    - How to edit road?
+    - How to create road on OSM?
+    - I want to create road
+    - I want to create building
+    - I want to add schools
+    - I want to add school
+    - Can i add school?
+    - How to add school on OSM?
+    - How to add hospital on OSM?
+    - I want to add my shop in OSM
+    - How can i add my shop on OpenStreetMap?
+    - How to add forest in openstreetmap?
+    - How to map farmland on OpenStreetMap?
+    - Can i add forest on OpenStreetMap?
+    - How to use iD editor?
+    - How can i use iD editor to edit map?
+    - Help me edit map using iD editor.
+    - How can i edit map using iDeditor.
+    - Help me edit map using ideditor.
+    - How to use ideditor?
+    - Can you help me using iD editor.
+    - I need help using iD editor.
+    - Can you help me to use ideditor.
+    - i need help using ideditor.
+    - how to make building
+    - how to edit map using id editor?
+    - how to add resendential area?
+    - how to add building?
+    - how to make resendential area?
+    - how to make building?
+    - how to add building
+    - How to add building?
+    - How to edit OSM map?
+    - How can i edit map?
+    - how can i edit map?
+    - how can i map in osm?
+    - How to map on OSM?
+    - How can i edit map on OSM?
+- intent: faq/osm_users
+  examples: |
+    - Who uses OSM?
+    - Who are the users of OSM?
+    - Which company uses OSM?
+    - What are the uses of OpenStreetMap.
+    - Which organizations uses OSM?
+    - Tell me the name of Organizations that uses OSM
+    - Name of users of OSM
+    - Who are the users of OpenStreetMap
+    - which organizations uses osm?
+    - what organizations use osm
+    - who use osm?
+- intent: faq/interesting_facts
+  examples: |
+    - What else can you say about OSM?
+    - What else can you say about openstreetmap?
+    - What more information can you provide regarding OSM?
+    - What more information can you provide regarding OpenStreetMap?
+    - What else can you tell me about OSM?
+    - Tell me something interesting about OSM
+    - Tell me interesting facts about OpenStreetMap
+    - Tell me something i have not heard of about OSM
+    - Tell me more
+    - No, tell more
+    - No explain more
+    - any more details on that?
+    - I want to know more
+    - something new
+    - Tell me something new
+    - no. tell more
+    - tell me something about osm
+    - tell me more
+- intent: faq/osm_license
+  examples: |
+    - do you about OSM licenses?
+    - Tell me about OSM licenses
+    - Do you know about OSM license?
+    - Tell me about license
+    - Which license OSM use?
+    - What is licensing term to use OSM data?
+    - What are licensing terms to use OSM data?
+    - Can i use data from OSM?
+    - Can i use data from OpenStreetMap?
+    - Can i use OSM data?
+    - Can i use OpenStreetMap data?
+    - Who can use OSM data?
+    - What i must agree to use OSM data?
+    - What terms and conditions i must follow to use OSM data?
+- intent: faq/josm_intro
+  examples: |
+    - What is JOSM?
+    - What is josm?
+    - What is JOSM.
+    - Tell me about JOSM.
+    - What do you mean by JOSM?
+    - Describe JOSM.
+    - Tell me about JOSM.
+    - Tell me about JOSM.
+    - tell me what is JOSM?
+    - Give me short description about JSOM.
+- intent: faq/josm_edit
+  examples: |
+    - Help me edit map using JOSM.
+    - How can i edit map using JOSM.
+    - Help me edit map using JOSM.
+    - How to use JOSM?
+    - Can you help me using JOSM.
+    - I need help using JOSM.
+    - Can you help me to use JOSM.
+    - i need help using JOSM.
+    - how to make building using JOSM
+    - how to edit map using JOSM?
+    - how to add resendential area using JOSM?
+    - how to add building with JOSM?
+    - how to make resendential area through JOSM?
+    - how to make building using JOSM?
+    - how to add road using JOSM?
+    - How to add forest using JOSM?
+    - I want to use JOSM to edit openstreetmap
+    - Can you help me learn JOSM
+    - I want to learn JOSM.
+- intent: faq/HOT
+  examples: |
+    - What is HOT?
+    - What is the fullform of HOT?
+    - What is Humanitarian OpenStreetMap Team?
+    - Why was HOT created?
+    - What is the purpose of HOT?
+    - What is the purpose of Humanitarian OpenStreetMap Team?
+    - Why was Humanitarian OpenStreetMap Team created?
+    - What is the job of HOT?
+    - What is the motive of Humanitarian OpenStreetMap Team?
+    - What is the motive of HOT?
+    - tell me about HOT
+    - tell me about Humanitarian OpenStreetMap Team
+    - What tasks HOT performs?
+    - What are the aims of HOT?
+    - What are the goals of HOT?
+    - What are the goals of Humanitarian OpenStreetMap Team?
+- intent: faq/tasking_manager
+  examples: |
+    - What is tasking manager?
+    - What is the purpose of tasking manager?
+    - Tell me about tasking manager
+    - What is hot tasking manager?
+    - What is tasking manager used for?
+    - Who created tasking manager
+    - Why to use tasking manager?
+    - how to use tasking manager
+    - Why was tasking manager created?
+    - I want to know about tasking manager
+    - Can you tell me about tasking manager?
+    - Why tasking manager?
+- intent: faq/tags
+  examples: |
+    - What are keys and values?
+    - What do you mean by tag?
+    - What do you mean by key and values?
+    - Tell me about Tags.
+    - help me with tags in OSM?
+    - What are tags in OSM?
+    - how can i use tags?
+    - What tags are available?
+    - How to use tags?
+    - tell me about keys and values?
+    - Help me understand tags, keys and values
+    - What tag can i use in buildings?
+    - What is the key for building?
+    - what is the key for roads?
+    - What tags are available for roads?
