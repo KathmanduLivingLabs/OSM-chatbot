@@ -127,99 +127,10 @@ nlu:
     - Whass up cutie?
     - whats up boy
     - whass up?
-    - Ahoy matey how are you?
-    - Are you ok?
-    - Do you feel good?
-    - Do you have a great day?
     - HI Sara, what are you up to?
     - Hi Sara! How are you?
-    - How are You?
-    - How are things?
-    - How are you
-    - How are you men?
-    - How are you today?
-    - How are you?
-    - How was your day?
-    - How you doing?
-    - How's it going
-    - How's it hanging?
-    - How's life treating you friend?
-    - How've you been?
-    - Hows it going
-    - I'm fine and you
-    - Is everything ok?
-    - What's going on?
-    - What's new?
-    - What's up
-    - What's up man
-    - and you
-    - are you alright
-    - are you happy
-    - are you having a good day
-    - are you ok
-    - are you okay
-    - h r u ?
-    - hello, how are you?
-    - hey how are you?
-    - hi how are you?
-    - hi how u doing
     - hi sara, how are you?
-    - how ?
-    - how are things going
-    - how are things with you?
-    - how are u
-    - how are u?
-    - how are xou
-    - how are you
-    - how are you ?
-    - how are you doing
-    - how are you doing this morning
-    - how are you doing today my sweet friend
-    - how are you doing today?
-    - how are you doing?
-    - how are you feeling
-    - how are you today
-    - how are you'
-    - how are you?
-    - how are you????
-    - how are yuo
-    - how do you do?
-    - how have you been
-    - how is it going
-    - how is your day
-    - how is your day going
-    - how is your evening
-    - how r u
-    - how r u ?
-    - how r u>
-    - how you doing
-    - how you doing?
-    - how's it going?
-    - how's life
-    - how's life been treating you?
-    - how's your day going
-    - howareyou
-    - hw r u?
-    - is everything all right
-    - is everything okay
-    - nah, I'm good - how are you doing?
-    - okay hi how are you?
-    - wassup>
-    - what about your day
-    - what are you up to?
-    - what's good
-    - what's up
-    - what's up sara
-    - what's up?
-    - whatchcha doing
-    - whatchya upto ?
-    - whats goin on
-    - whats new
-    - whatsapp
-    - yow are you
-    - how are you Rasa
     - Hey Sara, how's it going
-    - are you cool
 - intent: chitchat/ask_howhelp
   examples: |
     - Can you explain me in one sentence what you are doing?
@@ -327,6 +238,8 @@ nlu:
     - what can you teache me?
     - Can rasa do calculations?
     - what you can
+    - what are your capabilities?
+    - what are you capabilities?
 - intent: chitchat/ask_howold
   examples: |
     - How long have you been alive?
@@ -383,59 +296,8 @@ nlu:
     - when you were bon
     - What's your age?
     - Do you have friends the same age as you, if so, how old are they?
-    - How long have you been alive?
-    - How long have you been around?
-    - How long have you occupied the earth?
-    - How many candles were on your last birthday cake?
-    - How many years have you been alive?
-    - How many years have you lived?
-    - How old are you?
-    - How old were you on your last birthday?
-    - How old will you be on your next birthday?
-    - Tell me your day, month and year of birth.
-    - What is your age?
-    - What is your birthdate?
-    - What is your count of years being alive so far?
-    - What was your age on your last birthday?
-    - What will be your age on your next birthday?
-    - What year were you born?
-    - Whats your age?
-    - When do you celebrate your day of birth?
-    - and you are how many years old?
-    - can you tell me exactly how old you are?
-    - can you tell me what number represents your age?
-    - can you tell me your age?
-    - do you know how old you are?
-    - give me your age?
-    - how about your age
-    - how aold are you
-    - how many ages?
-    - how many years old are you?
-    - how old are u
-    - how old are you
-    - how old are you?
-    - how old were you on your last birthday?
-    - how old were you when you celebrated your last birthday?
-    - how old will you be this year?
-    - how old?
-    - in what year were you born?
-    - tell me how old you are?
-    - tell me your age number?
-    - tell me your age?
-    - what age are you
-    - what age were you when you celebrated your last birthday?
-    - what is your age?
-    - what is your birthday?
-    - what is your exact age?
-    - what number represents your age?
-    - what year were you born?
-    - what's your age?
-    - whats your age?
-    - whats your birth year?
-    - when is your birthday?
-    - when were you born?
-    - when you were bon
-    - What's your age?
+    - What is my age?
+    - What is my age
 - intent: chitchat/ask_time
   examples: |
     - Can you give me the time?
@@ -569,6 +431,7 @@ nlu:
     - whats the weather like tomorrow?
     - wheather at you location?
     - wheather be like at your place?
+    - how is waether?
 - intent: chitchat/ask_wherefrom
   examples: |
     - Are you from around here?
@@ -868,11 +731,20 @@ nlu:
     - what is rasa?
     - what is in rasa
     - what is it for?
-    - what is rasa
     - what is rasa actually
-    - what is rasa?
     - whats rasa
     - yeah go on explaining what rasa is
     - RASA IS SOFTWARE?
     - rasa os
     - what is Rasa
+- intent: not_happy_with
+  examples: |
+    - damn
+- intent: faq/learn_mapping
+  examples: |
+    - how to map?
+- intent: out_of_scope
+  examples: |
+    - what do you love?
+    - Who is Manoj Thapa?
+    - I did not ask git commit bro
