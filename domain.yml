@@ -13,6 +13,8 @@ intents:
     use_entities: true
 - deny:
     use_entities: true
+- user_info:
+    use_entities: true
 - out_of_scope:
     use_entities: true
 - bot_challenge:
@@ -32,7 +34,10 @@ entities:
 - person
 - company
 - language
-slots: {}
+slots:
+  username:
+    type: text
+    influence_conversation: false
 responses:
   utter_greet_guide:
   - buttons:
@@ -280,6 +285,9 @@ responses:
       • name=Park Avenue a tag for which the value field is used to convey the name of the particular street
       For more information visit https://wiki.openstreetmap.org/wiki/Tags
 actions:
-- goodbye
-forms: {}
+- action_user_stats
+forms:
+  username_form:
+    username:
+      - type: from_text
 e2e_actions: []

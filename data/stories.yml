@@ -103,3 +103,8 @@ stories:
   - action: utter_anything_else
   - intent: deny
   - action: utter_goodbye
+
+- story: give user information
+  steps:
+  - intent: user_info
+  - action: action_user_stats
