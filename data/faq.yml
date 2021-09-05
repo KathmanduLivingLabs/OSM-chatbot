@@ -32,6 +32,7 @@ nlu:
     - What is osm
     - What osm?
     - Tell me about OSM
+    - What OSM?
 - intent: faq/osm_motive
   examples: |
     - Why was OpenStreetMap created?
@@ -48,6 +49,9 @@ nlu:
     - Why should i contribute to osm?
     - What is the motive behind creating OSM?
     - what is the purpose of creating osm?
+    - Why was openstreetmap created?
+    - What is the aim of creating OSM?
+    - why is osm important
 - intent: faq/osm_spelling
   examples: |
     - Is it OpenStreetMap or Open Street Maps?
@@ -87,6 +91,9 @@ nlu:
     - When was OSM founded?
     - OSM founded date?
     - OSM founded region?
+    - Where is OSM?
+    - when was OSM started?
+    - do you know Aadesh Baral?
 - intent: faq/osm_alternatives
   examples: |
     - Why not just use Google maps or others?
@@ -109,6 +116,7 @@ nlu:
     - why OSM?
     - Why not google?
     - Why choose OSM over Google?
+    - Why should we use OSM?
 - intent: faq/osm_data_accuracy
   examples: |
     - How can a project like this create accurate maps?
@@ -123,6 +131,7 @@ nlu:
     - Who creates OSM data?
     - Who creates maps on OSM?
     - Who creates maps on OpenStreetMap?
+    - what is osm data
 - intent: faq/osm_owner
   examples: |
     - Who is the owner of OpenStreetMap?
@@ -200,6 +209,7 @@ nlu:
     - How can i extract hospitals from OSM?
     - how to download osm data
     - how can i download OSM data?
+    - how to download OSM data?
 - intent: faq/learn_osm
   examples: |
     - Can I map?
@@ -219,6 +229,7 @@ nlu:
     - I want to learn OSM
     - can you help me learn osm?
     - no, I am lookinh for some helpful tutorials
+    - any tutorials to learn about contribution to osm
 - intent: faq/create_osm_account
   examples: |
     - How to create OSM account?
@@ -230,6 +241,7 @@ nlu:
     - Can you help me ntto create OpenStreetMap account.
     - I want to create OSM account
     - how to create osm account?
+    - how to create account in OSM?
 - intent: faq/ideditor_info
   examples: |
     - What is iD editor?
@@ -241,6 +253,7 @@ nlu:
     - Tell me about iD editor.
     - Tell me about ideditor.
     - what is id editor?
+    - what is iD editor?
 - intent: faq/add_features
   examples: |
     - how to add add features on OSM?
@@ -294,6 +307,12 @@ nlu:
     - how can i map in osm?
     - How to map on OSM?
     - How can i edit map on OSM?
+    - How to add features using Id editor?
+    - How can I add my school on OSM?
+    - how to add buildings?
+    - how to make a building?
+    - can we add schools in OSM?
+    - how to edit OSM map?
 - intent: faq/osm_users
   examples: |
     - Who uses OSM?
@@ -327,6 +346,9 @@ nlu:
     - no. tell more
     - tell me something about osm
     - tell me more
+    - no. explain more
+    - what else can you say about OSM?
+    - what more information can you provide regarding OSM?
 - intent: faq/osm_license
   examples: |
     - do you about OSM licenses?
@@ -343,6 +365,8 @@ nlu:
     - Who can use OSM data?
     - What i must agree to use OSM data?
     - What terms and conditions i must follow to use OSM data?
+    - can i use osm data?
+    - what about osm licenses?
 - intent: faq/josm_intro
   examples: |
     - What is JOSM?
@@ -351,15 +375,14 @@ nlu:
     - Tell me about JOSM.
     - What do you mean by JOSM?
     - Describe JOSM.
-    - Tell me about JOSM.
-    - Tell me about JOSM.
     - tell me what is JOSM?
     - Give me short description about JSOM.
+    - what is JOSM?
+    - what is josm
 - intent: faq/josm_edit
   examples: |
     - Help me edit map using JOSM.
     - How can i edit map using JOSM.
-    - Help me edit map using JOSM.
     - How to use JOSM?
     - Can you help me using JOSM.
     - I need help using JOSM.
@@ -376,6 +399,7 @@ nlu:
     - I want to use JOSM to edit openstreetmap
     - Can you help me learn JOSM
     - I want to learn JOSM.
+    - how to use josm?
 - intent: faq/HOT
   examples: |
     - What is HOT?
@@ -394,6 +418,7 @@ nlu:
     - What are the aims of HOT?
     - What are the goals of HOT?
     - What are the goals of Humanitarian OpenStreetMap Team?
+    - what is hot
 - intent: faq/tasking_manager
   examples: |
     - What is tasking manager?
@@ -408,6 +433,8 @@ nlu:
     - I want to know about tasking manager
     - Can you tell me about tasking manager?
     - Why tasking manager?
+    - what is the benefit of using tasking manager?
+    - what is tasking manager?
 - intent: faq/tags
   examples: |
     - What are keys and values?
@@ -425,3 +452,6 @@ nlu:
     - What is the key for building?
     - what is the key for roads?
     - What tags are available for roads?
+    - how toa dd tags in osm?
+    - what are tags in osm?
+    - Which OSM tag and value is used to define a building in OSM?

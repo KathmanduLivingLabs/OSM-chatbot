@@ -50,6 +50,13 @@ nlu:
     - hawa kura
     - j payo tei
     - thoda thoda
+    - english nai ho tyo!
+    - ke cha?
+    - vayo [la](location)
+    - k hi
+    - address haina k bro
+    - ek bar acchhe sey question padhlo fir answer karna
+    - kya pooch raha hun kya bata rahe ho
 - intent: out_of_scope/others
   examples: |
     - who is nama
@@ -466,3 +473,8 @@ nlu:
     - did you fart?
     - how to make milk?
     - who is aadesh
+    - Do I have a boyfriend
+    - What is your gender?
+    - are you kidding?
+    - do you know Nama?
+    - What is your preferred pronoun?

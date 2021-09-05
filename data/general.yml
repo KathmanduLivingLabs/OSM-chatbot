@@ -136,6 +136,7 @@ nlu:
     - heyyyyyyyyyyyyyyyyyyyyyyyyyyyy
     - hello babe
     - hey boy
+    - hy
 - intent: goodbye
   examples: |
     - Bye
@@ -411,7 +412,12 @@ nlu:
     - correct
     - great choice
     - sounds really good
-    - ya
+    - yes. i am enlightened!
+    - you are correct
+    - no, you are correct
+    - ok great thanks
+    - yes it was
+    - a little bit
 - intent: deny
   examples: |
     - I don't want to
@@ -622,6 +628,10 @@ nlu:
     - Great information
     - I mean to say that I liked the explanation
     - Super! I love Rasa
+    - yes my doubts are cleared
+    - oh nice
+    - thanks for the information
+    - nice to know
 - intent: react_negative
   examples: |
     - I am feeling bad
@@ -699,7 +709,6 @@ nlu:
     - You are shit
     - You are bad
     - I dont like you
-    - You are rude
     - You are mean
     - Dumb chatbot
     - I have never seen dumb bot like you
@@ -707,7 +716,8 @@ nlu:
     - soooooo bad
     - I will never come back
     - answer my question
-    - you are bad
+    - be better next time
+    - shutup
 - intent: explain
   examples: |
     - can you elaborate
@@ -812,3 +822,4 @@ nlu:
     - What is your name?
     - Who are your parents?
     - Who is your gaurdian?
+    - Who is your guardian?
