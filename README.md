@@ -60,13 +60,13 @@ To train model
 ```bash
     rasa train
 ```
-To run bot
+To run bot on command line 
 ```bash
     rasa shell
 ```
 To run on interactive mode on web browser:
 
-Make sure you have install Rasa X on your environment,
+- Make sure you have install Rasa X on your environment,
 Then run
 ```bash
 rasa x
