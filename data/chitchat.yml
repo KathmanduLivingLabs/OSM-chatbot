@@ -599,7 +599,7 @@ nlu:
     - we cant converse in [french](language)?
     - can we converse in [french](language)?
     - Do you speak [italian](language)?
-- intent: utter_chitchat/ask_whoami
+- intent: chitchat/ask_whoami
   examples: |
     - Can you tell me my name?
     - Can you tell me what I am called?
