@@ -520,47 +520,6 @@ nlu:
     - stop it, i do not care!!!
     - none of them
     - I don't agree
-- intent: thank
-  examples: |
-    - Cool. Thanks
-    - Great, thanks
-    - Thank you
-    - Thank you Sara
-    - Thank you so much
-    - Thank's!
-    - Thanks
-    - Thanks bot
-    - Thanks for that
-    - Thanks!
-    - amazing, thanks
-    - cheers
-    - cheers bro
-    - cool thank you
-    - cool thanks
-    - cool, thanks
-    - danke
-    - great thanks
-    - ok thanks
-    - ok thanks sara
-    - ok thanks!
-    - perfect thank you
-    - thank u
-    - thank you
-    - thank you anyways
-    - thanks
-    - thanks a bunch for everything
-    - thanks a lot
-    - thanks for forum link, I'll check it out
-    - thanks for the help
-    - thanks this is great news
-    - thanks you
-    - thanks!
-    - thankyou
-    - thnks
-    - thx
-    - yes thanks
-    - thanks for your information
-    - thanks f
 - intent: react_positive
   examples: |
     - cool beans
@@ -632,6 +591,45 @@ nlu:
     - oh nice
     - thanks for the information
     - nice to know
+    - Cool. Thanks
+    - Great, thanks
+    - Thank you
+    - Thank you Sara
+    - Thank you so much
+    - Thank's!
+    - Thanks
+    - Thanks bot
+    - Thanks for that
+    - Thanks!
+    - amazing, thanks
+    - cheers
+    - cheers bro
+    - cool thank you
+    - cool thanks
+    - cool, thanks
+    - danke
+    - great thanks
+    - ok thanks
+    - ok thanks sara
+    - ok thanks!
+    - perfect thank you
+    - thank u
+    - thank you
+    - thank you anyways
+    - thanks
+    - thanks a bunch for everything
+    - thanks a lot
+    - thanks for forum link, I'll check it out
+    - thanks for the help
+    - thanks this is great news
+    - thanks you
+    - thanks!
+    - thankyou
+    - thnks
+    - thx
+    - yes thanks
+    - thanks for your information
+    - thanks f
 - intent: react_negative
   examples: |
     - I am feeling bad
@@ -718,25 +716,6 @@ nlu:
     - answer my question
     - be better next time
     - shutup
-- intent: explain
-  examples: |
-    - can you elaborate
-    - could you explain why you need that
-    - could you tell me more
-    - explain it to me
-    - explain that
-    - i want more information
-    - i would like to know why you need that
-    - please elaborate
-    - please explain
-    - why do you need to know that
-    - why is that necessary
-    - give me more details
-    - why
-    - what do you mean
-    - what does that mean
-    - how come?
-    - you've already said this
 - intent: bot_challenge
   examples: |
     - hey are you human

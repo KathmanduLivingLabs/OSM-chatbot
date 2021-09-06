@@ -23,34 +23,23 @@ intents:
     use_entities: true
 - chitchat:
     use_entities: true
-- not_happy_with:
-    use_entities: true
-- random_typing:
-    use_entities: true
-- nlu_fallback:
-    use_entities: true
-- explain:
+- react_positive:
     use_entities: true
 - react_negative:
     use_entities: true
-- react_positive:
+- nlu_fallback:
     use_entities: true
-- thank:
+- react_negative:
     use_entities: true
 entities:
 - location
 - person
 - company
 - language
-<<<<<<< HEAD
 slots:
   username:
     type: text
     influence_conversation: false
-=======
-- name
-slots: {}
->>>>>>> 29c70ecc45b66697c1d536d12c973fe3c4b8d98f
 responses:
   utter_greet_guide:
   - buttons:

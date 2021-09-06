@@ -737,14 +737,5 @@ nlu:
     - RASA IS SOFTWARE?
     - rasa os
     - what is Rasa
-- intent: not_happy_with
-  examples: |
-    - damn
-- intent: faq/learn_mapping
-  examples: |
-    - how to map?
-- intent: out_of_scope
-  examples: |
-    - what do you love?
-    - Who is Manoj Thapa?
-    - I did not ask git commit bro
+
+

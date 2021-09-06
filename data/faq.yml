@@ -231,6 +231,7 @@ nlu:
     - no, I am lookinh for some helpful tutorials
     - any tutorials to learn about contribution to osm
     - how can i edit map on OSM?
+    - how to map?
 - intent: faq/create_osm_account
   examples: |
     - How to create OSM account?
