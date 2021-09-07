@@ -25,3 +25,20 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_please_rephrase
+
+- rule: Provide user info
+  steps:
+  - intent: user_info
+  - action: username_form
+  - active_loop: username_form
+
+- rule: Submit username_form
+  condition:
+  - active_loop: username_form
+  steps:
+  - action: username_form
+  - active_loop: null
+  - slot_was_set:
+    - username: null
+  - action: action_user_info
+  - action: action_reset_username_slot

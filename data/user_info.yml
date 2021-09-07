@@ -2,15 +2,14 @@ version: "2.0"
 nlu:
 - intent: user_info
   examples: |
-    - Can you provide osm stats of [Aadesh Baral] (PERSON)
+    - Can you provide osm stats of [Aadesh Baral](PERSON)
     - Can you provide my osm stats?
     - How much i have mapped?
     - can you provide my mapping stats?
-    - Can you provide me stats of [Manoj Thapa] (PERSON)
-    - Can you provide me stats of [Bhawak] (PERSON)
+    - Can you provide me stats of [Manoj Thapa](PERSON)
+    - Can you provide me stats of [Bhawak](PERSON)
     - tell me my mapping stats
     - i want to know my mapping stats
     - How much buildings have i mapped?
     - How much roads i have mapped?
-    - tell me mapping stats of [Ichchya] (PERSON)
-- 
+    - tell me mapping stats of [Ichchya](PERSON)

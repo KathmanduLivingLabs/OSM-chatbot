@@ -14,7 +14,8 @@ intents:
 - deny:
     use_entities: true
 - user_info:
-    use_entities: true
+    use_entities:
+    - PERSON
 - out_of_scope:
     use_entities: true
 - bot_challenge:
@@ -29,14 +30,9 @@ intents:
     use_entities: true
 - nlu_fallback:
     use_entities: true
-- react_negative:
-    use_entities: true
 entities:
-- location
-- person
-- company
-- language
-slots:
+- PERSON
+slots: 
   username:
     type: text
     influence_conversation: false
@@ -82,6 +78,8 @@ responses:
   utter_goodbye:
   - text: Bye Bye! have a great day!!
   - text: Good Bye! have a good day!!
+  utter_ask_username:
+  - text: Please provide your username
   utter_iamabot:
   - text: I am OSM Chatbot, developed by Kathmandu Living Labs.
   utter_please_rephrase:
@@ -285,9 +283,12 @@ responses:
       • name=Park Avenue a tag for which the value field is used to convey the name of the particular street
       For more information visit https://wiki.openstreetmap.org/wiki/Tags
 actions:
-- action_user_stats
+- action_user_info
+- action_reset_username_slot
 forms:
   username_form:
-    username:
-      - type: from_text
+    required_slots:
+      username:
+      - type: from_entity
+        entity: PERSON
 e2e_actions: []
