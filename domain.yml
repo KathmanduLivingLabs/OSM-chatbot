@@ -289,6 +289,5 @@ forms:
   username_form:
     required_slots:
       username:
-      - type: from_entity
-        entity: PERSON
+      - type: from_text
 e2e_actions: []
