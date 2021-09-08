@@ -31,11 +31,9 @@ class ActionUserStats(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         username = tracker.get_slot("username")
-        print(username)
         user_name = username.replace(' ', '%20')
         url = "https://www.openstreetmap.org/user/{user_name}".format(user_name=user_name)
         user_page = requests.get(url)
-        print(user_page.status_code)
         if user_page.status_code !=200:
             dispatcher.utter_message(text="Sorry, there is no user with the username {user_name}. Please check your spelling and capitallization.". format(user_name=username))
         else:
@@ -43,7 +41,8 @@ class ActionUserStats(Action):
             user_soup = BeautifulSoup(user_page, 'lxml')
             try:
                 user_description = user_soup.find("div", class_="user-description")
-                user_description = user_description.find("p").textuser_name
+                user_description = user_description.find("p").text
+
             except:
                 user_description = ''
             user_image= user_soup.find("img", class_= "user_image")
@@ -55,7 +54,8 @@ class ActionUserStats(Action):
             mapping_since=mapping_since.split(":")[1]
             mapping_since=mapping_since.replace(" ", "")
             mapping_since=mapping_since.replace("\n", "")
-            dispatcher.utter_message(text="{name} \n {user_description} \n Mapping_since: {mapping_since} \n Edits: {edits}".format(name=username, 
+            dispatcher.utter_message(text="{name} \n {user_description} \n Mapping_since: {mapping_since} \n Edits: {edits} \n For more information about {user} visit https://hdyc.neis-one.org/{user_name}".format(name=username, 
                                         user_description=user_description, mapping_since=mapping_since, 
-                                        edits=edits), image=user_image)
+                                        edits=edits,user=username, user_name=user_name), 
+                                        image=user_image)
         return []
