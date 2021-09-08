@@ -13,3 +13,4 @@ nlu:
     - How much buildings have i mapped?
     - How much roads i have mapped?
     - tell me mapping stats of [Ichchya](PERSON)
+    - Can you provide stats of [Saurav Bhattarai](PERSON)
