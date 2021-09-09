@@ -716,6 +716,7 @@ nlu:
     - answer my question
     - be better next time
     - shutup
+    - can you provide me information about [Manoj Thapa](PERSON)
 - intent: bot_challenge
   examples: |
     - hey are you human

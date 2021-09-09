@@ -14,8 +14,7 @@ intents:
 - deny:
     use_entities: true
 - user_info:
-    use_entities:
-    - PERSON
+    use_entities: true
 - out_of_scope:
     use_entities: true
 - bot_challenge:
@@ -32,9 +31,15 @@ intents:
     use_entities: true
 entities:
 - PERSON
-slots: 
+- language
+- company
+- name
+- location
+slots:
   username:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: false
 responses:
   utter_greet_guide:

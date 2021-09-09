@@ -39,5 +39,24 @@ nlu:
     - Show me my OpenStreetMap profile
     - Give me mapping information of [drklrd][(PERSON)]
     - Give me mapping contribution of [drklrd][(PERSON)]
-
-  
+    - can you provide me user stats?
+    - can you provide me mapping stats?
+    - can you provide me osm stats?
+    - can you provide me maapping stats?
+    - can you provide me my mapping stats?
+    - i need user information
+    - i need user info
+    - can you provide my stats
+    - can you provide mapping stats of [Manoj Thapa](PERSON)?
+    - provide my mapping stats
+    - can you provide me stats of [dkrdld](PERSON)?
+    - Can you provide me mapping stats of [Aadesh Baral](PERSON)
+    - can you provide me mapping stats of [Manoj Thapa](PERSON)?
+    - can you provide my amapping stats?
+    - can you provide me stats of [Manoj Thapa](PERSON)?
+    - can you provide mapping stats of [Aadesh Baral](PERSON)?
+    - can you provide me information about [Manoj Thapa](PERSON)?
+    - can you provide me stats of [Manoj Thapa](PERSON) ?
+    - give me stats of [Manoj Thapa](PERSON)
+    - give me stats of [Aadesh Baral](PERSON)
+    - can you provide my osm stats?
