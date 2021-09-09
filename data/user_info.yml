@@ -14,3 +14,30 @@ nlu:
     - How much roads i have mapped?
     - tell me mapping stats of [Ichchya](PERSON)
     - Can you provide stats of [Saurav Bhattarai](PERSON)
+    - Can you provide me information about [Roshan](PERSON)?
+    - I need my mapping statistics.
+    - I need [Ichchya](PERSON) mapping statistics.
+    - I need [Aadesh Baral](PERSON) mapping stat.
+    - How much buildings has [Hel Narsingh Thapa](PERSON) mapped?
+    - How many buildigs i have edited?
+    - How many roads i have mapped?
+    - How many roads i have edited?
+    - How much i have contributed to OSM.
+    - How much i have contributed to OpenStreetMap?
+    - How much contribution [Miko](PERSON) have made to OSM?
+    - What are my mapping stats?
+    - What are my mapping statistics?
+    - What are my contributions to OSM?
+    - How much rivers i have mapped?
+    - what is the total no of buildings i have edited?
+    - what is the total nof buildings i have mapped?
+    - What is the total length of roads i have mapped.
+    - Show me my contributions statistics
+    - Show me my OSM contribution.
+    - Show my OSM contributions
+    - Show me my OSM profile
+    - Show me my OpenStreetMap profile
+    - Give me mapping information of [drklrd][(PERSON)]
+    - Give me mapping contribution of [drklrd][(PERSON)]
+
+  

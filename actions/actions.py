@@ -47,15 +47,31 @@ class ActionUserStats(Action):
                 user_description = ''
             user_image= user_soup.find("img", class_= "user_image")
             user_image = user_image.get("src")
-            user_actions = user_soup.find("ul", class_="secondary-actions")
-            edits = user_actions.find_all("li")[0]
-            edits = edits.find("span").text
+            raw_data = requests.get('https://osm-stats-production-api.azurewebsites.net/users/{user_name}'.format(user_name=user_name)).json()
+            building_edits = raw_data['total_building_count_add'] + raw_data['total_building_count_mod']
+            changesets = raw_data['changesets']
+            point_of_interest = raw_data['total_poi_count_add']
+            roads = str(round(raw_data['total_road_km_add'], 1)) + ' km'
+            waterways = str(round(raw_data['total_waterway_km_add'], 1))+ ' km'
+            total_edits = raw_data['total_building_count_add'] + raw_data['total_building_count_mod'] + raw_data['total_waterway_count_add'] + raw_data['total_poi_count_add'] + raw_data['total_road_count_add'] + raw_data['total_road_count_mod']
+            country_count = raw_data['country_count']
             mapping_since=user_soup.find("p", class_="text-muted").find('small').text
             mapping_since=mapping_since.split(":")[1]
             mapping_since=mapping_since.replace(" ", "")
             mapping_since=mapping_since.replace("\n", "")
-            dispatcher.utter_message(text="{name} \n {user_description} \n Mapping_since: {mapping_since} \n Edits: {edits} \n For more information about {user} visit https://hdyc.neis-one.org/{user_name}".format(name=username, 
-                                        user_description=user_description, mapping_since=mapping_since, 
-                                        edits=edits,user=username, user_name=user_name), 
-                                        image=user_image)
+            dispatcher.utter_message(text="{name} \n {user_description} \n Mapping_since: {mapping_since} \n \
+‣ Total Edits: {total_edits} \n \
+‣ Country Count: {country_count} \n \
+‣ Changesets: {changesets} \n \
+‣ Buildings Edits: {building_edits} \n \
+‣ Roads: {roads} \n \
+‣ Waterways: {waterways} \n \
+‣ Point Of Interest: {point_of_interest} \n \
+For more information about {user} visit https://hdyc.neis-one.org/{user_name}".format(
+    name=username, 
+    user_description=user_description, mapping_since=mapping_since, 
+    total_edits=total_edits, country_count=country_count, changesets=changesets,
+    building_edits=building_edits, roads=roads, waterways=waterways,
+    point_of_interest=point_of_interest, user=username, user_name=user_name), 
+    image=user_image)
         return []
