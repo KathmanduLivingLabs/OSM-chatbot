@@ -137,6 +137,7 @@ nlu:
     - hello babe
     - hey boy
     - hy
+    - ting tong
 - intent: goodbye
   examples: |
     - Bye
@@ -803,3 +804,4 @@ nlu:
     - Who are your parents?
     - Who is your gaurdian?
     - Who is your guardian?
+    - who is this
