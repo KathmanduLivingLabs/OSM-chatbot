@@ -70,9 +70,7 @@ responses:
       title: 👍
     - payload: '/feedback{{"feedback_value": "negative"}}'
       title: 👎
-    - text: Was it helpful?
-    - text: Are your doubts cleared now?
-    - text: Hope your doubts are cleared now.
+    text: Was it helpful?
   utter_anything_else:
   - text: Is there anything else you like to know? 😊
   - text: Is there anything else I can help you? 😊
