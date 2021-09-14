@@ -244,6 +244,7 @@ nlu:
     - I want to create OSM account
     - how to create osm account?
     - how to create account in OSM?
+    - how to create account in osm
 - intent: faq/ideditor_info
   examples: |
     - What is iD editor?
@@ -422,6 +423,7 @@ nlu:
     - What are the goals of HOT?
     - What are the goals of Humanitarian OpenStreetMap Team?
     - what is hot
+    - HOT OSM?
 - intent: faq/tasking_manager
   examples: |
     - What is tasking manager?

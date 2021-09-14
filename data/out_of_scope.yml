@@ -481,3 +481,4 @@ nlu:
     - what do you love?
     - Who is Manoj Thapa?
     - I did not ask git commit bro
+    - can you provide me stats of [Manoh Thapa](PERSON)
