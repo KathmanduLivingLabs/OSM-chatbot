@@ -14,12 +14,8 @@ intents:
 - deny:
     use_entities: true
 - user_info:
-<<<<<<< HEAD
     use_entities:
     - username
-=======
-    use_entities: true
->>>>>>> 09faa21622c68208e85460e663e37aa8c98a658e
 - out_of_scope:
     use_entities: true
 - bot_challenge:
@@ -35,17 +31,8 @@ intents:
 - nlu_fallback:
     use_entities: true
 entities:
-<<<<<<< HEAD
 - username
 slots: 
-=======
-- PERSON
-- language
-- company
-- name
-- location
-slots:
->>>>>>> 09faa21622c68208e85460e663e37aa8c98a658e
   username:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null

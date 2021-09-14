@@ -37,14 +37,8 @@ nlu:
     - Show my OSM contributions
     - Show me my OSM profile
     - Show me my OpenStreetMap profile
-<<<<<<< HEAD
     - Give me mapping information of [drklrd][(username)]
     - Give me mapping contribution of [drklrd][(username)]
-
-  
-=======
-    - Give me mapping information of [drklrd][(PERSON)]
-    - Give me mapping contribution of [drklrd][(PERSON)]
     - can you provide me user stats?
     - can you provide me mapping stats?
     - can you provide me osm stats?
@@ -53,18 +47,18 @@ nlu:
     - i need user information
     - i need user info
     - can you provide my stats
-    - can you provide mapping stats of [Manoj Thapa](PERSON)?
+    - can you provide mapping stats of [Manoj Thapa](username)?
     - provide my mapping stats
-    - can you provide me stats of [dkrdld](PERSON)?
-    - Can you provide me mapping stats of [Aadesh Baral](PERSON)
-    - can you provide me mapping stats of [Manoj Thapa](PERSON)?
+    - can you provide me stats of [dkrdld](username)?
+    - Can you provide me mapping stats of [Aadesh Baral](username)
+    - can you provide me mapping stats of [Manoj Thapa](username)?
     - can you provide my amapping stats?
-    - can you provide me stats of [Manoj Thapa](PERSON)?
-    - can you provide mapping stats of [Aadesh Baral](PERSON)?
-    - can you provide me information about [Manoj Thapa](PERSON)?
-    - can you provide me stats of [Manoj Thapa](PERSON) ?
-    - give me stats of [Manoj Thapa](PERSON)
-    - give me stats of [Aadesh Baral](PERSON)
+    - can you provide me stats of [Manoj Thapa](username)?
+    - can you provide mapping stats of [Aadesh Baral](username)?
+    - can you provide me information about [Manoj Thapa](username)?
+    - can you provide me stats of [Manoj Thapa](username) ?
+    - give me stats of [Manoj Thapa](username)
+    - give me stats of [Aadesh Baral](username)
     - can you provide my osm stats?
     - how to how know my mapping stats?
     - what is my mapping stats
@@ -75,5 +69,4 @@ nlu:
     - What is my OSM contributation?
     - what is my mapping stats?
     - tell me about my contribution!
-    - can you provide me stats about [Aadesh Baral](PERSON)?
->>>>>>> 09faa21622c68208e85460e663e37aa8c98a658e
+    - can you provide me stats about [Aadesh Baral](username)?
