@@ -64,11 +64,11 @@ responses:
   utter_welcome:
   - text: My pleasure !! 😊
   - text: Welcome !! Happy to help 😊
-  utter_ask_feedback:
+  utter_did_that_help:
   - buttons:
-    - payload: '/feedback{{"feedback_value": "positive"}}'
+    - payload: 'Yes'
       title: 👍
-    - payload: '/feedback{{"feedback_value": "negative"}}'
+    - payload: 'No'
       title: 👎
     text: Was it helpful?
   utter_anything_else:
