@@ -83,7 +83,7 @@ class ActionTagFeedback(Action):
     """Tag a conversation in Rasa X as positive or negative feedback """
 
     def name(self):
-        return "action_tag_feedback"
+        return "action_flag_feedback"
 
     def run(
         self,
@@ -103,5 +103,23 @@ class ActionTagFeedback(Action):
 
         rasax = RasaXAPI()
         rasax.tag_convo(tracker, label)
+        return []
+
+
+class ActionFlagResponse(Action):
+    """Flag a message in conversation if user didn't like the response`"""
+
+    def name(self):
+        return "action_flag_response"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> List[EventType]:
+
+        rasax = RasaXAPI()
+        rasax.flag_message(tracker)
         return []
         

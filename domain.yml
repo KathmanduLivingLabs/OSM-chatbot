@@ -289,6 +289,7 @@ responses:
 actions:
 - action_user_info
 - action_reset_username_slot
+- action_flag_response
 forms:
   username_form:
     required_slots:
