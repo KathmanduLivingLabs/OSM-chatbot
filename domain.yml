@@ -66,9 +66,10 @@ responses:
   utter_what_went_wrong:
   - buttons:
     - payload: /adjust_response
-      title: Response was incorrect. I want to provide feedback.
+      title: Response was incorrect. I want to adjust it.
     - payload: /wrong_cannot_help
       title: Response was incorrect, but i can't help
+    text: Can you please tell me what went wrong selecting one of the buttons below.
   utter_what_else:
   - text: So, what else you want to know about OpenStreetMap?
   - text: What else you want to know about OpenStreetMap?😊
