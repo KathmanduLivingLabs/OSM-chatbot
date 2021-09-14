@@ -42,3 +42,26 @@ rules:
     - username: null
   - action: action_user_info
   - action: action_reset_username_slot
+
+- rule: Provide feedback for response
+  steps:
+  - intent: adjust_response
+  - action: response_feedback_form
+  - active_loop: response_feedback_form
+
+- rule: Submit feeback for response
+  condition:
+  - active_loop: response_feedback_form
+  steps:
+  - action: response_feedback_form
+  - active_loop: null
+  - slot_was_set:
+    - response_feedback_message: null
+  - action: utter_thanks_for_feedback
+  - action: utter_anything_else
+
+- rule: Handle cannot provide feedback
+  steps:
+  - intent: wrong_cannot_help
+  - action: utter_thanks_for_feedback
+  - action: utter_anything_else

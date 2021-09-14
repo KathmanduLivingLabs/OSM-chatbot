@@ -30,6 +30,8 @@ intents:
     use_entities: true
 - nlu_fallback:
     use_entities: true
+- adjust_response
+- wrong_cannot_help
 entities:
 - username
 slots: 
@@ -37,6 +39,9 @@ slots:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     auto_fill: true
+    influence_conversation: false
+  response_feedback_message:
+    type: any
     influence_conversation: false
 responses:
   utter_greet_guide:
@@ -58,6 +63,12 @@ responses:
   utter_sorry:
   - text: I apologize, I promise that i will do my best to help you next time.
   - text: I am sorry, I will try my best next time.
+  utter_what_went_wrong:
+  - buttons:
+    - payload: /adjust_response
+      title: Response was incorrect. I want to provide feedback.
+    - payload: /wrong_cannot_help
+      title: Response was incorrect, but i can't help
   utter_what_else:
   - text: So, what else you want to know about OpenStreetMap?
   - text: What else you want to know about OpenStreetMap?😊
@@ -75,6 +86,10 @@ responses:
   - text: Is there anything else you like to know? 😊
   - text: Is there anything else I can help you? 😊
   - text: Is there anything else you want to know about OpenStreetMap?😊
+  utter_feedback_thanks:
+  - text: Thankyou for your feedback. It keeps making me better.
+  utter_ask_response_feedback_message:
+  - text: Please enter your feedback.
   utter_ask_about:
   - text: I am good! serving users with OpenStreetMap related queries.
   utter_happy:
@@ -294,5 +309,9 @@ forms:
   username_form:
     required_slots:
       username:
+      - type: from_text
+  response_feedback_form:
+    required_slots:
+      response_feedback_message:
       - type: from_text
 e2e_actions: []
