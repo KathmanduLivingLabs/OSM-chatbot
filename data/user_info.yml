@@ -2,29 +2,29 @@ version: "2.0"
 nlu:
 - intent: user_info
   examples: |
-    - Can you provide osm stats of [Aadesh Baral](PERSON)
+    - Can you provide osm stats of [Aadesh Baral](username)
     - Can you provide my osm stats?
     - How much i have mapped?
     - can you provide my mapping stats?
-    - Can you provide me stats of [Manoj Thapa](PERSON)
-    - Can you provide me stats of [Bhawak](PERSON)
+    - Can you provide me stats of [Manoj Thapa](username)
+    - Can you provide me stats of [Bhawak](username)
     - tell me my mapping stats
     - i want to know my mapping stats
     - How much buildings have i mapped?
     - How much roads i have mapped?
-    - tell me mapping stats of [Ichchya](PERSON)
-    - Can you provide stats of [Saurav Bhattarai](PERSON)
-    - Can you provide me information about [Roshan](PERSON)?
+    - tell me mapping stats of [Ichchya](username)
+    - Can you provide stats of [Saurav Bhattarai](username)
+    - Can you provide me information about [Roshan](username)?
     - I need my mapping statistics.
-    - I need [Ichchya](PERSON) mapping statistics.
-    - I need [Aadesh Baral](PERSON) mapping stat.
-    - How much buildings has [Hel Narsingh Thapa](PERSON) mapped?
+    - I need [Ichchya](username) mapping statistics.
+    - I need [Aadesh Baral](username) mapping stat.
+    - How much buildings has [Hel Narsingh Thapa](username) mapped?
     - How many buildigs i have edited?
     - How many roads i have mapped?
     - How many roads i have edited?
     - How much i have contributed to OSM.
     - How much i have contributed to OpenStreetMap?
-    - How much contribution [Miko](PERSON) have made to OSM?
+    - How much contribution [Miko](username) have made to OSM?
     - What are my mapping stats?
     - What are my mapping statistics?
     - What are my contributions to OSM?
@@ -37,7 +37,7 @@ nlu:
     - Show my OSM contributions
     - Show me my OSM profile
     - Show me my OpenStreetMap profile
-    - Give me mapping information of [drklrd][(PERSON)]
-    - Give me mapping contribution of [drklrd][(PERSON)]
+    - Give me mapping information of [drklrd][(username)]
+    - Give me mapping contribution of [drklrd][(username)]
 
   

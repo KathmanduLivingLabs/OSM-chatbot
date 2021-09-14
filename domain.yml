@@ -15,7 +15,7 @@ intents:
     use_entities: true
 - user_info:
     use_entities:
-    - PERSON
+    - username
 - out_of_scope:
     use_entities: true
 - bot_challenge:
@@ -31,7 +31,7 @@ intents:
 - nlu_fallback:
     use_entities: true
 entities:
-- PERSON
+- username
 slots: 
   username:
     type: text
@@ -62,11 +62,15 @@ responses:
   utter_welcome:
   - text: My pleasure !! 😊
   - text: Welcome !! Happy to help 😊
-  utter_did_that_help:
-  - text: Did that help you?
-  - text: Was it helpful?
-  - text: Are your doubts cleared now?
-  - text: Hope your doubts are cleared now.
+  utter_ask_feedback:
+  - buttons:
+    - payload: '/feedback{{"feedback_value": "positive"}}'
+      title: 👍
+    - payload: '/feedback{{"feedback_value": "negative"}}'
+      title: 👎
+    - text: Was it helpful?
+    - text: Are your doubts cleared now?
+    - text: Hope your doubts are cleared now.
   utter_anything_else:
   - text: Is there anything else you like to know? 😊
   - text: Is there anything else I can help you? 😊

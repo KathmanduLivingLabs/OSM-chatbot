@@ -6,8 +6,11 @@
 
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, EventType
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.types import DomainDict
+
+from actions.api.rasaxapi import RasaXAPI
 from bs4 import BeautifulSoup
 import lxml
 import requests
@@ -67,11 +70,38 @@ class ActionUserStats(Action):
 ‣ Roads: {roads} \n \
 ‣ Waterways: {waterways} \n \
 ‣ Point Of Interest: {point_of_interest} \n \
-For more information about {user} visit https://hdyc.neis-one.org/{user_name}".format(
-    name=username, 
-    user_description=user_description, mapping_since=mapping_since, 
+For more information about {user} visit https://hdyc.neis-one.org/?{user_name}".format(
+    name=username, user_description=user_description, mapping_since=mapping_since, 
     total_edits=total_edits, country_count=country_count, changesets=changesets,
     building_edits=building_edits, roads=roads, waterways=waterways,
     point_of_interest=point_of_interest, user=username, user_name=user_name), 
     image=user_image)
         return []
+
+
+class ActionTagFeedback(Action):
+    """Tag a conversation in Rasa X as positive or negative feedback """
+
+    def name(self):
+        return "action_tag_feedback"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> List[EventType]:
+
+        feedback = tracker.get_slot("feedback_value")
+
+        if feedback == "positive":
+            label = '[{"value":"postive feedback","color":"76af3d"}]'
+        elif feedback == "negative":
+            label = '[{"value":"negative feedback","color":"ff0000"}]'
+        else:
+            return []
+
+        rasax = RasaXAPI()
+        rasax.tag_convo(tracker, label)
+        return []
+        
