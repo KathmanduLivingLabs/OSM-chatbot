@@ -16,131 +16,6 @@ stories:
   - action: utter_chitchat
   - intent: deny
   - action: utter_sorry
-- story: Story from Conversation ID 7db07d38e830460a90f58930b26a57a9
-  steps:
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_what_else
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: deny
-  - action: action_flag_response
-  - action: utter_sorry
-  - action: utter_what_went_wrong
-  - intent: wrong_cannot_help
-  - action: utter_feedback_thanks
-  - action: utter_anything_else
-  - intent: affirm
-  - action: utter_what_else
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: deny
-  - action: action_flag_response
-  - action: utter_sorry
-  - action: utter_what_went_wrong
-  - intent: adjust_response
-  - action: response_feedback_form
-  - active_loop: response_feedback_form
-  - active_loop: null
-  - action: utter_feedback_thanks
-  - action: utter_anything_else
-  - intent: deny
-  - action: utter_goodbye
-- story: Story from Conversation ID e0db0ab6676a4a09975074ce7179ff9c
-  steps:
-  - intent: greet
-  - action: utter_greet_guide
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy_to_help
-  - action: utter_anything_else
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: deny
-  - action: action_flag_response
-  - action: utter_sorry
-  - action: utter_what_went_wrong
-  - intent: wrong_cannot_help
-  - action: utter_feedback_thanks
-  - action: utter_anything_else
-  - intent: affirm
-  - action: utter_what_else
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy_to_help
-  - action: utter_anything_else
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: deny
-  - action: action_flag_response
-  - action: utter_sorry
-  - action: utter_what_went_wrong
-  - intent: adjust_response
-  - action: response_feedback_form
-  - active_loop: response_feedback_form
-  - active_loop: null
-  - action: utter_feedback_thanks
-  - action: utter_anything_else
-  - intent: deny
-  - action: utter_goodbye
-- story: Story from Conversation ID 2e0d20d09b6e484d9f225764ab260b58
-  steps:
-  - intent: greet
-  - action: utter_greet_guide
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy_to_help
-  - action: utter_anything_else
-  - intent: affirm
-  - action: utter_what_else
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: deny
-  - action: action_flag_response
-  - action: utter_sorry
-  - action: utter_what_went_wrong
-  - intent: adjust_response
-  - action: response_feedback_form
-  - active_loop: response_feedback_form
-  - active_loop: null
-  - action: utter_feedback_thanks
-  - action: utter_anything_else
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_sorry
-  - action: utter_what_went_wrong
-  - intent: wrong_cannot_help
-  - action: utter_feedback_thanks
-  - action: utter_anything_else
-  - intent: faq
-  - action: utter_faq
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy_to_help
-  - action: utter_anything_else
-  - intent: deny
-  - action: utter_goodbye
 - story: Story from Conversation ID 3f745ecec6e94b08bbd58f3cc7022a04
   steps:
   - action: utter_what_else
@@ -218,6 +93,96 @@ stories:
   - active_loop: response_feedback_form
   - slot_was_set:
     - response_feedback_message: I want about OSM not JOSM
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_feedback_thanks
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID b366d886c4b747eca793f26165a8bd78
+  steps:
+  - intent: greet
+  - action: utter_greet_guide
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_flag_response
+  - action: utter_sorry
+  - action: utter_what_went_wrong
+  - intent: adjust_response
+  - action: response_feedback_form
+  - active_loop: response_feedback_form
+  - slot_was_set:
+    - requested_slot: response_feedback_message
+  - intent: deny
+  - action: response_feedback_form
+  - slot_was_set:
+    - response_feedback_message: no good
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_feedback_thanks
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID f48670ae8ddc4f599eeba53af1a42856
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy_to_help
+  - action: utter_anything_else
+- story: Story from Conversation ID f48670ae8ddc4f599eeba53af1a42856
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy_to_help
+  - action: utter_anything_else
+- story: Story from Conversation ID f48670ae8ddc4f599eeba53af1a42856
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy_to_help
+  - action: utter_anything_else
+- story: Story from Conversation ID 9bf117c539c649a783dff12e54bfc7f9
+  steps:
+  - intent: greet
+  - action: utter_greet_guide
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy_to_help
+  - action: utter_anything_else
+- story: Story from Conversation ID fe15574533ce40be946d6ce2f00e9dfa
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: deny
+  - action: action_flag_response
+  - action: utter_sorry
+  - action: utter_what_went_wrong
+  - intent: adjust_response
+  - action: response_feedback_form
+  - active_loop: response_feedback_form
+  - slot_was_set:
+    - requested_slot: response_feedback_message
+  - intent: react_negative
+  - action: response_feedback_form
+  - slot_was_set:
+    - response_feedback_message: not good enough
   - slot_was_set:
     - requested_slot: null
   - active_loop: null

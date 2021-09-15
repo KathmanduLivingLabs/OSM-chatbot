@@ -14,8 +14,7 @@ intents:
 - deny:
     use_entities: true
 - user_info:
-    use_entities:
-    - username
+    use_entities: true
 - out_of_scope:
     use_entities: true
 - bot_challenge:
@@ -30,18 +29,32 @@ intents:
     use_entities: true
 - nlu_fallback:
     use_entities: true
-- adjust_response
-- wrong_cannot_help
+- adjust_response:
+    use_entities: true
+- wrong_cannot_help:
+    use_entities: true
 entities:
 - username
-slots: 
+- location
+- PERSON
+- language
+- name
+- company
+slots:
   username:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     auto_fill: true
     influence_conversation: false
   response_feedback_message:
-    type: any
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: false
 responses:
   utter_greet_guide:
@@ -78,9 +91,9 @@ responses:
   - text: Welcome !! Happy to help 😊
   utter_did_that_help:
   - buttons:
-    - payload: 'Yes'
+    - payload: Yes
       title: 👍
-    - payload: 'No'
+    - payload: No
       title: 👎
     text: Was it helpful?
   utter_anything_else:
