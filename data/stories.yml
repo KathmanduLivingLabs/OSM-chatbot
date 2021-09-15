@@ -210,6 +210,7 @@ stories:
   - action: utter_faq
   - action: utter_did_that_help
   - intent: deny
+  - action: action_flag_response
   - action: utter_sorry
   - action: utter_what_went_wrong
   - intent: adjust_response
