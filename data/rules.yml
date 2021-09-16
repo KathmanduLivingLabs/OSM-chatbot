@@ -4,6 +4,16 @@ rules:
   steps:
   - intent: goodbye
   - action: utter_goodbye
+- rule: handle positive react
+  steps:
+  - intent: react_positive
+  - action: utter_welcome
+  - action: utter_anything_else
+- rule: handle negative react
+  steps:
+  - intent: react_negative
+  - action: utter_sorry
+  - action: utter_anything_else
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge

@@ -51,7 +51,6 @@ nlu:
     - what is the purpose of creating osm?
     - Why was openstreetmap created?
     - What is the aim of creating OSM?
-    - why is osm important
 - intent: faq/osm_spelling
   examples: |
     - Is it OpenStreetMap or Open Street Maps?
@@ -93,7 +92,6 @@ nlu:
     - OSM founded region?
     - Where is OSM?
     - when was OSM started?
-    - do you know Aadesh Baral?
 - intent: faq/osm_alternatives
   examples: |
     - Why not just use Google maps or others?
@@ -117,6 +115,7 @@ nlu:
     - Why not google?
     - Why choose OSM over Google?
     - Why should we use OSM?
+    - why is osm important
 - intent: faq/osm_data_accuracy
   examples: |
     - How can a project like this create accurate maps?

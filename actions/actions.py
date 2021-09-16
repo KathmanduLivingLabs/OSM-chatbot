@@ -44,6 +44,8 @@ class ActionUserStats(Action):
             user_soup = BeautifulSoup(user_page, 'lxml')
             user_image= user_soup.find("img", class_= "user_image_no_margins")
             user_image = user_image.get("src")
+            if "/assets" in user_image:
+            	user_image = 'https://github.com/Aadesh-Baral/OSM-chatbot/blob/main/images/blanck_profile_pic.png'
             raw_data = requests.get('https://osm-stats-production-api.azurewebsites.net/users/{user_name}'.format(user_name=user_name)).json()
             building_edits = raw_data['total_building_count_add'] + raw_data['total_building_count_mod']
             changesets = raw_data['changesets']

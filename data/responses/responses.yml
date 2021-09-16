@@ -70,6 +70,8 @@ responses:
   - text: "Rasa Open Source is a conversational AI framework for that provides machine learning tools for
       building contextual assistants. You can read more about it here in the docs or on
       [website](https://rasa.com/)."
+  utter_chitchat/kll_intro:
+  - text: Kathmandu Living Labs (KLL) is a leading civic-tech company based out of Nepal. It was founded in 2013, primarily, to advance the Open Mapping movement. KLL is a non-profit organization that works to harness local knowledge, develop open data and promote civic technologies especially around OpenStreetMap (OSM).For move info about Kathmandu Living Labs visit www.kathmandulivinglabs.org.
   utter_faq/osm_intro:
   - text: |-
       OpenStreetMap is a free digital map of the world, created by an ever growing community of mappers. It can be accessed through www.openstreetmap.org.

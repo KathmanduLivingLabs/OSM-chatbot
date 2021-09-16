@@ -737,5 +737,25 @@ nlu:
     - RASA IS SOFTWARE?
     - rasa os
     - what is Rasa
+- intent:chitchat/kll_intro
+  examples: |
+    - What is KLL?
+    - Can you give me info about KLL?
+    - What is Kathmandu Living Labs?
+    - What do you know about KLL?
+    - what can you tell me about kll?
+    - give me information about kathmandu living labs.
+    - i want to know about Kll
+    - what does Kathmandu Living Labs do?
+    - What does KLL do?
+    - Where is KLL?
+    - tell me about Kathmandu Living Labs
+    - Where is kathmandu living labs?
+    - tell me about kll
+    - what are the objective of kll
+    - Kathmandu living labs
+    - KLL
+    - kll
+    - i want to know about kathmandu living labs
 
 
