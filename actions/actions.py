@@ -10,10 +10,10 @@ from rasa_sdk.events import SlotSet, EventType
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.types import DomainDict
 
-from actions.api.rasaxapi import RasaXAPI
 from bs4 import BeautifulSoup
 import lxml
 import requests
+from actions.api.rasaxapi import RasaXAPI
 
 class ResetSlot(Action):
     def name(self):
@@ -40,15 +40,9 @@ class ActionUserStats(Action):
         if user_page.status_code !=200:
             dispatcher.utter_message(text="Sorry, there is no user with the username {user_name}. Please check your spelling and capitallization.". format(user_name=username))
         else:
-            user_page = user_page.text    
+            user_page = user_page.text  
             user_soup = BeautifulSoup(user_page, 'lxml')
-            try:
-                user_description = user_soup.find("div", class_="user-description")
-                user_description = user_description.find("p").text
-
-            except:
-                user_description = ''
-            user_image= user_soup.find("img", class_= "user_image")
+            user_image= user_soup.find("img", class_= "user_image_no_margins")
             user_image = user_image.get("src")
             raw_data = requests.get('https://osm-stats-production-api.azurewebsites.net/users/{user_name}'.format(user_name=user_name)).json()
             building_edits = raw_data['total_building_count_add'] + raw_data['total_building_count_mod']
@@ -58,20 +52,17 @@ class ActionUserStats(Action):
             waterways = str(round(raw_data['total_waterway_km_add'], 1))+ ' km'
             total_edits = raw_data['total_building_count_add'] + raw_data['total_building_count_mod'] + raw_data['total_waterway_count_add'] + raw_data['total_poi_count_add'] + raw_data['total_road_count_add'] + raw_data['total_road_count_mod']
             country_count = raw_data['country_count']
-            mapping_since=user_soup.find("p", class_="text-muted").find('small').text
-            mapping_since=mapping_since.split(":")[1]
-            mapping_since=mapping_since.replace(" ", "")
-            mapping_since=mapping_since.replace("\n", "")
-            dispatcher.utter_message(text="{name} \n {user_description} \n Mapping_since: {mapping_since} \n \
+            mapping_since=user_soup.find("dl", class_="dl-inline").find('dd').text
+            dispatcher.utter_message(text="{name} \n Mapping_since: {mapping_since} \n \
 ‣ Total Edits: {total_edits} \n \
 ‣ Country Count: {country_count} \n \
 ‣ Changesets: {changesets} \n \
 ‣ Buildings Edits: {building_edits} \n \
 ‣ Roads: {roads} \n \
 ‣ Waterways: {waterways} \n \
-‣ Point Of Interest: {point_of_interest} \n \
-For more information about {user} visit https://hdyc.neis-one.org/?{user_name}".format(
-    name=username, user_description=user_description, mapping_since=mapping_since, 
+‣ Points Of Interest: {point_of_interest} \n \
+For more information about {user} visit https://www.missingmaps.org/users/#/{user_name}".format(
+    name=username, mapping_since=mapping_since, 
     total_edits=total_edits, country_count=country_count, changesets=changesets,
     building_edits=building_edits, roads=roads, waterways=waterways,
     point_of_interest=point_of_interest, user=username, user_name=user_name), 
