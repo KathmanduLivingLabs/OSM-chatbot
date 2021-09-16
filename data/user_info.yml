@@ -70,3 +70,6 @@ nlu:
     - what is my mapping stats?
     - tell me about my contribution!
     - can you provide me stats about [Aadesh Baral](username)?
+    - Can you provide me stats of [Aadesh Baral](username)
+    - Can you provide me stats of [Aadesh Baral](username)?
+    - Can you provide me stats of [Manoj Thapa](username)?
