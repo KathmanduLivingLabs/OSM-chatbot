@@ -737,7 +737,7 @@ nlu:
     - RASA IS SOFTWARE?
     - rasa os
     - what is Rasa
-- intent:chitchat/kll_intro
+- intent: chitchat/kll_intro
   examples: |
     - What is KLL?
     - Can you give me info about KLL?
