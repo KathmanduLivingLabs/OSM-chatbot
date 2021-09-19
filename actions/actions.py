@@ -6,6 +6,7 @@
 
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
+from rasa_sdk.forms import FormValidationAction
 from rasa_sdk.events import SlotSet, EventType
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.types import DomainDict
@@ -25,6 +26,33 @@ class ResetSlot(Action):
         
         return [SlotSet("username", None)]
 
+class ValidateUserNameForm(FormValidationAction):
+    def name(self) -> Text:
+        return "validate_username_form"
+    
+    def run(
+        self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict
+    ) -> List[EventType]:
+        return []
+
+    def validate_username(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> Dict[Text, Any]:
+        """Validate `username` value."""
+        # If the name is super short, it might be wrong.
+        print(f"Username given = {slot_value}")
+        url = "https://www.openstreetmap.org/user/{user_name}".format(user_name=slot_value)
+
+        if requests.get(url).status_code !=200:
+            dispatcher.utter_message(text="Sorry, there is no user with the username {user_name}. Please check your spelling and capitallization as username is case-sensative.". format(user_name=username))
+            return {"username": None}
+        else:
+            return {"username": slot_value}
+
 class ActionUserStats(Action):
     
     def name(self):
@@ -37,25 +65,25 @@ class ActionUserStats(Action):
         user_name = username.replace(' ', '%20')
         url = "https://www.openstreetmap.org/user/{user_name}".format(user_name=user_name)
         user_page = requests.get(url)
-        if user_page.status_code !=200:
-            dispatcher.utter_message(text="Sorry, there is no user with the username {user_name}. Please check your spelling and capitallization.". format(user_name=username))
-        else:
-            user_page = user_page.text  
-            user_soup = BeautifulSoup(user_page, 'lxml')
-            user_image= user_soup.find("img", class_= "user_image_no_margins")
-            user_image = user_image.get("src")
-            if "/assets" in user_image:
-            	user_image = 'https://github.com/Aadesh-Baral/OSM-chatbot/blob/main/images/blanck_profile_pic.png'
-            raw_data = requests.get('https://osm-stats-production-api.azurewebsites.net/users/{user_name}'.format(user_name=user_name)).json()
-            building_edits = raw_data['total_building_count_add'] + raw_data['total_building_count_mod']
-            changesets = raw_data['changesets']
-            point_of_interest = raw_data['total_poi_count_add']
-            roads = str(round(raw_data['total_road_km_add'], 1)) + ' km'
-            waterways = str(round(raw_data['total_waterway_km_add'], 1))+ ' km'
-            total_edits = raw_data['total_building_count_add'] + raw_data['total_building_count_mod'] + raw_data['total_waterway_count_add'] + raw_data['total_poi_count_add'] + raw_data['total_road_count_add'] + raw_data['total_road_count_mod']
-            country_count = raw_data['country_count']
-            mapping_since=user_soup.find("dl", class_="dl-inline").find('dd').text
-            dispatcher.utter_message(text="{name} \n Mapping_since: {mapping_since} \n \
+        # if user_page.status_code !=200:
+        #     dispatcher.utter_message(text="Sorry, there is no user with the username {user_name}. Please check your spelling and capitallization as username is case-sensative.". format(user_name=username))
+        # else:
+        user_page = user_page.text  
+        user_soup = BeautifulSoup(user_page, 'lxml')
+        user_image= user_soup.find("img", class_= "user_image_no_margins")
+        user_image = user_image.get("src")
+        if "/assets" in user_image:
+            user_image = 'https://github.com/Aadesh-Baral/OSM-chatbot/blob/main/images/blanck_profile_pic.png'
+        raw_data = requests.get('https://osm-stats-production-api.azurewebsites.net/users/{user_name}'.format(user_name=user_name)).json()
+        building_edits = raw_data['total_building_count_add'] + raw_data['total_building_count_mod']
+        changesets = raw_data['changesets']
+        point_of_interest = raw_data['total_poi_count_add']
+        roads = str(round(raw_data['total_road_km_add'], 1)) + ' km'
+        waterways = str(round(raw_data['total_waterway_km_add'], 1))+ ' km'
+        total_edits = raw_data['total_building_count_add'] + raw_data['total_building_count_mod'] + raw_data['total_waterway_count_add'] + raw_data['total_poi_count_add'] + raw_data['total_road_count_add'] + raw_data['total_road_count_mod']
+        country_count = raw_data['country_count']
+        mapping_since=user_soup.find("dl", class_="dl-inline").find('dd').text
+        dispatcher.utter_message(text="{name} \n Mapping_since: {mapping_since} \n \
 ‣ Total Edits: {total_edits} \n \
 ‣ Country Count: {country_count} \n \
 ‣ Changesets: {changesets} \n \

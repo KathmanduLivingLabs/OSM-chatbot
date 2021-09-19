@@ -319,6 +319,7 @@ actions:
 - action_user_info
 - action_reset_username_slot
 - action_flag_response
+- validate_username_form
 forms:
   username_form:
     required_slots:
