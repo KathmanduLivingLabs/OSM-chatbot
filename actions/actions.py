@@ -26,6 +26,31 @@ class ResetSlot(Action):
         
         return [SlotSet("username", None)]
 
+# class ValidateUsernameForm(FormValidationAction):
+#     def name(self) -> Text:
+#         return "validate_username_form"
+
+#     def validate_username(
+#         self,
+#         slot_value: Any,
+#         dispatcher: CollectingDispatcher,
+#         tracker: Tracker,
+#         domain: DomainDict,
+#     ) -> Dict[Text, Any]:
+#         """Validate `username` value."""
+
+#         # If the name is super short, it might be wrong.
+#         print(f"First name given = {slot_value} length = {len(slot_value)}")
+#         user_name = slot_value.replace(' ', '%20')
+#         url = "https://www.openstreetmap.org/user/{user_name}".format(user_name=user_name)
+#         print(requests.get(url).status_code)
+#         print(requests.get(url).status_code==404)
+#         if requests.get(url).status_code == 404:
+#             dispatcher.utter_message(text=f"That's a very short name. I'm assuming you mis-spelled.")
+#             return {"username": None}
+#         else:
+#             return {"username": slot_value}
+
 class ValidateUserNameForm(FormValidationAction):
     def name(self) -> Text:
         return "validate_username_form"
@@ -37,9 +62,11 @@ class ValidateUserNameForm(FormValidationAction):
         tracker: Tracker,
         domain: DomainDict,
     ) -> Dict[Text, Any]:
-        """Validate username value."""
+        """Validate `username` value."""
         print(f"Username given = {slot_value}")
-        url = "https://www.openstreetmap.org/user/{user_name}".format(user_name=slot_value)
+        username=slot_value
+        user_name=slot_value.replace(' ', '%20')
+        url = "https://www.openstreetmap.org/user/{user_name}".format(user_name=user_name)
 
         if requests.get(url).status_code !=200:
             dispatcher.utter_message(text="Sorry, there is no user with the username {user_name}. Please check your spelling and capitallization as username is case-sensative.". format(user_name=username))
