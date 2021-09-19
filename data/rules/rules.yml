@@ -39,7 +39,6 @@ rules:
 - rule: Provide user info
   steps:
   - intent: user_info
-  - action: utter_ask_username
   - action: username_form
   - active_loop: username_form
 
