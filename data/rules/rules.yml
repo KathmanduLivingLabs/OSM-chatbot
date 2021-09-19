@@ -35,11 +35,14 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_please_rephrase
+
 - rule: Provide user info
   steps:
   - intent: user_info
+  - action: utter_ask_username
   - action: username_form
   - active_loop: username_form
+
 - rule: Submit username_form
   condition:
   - active_loop: username_form
@@ -50,6 +53,7 @@ rules:
     - username: null
   - action: action_user_info
   - action: action_reset_username_slot
+  
 - rule: Provide feedback for response
   steps:
   - intent: adjust_response

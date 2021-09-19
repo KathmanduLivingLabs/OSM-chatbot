@@ -30,11 +30,6 @@ class ValidateUserNameForm(FormValidationAction):
     def name(self) -> Text:
         return "validate_username_form"
     
-    def run(
-        self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict
-    ) -> List[EventType]:
-        return []
-
     def validate_username(
         self,
         slot_value: Any,
@@ -42,8 +37,7 @@ class ValidateUserNameForm(FormValidationAction):
         tracker: Tracker,
         domain: DomainDict,
     ) -> Dict[Text, Any]:
-        """Validate `username` value."""
-        # If the name is super short, it might be wrong.
+        """Validate username value."""
         print(f"Username given = {slot_value}")
         url = "https://www.openstreetmap.org/user/{user_name}".format(user_name=slot_value)
 
