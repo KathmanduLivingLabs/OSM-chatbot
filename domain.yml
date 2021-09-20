@@ -40,6 +40,7 @@ entities:
 - language
 - name
 - company
+- tag
 slots:
   username:
     type: rasa.shared.core.slots.TextSlot
@@ -113,6 +114,8 @@ responses:
   - text: Good Bye! have a good day!!
   utter_ask_username:
   - text: Please provide your username
+  utter_ask_tag:
+  - text: I couldn't find tag in your query. Please provide tag you want to query about.
   utter_iamabot:
   - text: I am OSM Chatbot, developed by Kathmandu Living Labs.
   utter_please_rephrase:
@@ -320,6 +323,9 @@ actions:
 - action_reset_username_slot
 - action_flag_response
 - validate_username_form
+- validate_tag_form
+- action_tag_info
+- action_reset_tag_slot
 forms:
   username_form:
     required_slots:
@@ -328,5 +334,9 @@ forms:
   response_feedback_form:
     required_slots:
       response_feedback_message:
+      - type: from_text
+  tag_form:
+    required_slots:
+      tag:
       - type: from_text
 e2e_actions: []

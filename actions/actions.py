@@ -16,7 +16,7 @@ import lxml
 import requests
 from actions.api.rasaxapi import RasaXAPI
 
-class ResetSlot(Action):
+class ResetUsernameSlot(Action):
     def name(self):
         return "action_reset_username_slot"
 
@@ -25,31 +25,6 @@ class ResetSlot(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         return [SlotSet("username", None)]
-
-# class ValidateUsernameForm(FormValidationAction):
-#     def name(self) -> Text:
-#         return "validate_username_form"
-
-#     def validate_username(
-#         self,
-#         slot_value: Any,
-#         dispatcher: CollectingDispatcher,
-#         tracker: Tracker,
-#         domain: DomainDict,
-#     ) -> Dict[Text, Any]:
-#         """Validate `username` value."""
-
-#         # If the name is super short, it might be wrong.
-#         print(f"First name given = {slot_value} length = {len(slot_value)}")
-#         user_name = slot_value.replace(' ', '%20')
-#         url = "https://www.openstreetmap.org/user/{user_name}".format(user_name=user_name)
-#         print(requests.get(url).status_code)
-#         print(requests.get(url).status_code==404)
-#         if requests.get(url).status_code == 404:
-#             dispatcher.utter_message(text=f"That's a very short name. I'm assuming you mis-spelled.")
-#             return {"username": None}
-#         else:
-#             return {"username": slot_value}
 
 class ValidateUserNameForm(FormValidationAction):
     def name(self) -> Text:
@@ -165,3 +140,72 @@ class ActionFlagResponse(Action):
         rasax.flag_message(tracker)
         return []
         
+class TagInformation(Action):
+    def name(self):
+        return "action_tag_info"
+    
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> List[EventType]:
+        asked_tag = tracker.get_slot('tag')
+        processed_tag = asked_tag.replace(' ', '+')
+        url = "https://tagfinder.herokuapp.com/search?query={user_query}&lang=en".format(user_query=processed_tag)
+        tags_page = requests.get(url).text
+        tags_soup = BeautifulSoup(tags_page, 'lxml')
+        found = tags_soup.find('h5', class_='found').find('b').text
+        top_tag = tags_soup.find_all('div', class_='search_result')
+        key = top_tag.find('a', id='keyPartLabel_1').text
+        label = top_tag.find('a', id='tagLabel_1').text
+        image = top_tag.find('a', id='depiction').get('href')
+        description = top_tag.find('p', id='descriptionEN_1').text
+        wiki_link = top_tag.find('a', id='tagLabel_1').get('href')
+        dispatcher.utter_message(text="Found {found} OpenStreetMap tag(s) that matched your query. The to match was: \n \
+{key}{label} \n \
+Description: {description} \n \
+For more info about this tag visit this <a href={wiki_link}>Wiki Page</a> \n \
+For other tags related to {user_query} visit: \n\
+{url}".format(
+        found=found, key=key, label=label, description=description, wiki_link=wiki_link, url=url
+        ), image=image)
+        return []
+
+class ValidateTagForm(FormValidationAction):
+    def name(self) -> Text:
+        return "validate_tag_form"
+    
+    def validate_tag(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> Dict[Text, Any]:
+        """Validate `tag` value."""
+        # print(f"Username given = {slot_value}")
+        tag=slot_value
+        processed_tag=slot_value.replace(' ', '%20')
+        url = "https://tagfinder.herokuapp.com/search?query={user_query}&lang=en".format(user_query=processed_tag)
+        tags_page = requests.get(url).text
+        tags_soup = BeautifulSoup(tags_page, 'lxml')
+        try:
+            found = tags_soup.find('h5', class_='found').find('b').text
+        except:
+            found = 0
+        if found == 0:
+            dispatcher.utter_message(text="Sorry, there is no user with the username {tag_name}. Please check your spelling and capitallization as username is case-sensative.". format(tag_name=tag))
+            return {"tag": None}
+        else:
+            return {"tag": slot_value}
+
+class ResetTagSlot(Action):
+    def name(self):
+        return "action_reset_tag_slot"
+
+    def run(self, dispatcher: CollectingDispatcher, 
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        return [SlotSet("tag", None)]

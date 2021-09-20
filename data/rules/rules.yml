@@ -73,3 +73,19 @@ rules:
   - intent: wrong_cannot_help
   - action: utter_feedback_thanks
   - action: utter_anything_else
+- rule: Provide tag info
+  steps:
+  - intent: tag_info
+  - action: tag_form
+  - active_loop: tag_form
+
+- rule: Submit tag_form
+  condition:
+  - active_loop: tag_form
+  steps:
+  - action: tag_form
+  - active_loop: null
+  - slot_was_set:
+    - username: null
+  - action: action_tag_info
+  - action: action_reset_tag_slot
