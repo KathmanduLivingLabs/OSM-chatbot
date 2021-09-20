@@ -33,6 +33,8 @@ intents:
     use_entities: true
 - wrong_cannot_help:
     use_entities: true
+- tag_info:
+    use_entities: true
 entities:
 - username
 - location
