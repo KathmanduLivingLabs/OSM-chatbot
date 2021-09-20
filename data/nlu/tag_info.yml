@@ -1,0 +1,12 @@
+version: "2.0"
+nlu:
+- intent: tag_info
+  examples: |
+    - What tag can i use in [buildings](tag)?
+    - What is the key for [building](tag)?
+    - what is the key for [roads](tag)?
+    - What tags are available for [roads](tag)?
+    - what is the tag for [cloth shop](tag)?
+    - what is the tag for [hospital](tag)?
+    - what is the tag for [zoo](tag)?
+    - what tag can i use for [highway](tag)?

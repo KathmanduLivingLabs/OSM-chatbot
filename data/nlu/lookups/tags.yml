@@ -1,0 +1,695 @@
+version: "2.0"
+nlu:
+  - lookup: tag
+    examples: |
+      - cable car
+      - zip line
+      - station
+      - aerodrome
+      - hangar
+      - gate
+      - helipad
+      - apron
+      - runway
+      - spaceport
+      - taxiway
+      - terminal
+      - bar
+      - cloth shop
+      - cloth house
+      - biegarten
+      - cafe
+      - fast food
+      - fastfood
+      - food count
+      - ice cream
+      - icecream
+      - pub
+      - restaurant
+      - hotel
+      - college
+      - driving school
+      - kindergarten
+      - language school
+      - library
+      - music school
+      - school
+      - university
+      - bicycle parking
+      - bicycle
+      - boat
+      - bus station
+      - busstation
+      - buspark
+      - bus park
+      - car rental
+      - car
+      - car wash
+      - carwash
+      - charging station
+      - fuel
+      - ferry
+      - parking
+      - motorcycle
+      - taxi
+      - atm
+      - bank
+      - clinic
+      - dentist
+      - doctors
+      - hospital
+      - nusring home
+      - pharmacy
+      - veterinary
+      - social facility
+      - arts
+      - brothel
+      - casino
+      - cinema
+      - community center
+      - conference centre
+      - events venue
+      - fountaion
+      - gambling
+      - nightclub
+      - night club
+      - planetarium
+      - bookcase
+      - social centre
+      - stripclub
+      - club
+      - studio
+      - theatre
+      - courthouse
+      - court house
+      - embassy
+      - fire station
+      - firestation
+      - police
+      - post box
+      - postbox
+      - post office
+      - prision
+      - ranger station
+      - townhall
+      - bbq
+      - barbecue
+      - beach
+      - bench
+      - toilet
+      - drinking water
+      - freeshop
+      - shelter
+      - shower
+      - toilets
+      - telephone
+      - watering place
+      - sanitary dump station
+      - dumping site
+      - recycling
+      - waste disposal
+      - animal
+      - bakery
+      - childcare
+      - clock
+      - crematorium
+      - funeral
+      - graveyard
+      - garve yard
+      - gym
+      - fitness center
+      - kitchen
+      - hunting
+      - marketplace
+      - monastery
+      - photo booth
+      - photobooth
+      - worship
+      - public building
+      - government
+      - vending machine
+      - wall
+      - ditch
+      - fence
+      - block
+      - border
+      - derbis
+      - entrance
+      - log
+      - rope
+      - booth
+      - toll booth
+      - administrative
+      - boundary
+      - barrier
+      - hazard
+      - marker
+      - political
+      - national park
+      - protected area
+      - building
+      - apartments
+      - bungalow
+      - cabin
+      - dormitory
+      - farm
+      - house
+      - buildings
+      - residential
+      - terrace
+      - commercial
+      - industrial
+      - office
+      - retail
+      - supermarket
+      - warehouse
+      - catgedral
+      - church
+      - chapel
+      - monastery
+      - mosque
+      - temple
+      - religious
+      - presbytery
+      - shrine
+      - synagogue
+      - civic
+      - public
+      - train station
+      - transportation
+      - kindergarten
+      - barn
+      - cowshed
+      - greenhouse
+      - stable
+      - stand
+      - hall
+      - stadium
+      - pavilion
+      - hut
+      - shed
+      - carport
+      - garage
+      - garages
+      - service
+      - digester
+      - tower
+      - water tower
+      - millitary
+      - bunker
+      - bridge
+      - construction
+      - tent
+      - container
+      - ruins
+      - roof
+      - gatehouse
+      - tree house
+      - beekeeper
+      - blacksmith
+      - brewery
+      - builder
+      - carpenter
+      - cleaning
+      - painter
+      - cooper
+      - distillery
+      - dressmaker
+      - tailor
+      - electronics
+      - electronics repair
+      - mobile
+      - computer
+      - electrician
+      - floorer
+      - gardner
+      - goldsmith
+      - handicraft
+      - grinding mill
+      - mill
+      - insulation
+      - interior
+      - jweller
+      - key cutter
+      - locksmith
+      - oil mill
+      - musical instrument
+      - optician
+      - parquet
+      - paver
+      - photographer
+      - piano
+      - plumber
+      - pottery
+      - printer
+      - rigger
+      - roofer
+      - saddler
+      - sailmaker
+      - sawmill
+      - scaffolder
+      - sculptor
+      - shoemaker
+      - stonemason
+      - watchmaker
+      - winery
+      - ambulance
+      - defibrillator
+      - landing site
+      - emergency ward
+      - firefighters
+      - firefighter
+      - emergency
+      - fire hydrant
+      - water tank
+      - lifegaurd
+      - assembly point
+      - phone
+      - siren
+      - drinking water
+      - moraine
+      - outcrop
+      - volcanic
+      - geological
+      - volcano
+      - healthcare
+      - dialysis
+      - nurse
+      - blood donation 
+      - blood bank
+      - audiologist
+      - laboratory
+      - physiotherapist
+      - rehabilitation
+      - vaccination centre
+      - highway
+      - motorway
+      - trunk
+      - primary
+      - secondary
+      - tertiary
+      - unclassified
+      - link
+      - street
+      - pedestrian
+      - track
+      - bus guideway
+      - raceway
+      - escape
+      - road
+      - busway
+      - footway
+      - corridor
+      - path
+      - sidewalk
+      - crossing
+      - cycleway
+      - lane
+      - bicycle road
+      - ice road
+      - junction
+      - roundabout
+      - maxspeed
+      - motorroad
+      - mountain pass
+      - oneway
+      - elevator
+      - street lamp
+      - platform
+      - traffic mirror
+      - aircraft
+      - aqueduct
+      - archaeological
+      - battlefield
+      - cannon
+      - castle
+      - fort
+      - citywalls
+      - manor
+      - memorial
+      - monument
+      - monastery
+      - landuse
+      - commercial
+      - construction
+      - education
+      - industrial
+      - allotments
+      - farmland
+      - farmyard
+      - flowerbed
+      - forest
+      - meadow
+      - orchard
+      - vineyard
+      - aquaculture
+      - basin
+      - reserviour
+      - pond
+      - cemetery
+      - brownfield
+      - conservation
+      - greenfield
+      - grass
+      - landfill
+      - nursery
+      - port
+      - railway
+      - quarry
+      - recreation
+      - religous
+      - village
+      - sports
+      - gaming
+      - arcade
+      - amusement
+      - beach resort
+      - resort
+      - bird
+      - bandstand
+      - dance
+      - common
+      - golf
+      - dog
+      - park
+      - dog park
+      - firepit
+      - fishing
+      - garden
+      - horse riding
+      - reserve
+      - picnic
+      - playground
+      - pitch
+      - sports
+      - camp
+      - camping
+      - swimming
+      - pool
+      - swimming pool
+      - water park
+      - beacon
+      - chimney
+      - communications
+      - crane
+      - embankment
+      - dyke
+      - lighthouse
+      - observatory
+      - petroleum
+      - well
+      - pump
+      - pumping station
+      - reserviour
+      - silo
+      - fence
+      - storage
+      - stupa
+      - tap
+      - water tap
+      - airfield
+      - bunker
+      - barracks
+      - checkpoint
+      - danger
+      - naval base
+      - nuclear
+      - office
+      - range
+      - trench
+      - tree
+      - wood
+      - scrub
+      - shingle
+      - sand
+      - mud
+      - natural water
+      - water
+      - wetland
+      - glacier
+      - bay
+      - strait
+      - roads
+      - cape
+      - coastline
+      - reef
+      - spring
+      - hot spring
+      - geyser
+      - blowhole
+      - peak
+      - valley
+      - peninsula
+      - ridge
+      - cliff
+      - saddle
+      - dune
+      - rock
+      - sinkhole
+      - cave
+      - accountant
+      - architect
+      - advertising
+      - charity
+      - association
+      - company
+      - consulting
+      - courier
+      - diplomatic
+      - institutional
+      - employment
+      - energy supplier
+      - travel agent
+      - telecommunication
+      - security
+      - forestry
+      - finiancial
+      - engineer
+      - lawyer
+      - security
+      - country
+      - state
+      - province
+      - place
+      - district
+      - municipality
+      - county
+      - city
+      - borough
+      - suburb
+      - quarter
+      - neighbourhood
+      - plot
+      - town
+      - hamlet
+      - continent
+      - island
+      - square
+      - locality
+      - sea
+      - ocean
+      - cable
+      - compensator
+      - generator
+      - power
+      - power plant
+      - powerplant
+      - pole
+      - portal
+      - substation
+      - switch
+      - terminal
+      - transformer
+      - platform
+      - public transport
+      - monorail
+      - embankment
+      - subway
+      - route
+      - hiking
+      - bicycle
+      - bus
+      - canoe
+      - train
+      - tracks
+      - tram
+      - trolleybus
+      - shop
+      - alcohol
+      - beverages
+      - brewing
+      - butcher
+      - cheese
+      - coffee
+      - convenience
+      - diary
+      - greenfrocer
+      - organic
+      - pasta
+      - pastry
+      - seafood
+      - spices
+      - tea
+      - wine
+      - water shop
+      - department store
+      - general store
+      - kiosk
+      - mall
+      - supermarket
+      - wholesale
+      - baby goods
+      - bag shop
+      - boutique
+      - fabric
+      - fashion
+      - jewelry
+      - leather
+      - sewing
+      - shoes
+      - watches
+      - wool
+      - second hand
+      - beauty
+      - chemist
+      - cosmetics
+      - deugstore
+      - erotic
+      - hairdresser
+      - herablist
+      - massage
+      - medical supply
+      - medical
+      - nutrition
+      - perfumery
+      - tattoo
+      - appliance
+      - furnishing
+      - electrical
+      - furniture
+      - garden
+      - gas
+      - florist
+      - energy
+      - hardware
+      - houseware
+      - paint
+      - trade
+      - antiques
+      - bed
+      - candels
+      - carpet
+      - curtain
+      - flooring
+      - lightning
+      - tiles
+      - hifi
+      - bicycle shop
+      - car shop
+      - car parts
+      - boat shop
+      - caravan
+      - motorcycle shop
+      - sports shop
+      - swimming pool
+      - art shop
+      - craft shop
+      - games shop
+      - music shop
+      - books shop
+      - bookstore
+      - gift shop
+      - stationery
+      - ticket
+      - copyshop
+      - laundry
+      - pet shop
+      - pet
+      - tobacco
+      - toys
+      - badminton
+      - football
+      - athletics
+      - baseball
+      - tennis
+      - beachvolleyball
+      - volleyball
+      - basketball
+      - billards
+      - boxing
+      - bullfighting
+      - chess
+      - cliff
+      - climbing
+      - cricket
+      - cycling
+      - darts
+      - hockey
+      - fitness
+      - futsal
+      - gymnastics
+      - handball
+      - horse racing
+      - ice hockey
+      - skating
+      - judo
+      - karate
+      - karting
+      - martial arts
+      - miniature golf
+      - parachuting
+      - paragliding
+      - racquet
+      - rugby
+      - running
+      - scuba diving
+      - shooting
+      - skateboard
+      - skiing
+      - ski jumping
+      - snooker
+      - soccer
+      - squash
+      - sumo
+      - surfing
+      - table tennis
+      - taekwondo
+      - ski
+      - wightlifting
+      - wrestling
+      - yoga
+      - telecom
+      - tourism
+      - aquarium
+      - artwork
+      - attraction
+      - gallery
+      - hostel
+      - guest house
+      - motel
+      - museum
+      - theme park
+      - viewpoint
+      - river
+      - oxbow
+      - canal
+      - ditch
+      - lake
+      - basin
+      - lagoon
+      - pool
+      - waterway
+      - riverbank
+      - stream
+      - channel
+      - drain
+      - pressurised
+      - dock
+      - boatyard
+      - dam
+      - weir
+      - waterfall
+      - soakhole
+      - email
+      - image
+      - agriculture
