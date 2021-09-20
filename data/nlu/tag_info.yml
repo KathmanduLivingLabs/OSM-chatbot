@@ -10,3 +10,8 @@ nlu:
     - what is the tag for [hospital](tag)?
     - what is the tag for [zoo](tag)?
     - what tag can i use for [highway](tag)?
+    - what is the tag for [cable car](tag)?
+    - what is the tag for [ruins](tag)?
+    - tag for [computer shop](tag)
+    - i want to know tag for [electronics](tag).
+    - Which OSM tag and value is used to define a building in OSM?

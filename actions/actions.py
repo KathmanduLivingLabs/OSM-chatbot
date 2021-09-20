@@ -156,7 +156,7 @@ class TagInformation(Action):
         tags_page = requests.get(url).text
         tags_soup = BeautifulSoup(tags_page, 'lxml')
         found = tags_soup.find('h5', class_='found').find('b').text
-        top_tag = tags_soup.find_all('div', class_='search_result')
+        top_tag = tags_soup.find('div', class_='search_result')
         key = top_tag.find('a', id='keyPartLabel_1').text
         label = top_tag.find('a', id='tagLabel_1').text
         image = top_tag.find('a', id='depiction').get('href')
@@ -168,7 +168,7 @@ Description: {description} \n \
 For more info about this tag visit this <a href={wiki_link}>Wiki Page</a> \n \
 For other tags related to {user_query} visit: \n\
 {url}".format(
-        found=found, key=key, label=label, description=description, wiki_link=wiki_link, url=url
+        found=found, key=key, label=label, description=description, wiki_link=wiki_link, url=url, user_query=asked_tag 
         ), image=image)
         return []
 
@@ -197,6 +197,10 @@ class ValidateTagForm(FormValidationAction):
         if found == 0:
             dispatcher.utter_message(text="Sorry, there is no user with the username {tag_name}. Please check your spelling and capitallization as username is case-sensative.". format(tag_name=tag))
             return {"tag": None}
+        elif found == 0:
+            dispatcher.utter_message(text="Sorry, there is no tag with the username {tag_name}. Please check your spelling and capitallization as username is case-sensative.". format(tag_name=tag))
+            return {"tag": None}
+
         else:
             return {"tag": slot_value}
 

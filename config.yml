@@ -37,7 +37,7 @@ policies:
   name: AugmentedMemoizationPolicy
 - name: TEDPolicy
   max_history: 10
-  epochs: 20
+  epochs: 50
   batch_size:
   - 32
   - 64

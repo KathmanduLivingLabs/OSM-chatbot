@@ -54,8 +54,8 @@ slots:
     initial_value: null
     auto_fill: true
     influence_conversation: false
-  requested_slot:
-    type: rasa.shared.core.slots.UnfeaturizedSlot
+  tag:
+    type: rasa.shared.core.slots.TextSlot
     initial_value: null
     auto_fill: true
     influence_conversation: false
