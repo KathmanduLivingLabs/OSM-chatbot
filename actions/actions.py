@@ -213,3 +213,15 @@ class ResetTagSlot(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         return [SlotSet("tag", None)]
+
+class EventInfo(Action):
+    def name(self):
+        return "action_event_info"
+    
+    def run(self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> List[EventType]:
+        dispatcher.utter_message(text="To veiw events regarding OpenStreetMap visit https://osmcal.org/")
+        return []

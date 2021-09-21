@@ -89,3 +89,7 @@ rules:
     - username: null
   - action: action_tag_info
   - action: action_reset_tag_slot
+- rule: Provide OSM events
+  steps:
+  - intent: events_info
+  - action: action_event_info

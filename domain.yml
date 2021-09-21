@@ -330,6 +330,7 @@ actions:
 - validate_tag_form
 - action_tag_info
 - action_reset_tag_slot
+- action_event_info
 forms:
   username_form:
     required_slots:
