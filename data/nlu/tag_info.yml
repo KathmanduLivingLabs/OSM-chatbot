@@ -14,4 +14,4 @@ nlu:
     - what is the tag for [ruins](tag)?
     - tag for [computer shop](tag)
     - i want to know tag for [electronics](tag).
-    - Which OSM tag and value is used to define a building in OSM?
+    - Which OSM tag and value is used to define a [building](tag) in OSM?
