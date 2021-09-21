@@ -11,9 +11,9 @@ pipeline:
   min_ngram: 1
   max_ngram: 4
 - name: DIETClassifier
-  epochs: 10
+  epochs: 100
   ranking_length: 5
-  constrain_similarities: True
+  constrain_similarities: true
 - name: EntitySynonymMapper
 - name: ResponseSelector
   retrieval_intent: out_of_scope
@@ -32,13 +32,13 @@ pipeline:
 policies:
 - name: RulePolicy
   core_fallback_threshold: 0.3
-  core_fallback_action_name: "action_default_fallback"
-  enable_fallback_prediction: True
+  core_fallback_action_name: action_default_fallback
+  enable_fallback_prediction: true
 - max_history: 6
   name: AugmentedMemoizationPolicy
 - name: TEDPolicy
   max_history: 10
-  epochs: 50
+  epochs: 100
   batch_size:
   - 32
   - 64
