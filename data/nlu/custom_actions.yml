@@ -73,7 +73,6 @@ nlu:
     - Can you provide me stats of [Aadesh Baral](username)
     - Can you provide me stats of [Aadesh Baral](username)?
     - Can you provide me stats of [Manoj Thapa](username)?
-
 - intent: tag_info
   examples: |
     - What tag can i use in [buildings](tag)?
@@ -91,7 +90,7 @@ nlu:
     - Which OSM tag and value is used to define a [building](tag) in OSM?
     - Which OSM tag and value are used to define [road](tag) in OSM?
     - Which OSM tag and value are used to define [wall](tag)?
-
+    - what tags are available for cowshed?
 - intent: events_info
   examples: |
     - what events are near me?
