@@ -64,6 +64,11 @@ To run bot on command line
 ```bash
     rasa shell
 ```
+To run custom action server
+Custom action server are required to fetch dynamic response from api's or web scrapping. We have used custom actions to fetch user statistics and tag information in this project. 
+```bash
+  rasa run actions
+```
 To run on interactive mode on web browser:
 
 - Make sure you have install Rasa X on your environment,
