@@ -5,6 +5,8 @@ A chatbot that answers OpenStreetMap related queries. It is powered by Rasa Open
 
 ## Acknowledgements
 [RASA](https://rasa.com/)
+[Missing Maps](https://www.missingmaps.org/)
+[Tag Finder](https://tagfinder.herokuapp.com/)
 ## Contributing
 
 Contributions are always welcome!
