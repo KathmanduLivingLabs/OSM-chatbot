@@ -78,7 +78,7 @@ To run custom action server
 ```
 To run on interactive mode on web browser:
 
-- Make sure you have install Rasa X on your environment,
+- Make sure you have RasaX installed on your environment,
 Then run
 ```bash
 rasa x
