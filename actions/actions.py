@@ -170,7 +170,7 @@ class TagInformation(Action):
         dispatcher.utter_message(text="Found {found} OpenStreetMap tag(s) that matched your query. The top match was: \n \
 {key_label} \n \
 Description: {description} \n \
-For more info about this tag visit this <a href={wiki_link}>Wiki Page</a> \n \
+For more info about this tag visit this {wiki_link} \n \
 For other tags related to {user_query} visit: \n\
 {url}".format(
         found=found, key_label=key_label, description=description, wiki_link=wiki_link, url=url, user_query=asked_tag 
