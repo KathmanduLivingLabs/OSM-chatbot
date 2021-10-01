@@ -91,6 +91,25 @@ nlu:
     - Which OSM tag and value are used to define [road](tag) in OSM?
     - Which OSM tag and value are used to define [wall](tag)?
     - what tags are available for cowshed?
+    - provide me tag info
+    - can you help me get available tags?
+
+- intent: tags
+  examples: |
+    - What are keys and values?
+    - What do you mean by tag?
+    - What do you mean by key and values?
+    - Tell me about Tags.
+    - help me with tags in OSM?
+    - What are tags in OSM?
+    - how can i use tags?
+    - What tags are available?
+    - How to use tags?
+    - tell me about keys and values?
+    - Help me understand tags, keys and values
+    - how to add tags in osm?
+    - what are tags in osm?
+
 - intent: events_info
   examples: |
     - what events are near me?
