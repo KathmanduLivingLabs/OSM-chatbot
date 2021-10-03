@@ -1,10 +1,10 @@
 version: "2.0"
 responses:
   utter_out_of_scope/non_english:
-  - text: "I only understand English, I'm sorry."
+  - text: "I only understand English, I'm sorry. You can visit specific country community at https://forum.openstreetmap.org inorder to post query in your preferred language."
   utter_out_of_scope/others:
-  - text: I can't help you with that, I'm sorry.
-  - text: Sorry, I can't handle that request at this moment.
+  - text: I can't help you with that, I'm sorry. Please rephrase your query or post it at https://help.openstreetmap.org or https://forum.openstreetmap.org .
+  - text: Sorry, I can't handle that request at this moment. Please rephrase your query or post it at https://help.openstreetmap.org or https://forum.openstreetmap.org .
   utter_chitchat/nicetomeetyou:
   - text: Nice to meet you too! Happy to be of help.
   - text: Likewise!
@@ -56,8 +56,8 @@ responses:
   - text: "I was made using Rasa, but i am constantly learning... even at this current moment while talking with you."
   - text: "I'm building myself every day. I've been working out, did you notice?"
   utter_chitchat/ask_languagesbot:
-  - text: "I can spell baguette in French, but unfortunately English is the only language I can answer you in."
-  - text: "I am in the process of learning, but at the moment I can only speak English."
+  - text: "I can spell baguette in French, but unfortunately at this moment English is the only language I can answer you in."
+  - text: "I am in the process of learning, but at this moment I can only speak English."
   - text: "Binary code and the language of love. And English."
   - text: "I was written in Python, but for your convenience I'll translate to English."
   utter_chitchat/ask_whoami:
@@ -65,13 +65,12 @@ responses:
   - text: "Unfortunately I haven't been programmed with the amount of necessary philosophy knowledge to answer that."
   - text: "It's probably the one that your parents chose for you."
   - text: "Believe it or not, I actually am not spying on your personal information."
-  - text: "You're the second person now to ask me that. Rihanna was the first."
   utter_chitchat/ask_whatisrasa:
   - text: "Rasa Open Source is a conversational AI framework for that provides machine learning tools for
       building contextual assistants. You can read more about it here in the docs or on
       [website](https://rasa.com/)."
   utter_chitchat/kll_intro:
-  - text: Kathmandu Living Labs (KLL) is a leading civic-tech company based out of Nepal. It was founded in 2013, primarily, to advance the Open Mapping movement. KLL is a non-profit organization that works to harness local knowledge, develop open data and promote civic technologies especially around OpenStreetMap (OSM).For move info about Kathmandu Living Labs visit www.kathmandulivinglabs.org.
+  - text: Kathmandu Living Labs (KLL) is a leading civic-tech company based out of Nepal. It was founded in 2013, primarily, to advance the Open Mapping movement. KLL is a non-profit organization that works to harness local knowledge, develop open data and promote civic technologies especially around OpenStreetMap (OSM).For move info about Kathmandu Living Labs visit https://www.kathmandulivinglabs.org.
   utter_faq/osm_intro:
   - text: |-
       OpenStreetMap is a free digital map of the world, created by an ever growing community of mappers. It can be accessed through www.openstreetmap.org.
@@ -193,11 +192,3 @@ responses:
       The HOT Tasking Manager is an intuitive tool developed by Humanitarian OpenStreetMap Team (HOT) that mappers can use to sort an area into a grid, and work together to map an area in an organized way.
       The purpose of creating tasking manager is to allow mappers throughout the world to assist in mapping a defined region with a minimum risk of overlapping work areas, and also allows people both on the ground and working remotely to collaborate effectively, rapidly, and avoid accidental rework being required due to conflicts.
       For getting started and more info about tasking manager visit https://learnosm.org/en/coordination/tasking-manager/
-  utter_faq/tags:
-  - text: |- 
-      Tags describe specific features of map elements (nodes, ways, or relations) or changesets.A tag consists of two items, a key and a value.  Conventions are agreed on the meaning and use of tags.
-      OpenStreetMap uses tags of the form key=value to add meaning to geographic objects. The key, therefore, is used to describe a topic, category, or type of feature. The value provides detail for the key-specified feature.
-      Here are few examples used in practice
-      • highway=residential a tag with a key of highway and a value of residential which should be used on a way to indicate a road along which people live.
-      • name=Park Avenue a tag for which the value field is used to convey the name of the particular street
-      For more information visit https://wiki.openstreetmap.org/wiki/Tags
