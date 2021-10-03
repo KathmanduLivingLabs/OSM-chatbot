@@ -381,6 +381,14 @@ nlu:
     - Give me short description about JSOM.
     - what is JOSM?
     - what is josm
+    - which is most popular editor?
+    - which editor should i use?
+    - which is the best editor?
+    - which is better iDeditor or josm?
+    - which is better id editor or josm?
+    - iDeditor vs josm
+    - id editor vs josm
+
 - intent: faq/josm_edit
   examples: |
     - Help me edit map using JOSM.
@@ -439,3 +447,30 @@ nlu:
     - Why tasking manager?
     - what is the benefit of using tasking manager?
     - what is tasking manager?
+- intent: faq/overpass-turbo
+  examples: |
+    - What is overpass?
+    - what is overpass turbo?
+    - How to use overpass api?
+    - What is overpass api?
+    - What is overpass turbo used for?
+    - what is overpass used for?
+    - I want to download data using overpass. Help me
+    - Help me download data using overpass turbo
+    - How can i download data using overpass?
+    - I want to learn writing overpass query.
+    - Which language overpass use?
+    - Can i download data of any region using overpass?
+
+- intent: faq/mapping_party
+  examples: |
+    - What is mapping party?
+    - I have heard of this thing called a "Mapping Party". Sounds like fun. What is it?
+    - What is the purpose of Mapping party?
+    - What is done on mapping party?
+    - is mapping party fun?
+    - I want to know about term mapping party?
+    - Why is mapping party organized?
+- intent: faq/josm_ideditor
+  examples: |
+    - 

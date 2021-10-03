@@ -304,8 +304,13 @@ responses:
       For more info visit https://wiki.osmfoundation.org/wiki/Licence#What_is_the_license.2C_how_can_I_use_it.3F
   utter_faq/josm_intro:
   - text: |-
-      JOSM is an opensource extensible editor for ​OpenStreetMap. It supports loading GPX tracks, background imagery, and OSM data from local sources as well as from online sources and allows to edit the OSM data (nodes, ways, and relations) and their metadata tags.
+      JOSM is an opensource extensible editor for ​OpenStreetMap. The benefits of working with JOSM include:
+      • Efficiency: edit faster with a powerful search function, filters to hide data you don't want to edit, and the largest available selection of editing tools of all editors
+      • Offline editing: save your partially completed work locally, work with your private GPS tracks or photographs without having to upload them
+      • Customization: customize keyboard shortcuts, pick from high-quality plugins for specialized tasks, enable UI dialogs for experimental features, change how the editor's map rendering looks
+      • Cutting-edge mapping: get tool support for emerging mapping topics like lane mapping, 3D mapping or indoor mapping
       For more info visit https://josm.openstreetmap.de/wiki/Introduction
+      If you want to compare editors visit: https://wiki.openstreetmap.org/wiki/Comparison_of_editors
   utter_faq/josm_edit:
   - text: |-
       Following resources could be useful to getting started with JOSM:
@@ -323,14 +328,13 @@ responses:
       The HOT Tasking Manager is an intuitive tool developed by Humanitarian OpenStreetMap Team (HOT) that mappers can use to sort an area into a grid, and work together to map an area in an organized way.
       The purpose of creating tasking manager is to allow mappers throughout the world to assist in mapping a defined region with a minimum risk of overlapping work areas, and also allows people both on the ground and working remotely to collaborate effectively, rapidly, and avoid accidental rework being required due to conflicts.
       For getting started with tasking manager visit https://learnosm.org/en/coordination/tasking-manager/
-  utter_faq/tags:
+  utter_faq/overpass-turbo:
   - text: |-
-      Tags describe specific features of map elements (nodes, ways, or relations) or changesets.A tag consists of two items, a key and a value.  Conventions are agreed on the meaning and use of tags.
-      OpenStreetMap uses tags of the form key=value to add meaning to geographic objects. The key, therefore, is used to describe a topic, category, or type of feature. The value provides detail for the key-specified feature.
-      Here are few examples used in practice
-      • highway=residential a tag with a key of highway and a value of residential which should be used on a way to indicate a road along which people live.
-      • name=Park Avenue a tag for which the value field is used to convey the name of the particular street
-      For more information visit https://wiki.openstreetmap.org/wiki/Tags
+      Overpass turbo is a web based data mining tool for OpenStreetMap. It runs any kind of Overpass API query and shows the results on an interactive map. You can view, share and download data in desired formats using overpass turbo.
+      It can be accessed through https://overpass-turbo.eu/  
+      Writing overpass queries can be quite technical. Beginners can may find wizard a good place to start. If you want to generate overpass query using natural language visit https://nlmaps.gorgor.de/
+  utter_faq/mapping_party:
+  - text: A "Mapping Party" is when a group of people comes together to map something. It usually involves going out to collect data, adding it to the database afterwards and of course just having fun together. Those events are often organized by experienced mappers to help people who are interested in OpenStreetMap to get to know the process of mapping and the project in general, or to simply map a region that is yet very uncomplete.
 actions:
 - action_user_info
 - action_reset_username_slot
