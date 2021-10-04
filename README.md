@@ -83,5 +83,9 @@ Then run
 ```bash
 rasa x
 ```
+## TO DO:
+- Currently the chatbot only supports English language, we want to extend its support for as many languages as possible.
+- This chatbot model is trained on a very limited set of training data. We want to add support for more user queries.
+- We want to add support for more OSM tools like running an Overpass query in natural language through chatbot, generating before-after maps, connecting users to local OSM-communities by accessing their location and others.
 
   
