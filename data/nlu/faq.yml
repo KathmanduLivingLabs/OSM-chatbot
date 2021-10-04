@@ -231,6 +231,8 @@ nlu:
     - any tutorials to learn about contribution to osm
     - how can i edit map on OSM?
     - how to map?
+    - Interactive tutorial to getting started editing OSM
+    - Are there instructional videos for new OpenStreetMap contributors?
 - intent: faq/create_osm_account
   examples: |
     - How to create OSM account?
@@ -461,7 +463,6 @@ nlu:
     - I want to learn writing overpass query.
     - Which language overpass use?
     - Can i download data of any region using overpass?
-
 - intent: faq/mapping_party
   examples: |
     - What is mapping party?
@@ -471,6 +472,12 @@ nlu:
     - is mapping party fun?
     - I want to know about term mapping party?
     - Why is mapping party organized?
-- intent: faq/josm_ideditor
+- intent: faq/osmosis
   examples: |
-    - 
+    - What is osmosis?
+    - What can i use osmosis for?
+    - can you tell me about osmisis?
+    - i want to know about osmosis.
+    - what is the purpose of osmosis?
+    - how can i download data using osmosis?
+

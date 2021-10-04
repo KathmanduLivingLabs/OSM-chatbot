@@ -335,6 +335,18 @@ responses:
       Writing overpass queries can be quite technical. Beginners can may find wizard a good place to start. If you want to generate overpass query using natural language visit https://nlmaps.gorgor.de/
   utter_faq/mapping_party:
   - text: A "Mapping Party" is when a group of people comes together to map something. It usually involves going out to collect data, adding it to the database afterwards and of course just having fun together. Those events are often organized by experienced mappers to help people who are interested in OpenStreetMap to get to know the process of mapping and the project in general, or to simply map a region that is yet very uncomplete.
+  utter_faq/osmosis:
+  - text: |-
+      Osmosis is a command line Java application for processing OSM data. Some examples of the things it can currently do are:
+      • Generate planet dumps from a database
+      • Load planet dumps into a database
+      • Produce change sets using database history tables
+      • Apply change sets to a local database
+      • Compare two planet dump files and produce a change set
+      • Re-sort the data contained in planet dump files
+      • Extract data inside a bounding box or polygon
+      For more info about osmosis visit: https://wiki.openstreetmap.org/wiki/Osmosis
+      For more queries related to osmosis visit: https://help.openstreetmap.org/tags/osmosis/
 actions:
 - action_user_info
 - action_reset_username_slot
