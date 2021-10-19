@@ -35,7 +35,12 @@ intents:
     use_entities: true
 - tag_info:
     use_entities: true
-- what_is_tag
+- what_is_tag:
+    use_entities: true
+- events_info:
+    use_entities: true
+- tags:
+    use_entities: true
 entities:
 - username
 - location
@@ -44,6 +49,7 @@ entities:
 - name
 - company
 - tag
+- country
 slots:
   username:
     type: rasa.shared.core.slots.TextSlot
@@ -57,6 +63,11 @@ slots:
     influence_conversation: false
   tag:
     type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
     initial_value: null
     auto_fill: true
     influence_conversation: false
@@ -195,7 +206,7 @@ responses:
   utter_chitchat/kll_intro:
   - text: Kathmandu Living Labs (KLL) is a leading civic-tech company based out of Nepal. It was founded in 2013, primarily, to advance the Open Mapping movement. KLL is a non-profit organization that works to harness local knowledge, develop open data and promote civic technologies especially around OpenStreetMap (OSM).For more info about Kathmandu Living Labs visit www.kathmandulivinglabs.org.
   utter_what_is_tag:
-  - text: |- 
+  - text: |-
       Tags describe specific features of map elements (nodes, ways, or relations) or changesets.A tag consists of two items, a key and a value.  Conventions are agreed on the meaning and use of tags.
       OpenStreetMap uses tags of the form key=value to add meaning to geographic objects. The key, therefore, is used to describe a topic, category, or type of feature. The value provides detail for the key-specified feature.
       Here are few examples used in practice

@@ -65,6 +65,10 @@ nlu:
     - what is spelling of osm?
 - intent: faq/osm_founder
   examples: |
+    - Who founded OSM?
+    - Who is the founder of OSM?
+    - Who created OSM?
+    - Who founded OpenStreetMap?
     - who is steve coast?
     - Who is Steve Coast?
     - Who founded OSM?
@@ -179,12 +183,17 @@ nlu:
     - When my chages are made available to the map?
     - How long does it take to see my changes?
     - wWen my changes are applied to the map?
+    - How often does the main (mapnik) map get updated
+    - I have made edits but they don't show up on the map
+    - Why haven't my changes appeared on the map?
+    - Why do the changes I have made to coastline not appear on the map?
 - intent: faq/osm_need_gps
   examples: |
     - Do I need to own a GPS device to contribute to the map?
     - Do i need a GPS device to contribute to the map?
 - intent: faq/osm_satellite_image_resolution
   examples: |
+    - Can we get more updated aerial imagery from Bing or Mapquest or anything, but Yahoo?
     - Why is the satellite imagery low resolution?
     - Why is the satellite imagery outdated?
     - Why is the satellite imagery old?
@@ -211,6 +220,7 @@ nlu:
     - how to download OSM data?
 - intent: faq/learn_osm
   examples: |
+    - How do I get started with OpenStreetMap?
     - Can I map?
     - I am looking for some helpful tutorials
     - any tutorials to learn about contribution to OSM
@@ -241,7 +251,7 @@ nlu:
     - I want to create OSM account help me.
     - Help me create OSM account.
     - Help me create OpenStreetMap account.
-    - Can you help me ntto create OpenStreetMap account.
+    - Can you help me to create OpenStreetMap account.
     - I want to create OSM account
     - how to create osm account?
     - how to create account in OSM?
@@ -317,6 +327,7 @@ nlu:
     - how to make a building?
     - can we add schools in OSM?
     - how to edit OSM map?
+    - How to add a new place on the map?
 - intent: faq/osm_users
   examples: |
     - Who uses OSM?
@@ -371,6 +382,7 @@ nlu:
     - What terms and conditions i must follow to use OSM data?
     - can i use osm data?
     - what about osm licenses?
+    - Can I use OpenStreetMap in a commercial product?
 - intent: faq/josm_intro
   examples: |
     - What is JOSM?
@@ -390,7 +402,7 @@ nlu:
     - which is better id editor or josm?
     - iDeditor vs josm
     - id editor vs josm
-
+    - What are the main things that I'm missing out by using the iD editor instead of JOSM?
 - intent: faq/josm_edit
   examples: |
     - Help me edit map using JOSM.
@@ -451,6 +463,7 @@ nlu:
     - what is tasking manager?
 - intent: faq/overpass-turbo
   examples: |
+    - How can I create a personalized map choosing the layers that I want
     - What is overpass?
     - what is overpass turbo?
     - How to use overpass api?
@@ -476,7 +489,7 @@ nlu:
   examples: |
     - What is osmosis?
     - What can i use osmosis for?
-    - can you tell me about osmisis?
+    - can you tell me about osmosis?
     - i want to know about osmosis.
     - what is the purpose of osmosis?
     - how can i download data using osmosis?

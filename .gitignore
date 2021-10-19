@@ -1,2 +1,4 @@
 /models
 /.vscode
+*.db
+events.*

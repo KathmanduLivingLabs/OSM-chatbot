@@ -163,7 +163,7 @@ responses:
         • Log in (on the OpenStreetMap.org homepage)
         • Start iD (on the OpenStreetMap.org homepage click the "Edit" button or, if you have set another default editor in your user preferences, click "iD" inside the "Edit ▼" menu),
         • Click the help icon (currently in the right panel, bottom),
-        • Click the big "Start the Walkthrough" button below the list of help chapters
+        • Click the big "Start the Walkthrough" button buttom at the list of help chapters
         Note that this is mainly a tutorial to use iD. We have other editors. Other tutorials would be Beginners' guide in https://wiki.openstreetmap.org/wiki/Beginners%27_guide or https://learnosm.org/en/.
   utter_faq/osm_users:
   - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.
