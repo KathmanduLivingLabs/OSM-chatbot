@@ -65,9 +65,17 @@ To train model
 ```bash
     rasa train
 ```
-To run bot on command line 
+To chat with bot on command line 
 ```bash
     rasa shell
+```
+To start rasa server
+```bash
+    rasa run
+```
+or to run rasa with api enabled
+```bash
+    rasa run --enable-api
 ```
 
 Custom action server are required to fetch dynamic response from api's or web scrapping. We have used custom actions to fetch user statistics and tag information in this project.
@@ -83,5 +91,9 @@ Then run
 ```bash
 rasa x
 ```
+## TO DO:
+- Currently the chatbot only supports English language, we want to extend its support for as many languages as possible.
+- This chatbot model is trained on a very limited set of training data. We want to add support for more user queries.
+- We want to add support for more OSM tools like running an Overpass query in natural language through chatbot, generating before-after maps, connecting users to local OSM-communities by accessing their location and others.
 
   
