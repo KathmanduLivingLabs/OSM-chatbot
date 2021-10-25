@@ -71,14 +71,10 @@ nlu:
     - Who founded OpenStreetMap?
     - who is steve coast?
     - Who is Steve Coast?
-    - Who founded OSM?
-    - Who founded OpenStreetMap?
     - Who is the founder of OpenStreetMap?
-    - Who is the founder of OSM?
     - developer?
     - who started osm?
     - Who is the father of OSM?
-    - Who created OSM?
     - WHo created OpenStreetMap?
     - Tell me about creator of openstreetmap
     - Who developed OSM?
@@ -493,4 +489,4 @@ nlu:
     - i want to know about osmosis.
     - what is the purpose of osmosis?
     - how can i download data using osmosis?
-
+    - what is osmosis?
