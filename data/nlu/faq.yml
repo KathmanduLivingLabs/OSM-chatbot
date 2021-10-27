@@ -51,15 +51,11 @@ nlu:
     - what is the purpose of creating osm?
     - Why was openstreetmap created?
     - What is the aim of creating OSM?
-- intent: faq/osm_spelling
-  examples: |
     - Is it OpenStreetMap or Open Street Maps?
     - Is OpenStreetMap correct?
     - What is the full form of OSM?
     - What is trademark of OSM?
     - What is the correct spelling of openstreetmap?
-    - fullform of OpenStreetMap
-    - Can you tell me fullform of OpenStreetMap?
     - Can you tell me spelling of open street map?
     - How do i write open street map?
     - what is spelling of osm?
@@ -214,6 +210,19 @@ nlu:
     - how to download osm data
     - how can i download OSM data?
     - how to download OSM data?
+- intent: faq/create_osm_account
+  examples: |
+    - How to create OSM account?
+    - How to create OpenStreetMap account?
+    - How can i create OSM account?
+    - I want to create OSM account help me.
+    - Help me create OSM account.
+    - Help me create OpenStreetMap account.
+    - Can you help me to create OpenStreetMap account.
+    - I want to create OSM account
+    - how to create osm account?
+    - how to create account in OSM?
+    - how to create account in osm
 - intent: faq/learn_osm
   examples: |
     - How do I get started with OpenStreetMap?
@@ -233,64 +242,27 @@ nlu:
     - I want you to help me edit map on osm
     - I want to learn OSM
     - can you help me learn osm?
-    - no, I am lookinh for some helpful tutorials
-    - any tutorials to learn about contribution to osm
+    - no, I am looking for some helpful tutorials
     - how can i edit map on OSM?
-    - how to map?
     - Interactive tutorial to getting started editing OSM
     - Are there instructional videos for new OpenStreetMap contributors?
-- intent: faq/create_osm_account
-  examples: |
-    - How to create OSM account?
-    - How to create OpenStreetMap account?
-    - How can i create OSM account?
-    - I want to create OSM account help me.
-    - Help me create OSM account.
-    - Help me create OpenStreetMap account.
-    - Can you help me to create OpenStreetMap account.
-    - I want to create OSM account
-    - how to create osm account?
-    - how to create account in OSM?
-    - how to create account in osm
-- intent: faq/ideditor_info
-  examples: |
-    - What is iD editor?
-    - What is ideditor?
-    - What is id editor.
-    - Tell me about id editor.
-    - What do you mean by ID editor?
-    - Describe id editor.
-    - Tell me about iD editor.
-    - Tell me about ideditor.
-    - what is id editor?
-    - what is iD editor?
-- intent: faq/add_features
-  examples: |
-    - how to add add features on OSM?
+    - how to add features on OSM?
     - how to add buildings on OSM?
-    - How to add buildings?
     - How do i update OSM data?
     - How to create building?
-    - How to edit building?
+    - How can i add data to OSM?
     - How to map buildings?
-    - How to create river?
     - How to create river on OSM?
-    - How to create river on OpenStreetMap?
     - How to draw river on OSM?
     - How to draw road on OSM?
     - How to map road?
     - How to edit road?
-    - How to create road on OSM?
     - I want to create road
     - I want to create building
-    - I want to add schools
     - I want to add school
     - Can i add school?
-    - How to add school on OSM?
     - How to add hospital on OSM?
     - I want to add my shop in OSM
-    - How can i add my shop on OpenStreetMap?
-    - How to add forest in openstreetmap?
     - How to map farmland on OpenStreetMap?
     - Can i add forest on OpenStreetMap?
     - How to use iD editor?
@@ -303,20 +275,16 @@ nlu:
     - I need help using iD editor.
     - Can you help me to use ideditor.
     - i need help using ideditor.
-    - how to make building
     - how to edit map using id editor?
     - how to add resendential area?
-    - how to add building?
     - how to make resendential area?
     - how to make building?
     - how to add building
-    - How to add building?
     - How to edit OSM map?
     - How can i edit map?
     - how can i edit map?
     - how can i map in osm?
     - How to map on OSM?
-    - How can i edit map on OSM?
     - How to add features using Id editor?
     - How can I add my school on OSM?
     - how to add buildings?
@@ -324,6 +292,14 @@ nlu:
     - can we add schools in OSM?
     - how to edit OSM map?
     - How to add a new place on the map?
+    - What is iD editor?
+    - What is ideditor?
+    - What is id editor.
+    - Tell me about id editor.
+    - What do you mean by ID editor?
+    - Describe id editor.
+    - Tell me about ideditor.
+
 - intent: faq/osm_users
   examples: |
     - Who uses OSM?
