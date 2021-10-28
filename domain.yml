@@ -298,13 +298,13 @@ responses:
 #      In this way you can add features into OpenStreetMap using iD editor, you can also use other editors like JOSM to add and edit features.
   utter_faq/learn_osm:
   - text: |-
-        To get starting with editing OpenStreetMap we recommend using iD editor. The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary.
+        You can create an account at [openstreetmap.org](https://openstreetmap.org) and start editing data using iD editor or other editor of your choice to contribute in OSM. The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary.
         There is a built-in tutorial in iDeditor. To access it:
         • Log in or Sign up (on the OpenStreetMap.org homepage).
         • Start iD (on the OpenStreetMap.org homepage click the "Edit" button or, if you have set another default editor in your user preferences, click "iD" inside the "Edit ▼" menu),
         • Click the help icon (currently in the right panel, bottom),
         • Click the big "Start the Walkthrough" button buttom at the list of help chapters
-        Note that this is mainly a tutorial to use iD. We also have other editors like JOSM, Potlatch and more. Other tutorials would be Beginners' guide in [Wiki](https://wiki.openstreetmap.org/wiki/Beginners%27_guide) or [Learn OSM](https://learnosm.org/en/).
+        Note that this is mainly a tutorial to use iD. We also have other editors like JOSM, Potlatch and more. Other tutorials would be Beginners' guide in [Begineers' guide Wiki](https://wiki.openstreetmap.org/wiki/Beginners%27_guide) or [Learn OSM](https://learnosm.org/en/).
   utter_faq/osm_users:
   - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit https://welcome.openstreetmap.org/about-osm-community/consumers.
   utter_faq/osm_license:

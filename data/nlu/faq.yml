@@ -117,6 +117,8 @@ nlu:
     - Who creates maps on OSM?
     - Who creates maps on OpenStreetMap?
     - what is osm data
+    - how is OpenStreetMap data created?
+    - where did OSM data come from?
 - intent: faq/osm_owner
   examples: |
     - Who is the owner of OpenStreetMap?
@@ -127,6 +129,7 @@ nlu:
     - Who owns OpenStreetMap data?
     - Owner of OpenStreetMap
     - who owns osm data?
+    - Who is the owner of OSM?
 - intent: faq/osm_data_accuracy
   examples: |
     - How can a project like this create accurate maps?
@@ -141,17 +144,6 @@ nlu:
     - Why there is no data in some place?
     - Why the map is blanck at some places?
     - Why the map s black at some regions?
-- intent: faq/osm_involvement
-  examples: |
-    - How can i get involved?
-    - How can i contribute to OSM?
-    - How can i get involved with OpenStreetMap?
-    - How can i contribute to OpenStreetMap?
-    - how can i help?
-    - who can contribute to osm
-    - How can I contribute to OSM?
-    - how can I contribute to this?
-    - how to contribute in osm?
 - intent: faq/osm_communicate
   examples: |
     - How do you communicate?
@@ -165,6 +157,8 @@ nlu:
     - I have some questions.
     - where can i join osm community
     - osm community in nepal
+    - where can i ask my osm related questions?
+    - is there a community where i can ask osm related questions?
 - intent: faq/osm_see_changes
   examples: |
     - How do I get to see my changes to the map?
@@ -293,6 +287,15 @@ nlu:
     - What do you mean by ID editor?
     - Describe id editor.
     - Tell me about ideditor.
+    - How can i get involved?
+    - How can i contribute to OSM?
+    - How can i get involved with OpenStreetMap?
+    - How can i contribute to OpenStreetMap?
+    - how can i help?
+    - who can contribute to osm
+    - How can I contribute to OSM?
+    - how can I contribute to this?
+    - how to contribute in osm?
 
 - intent: faq/osm_users
   examples: |
