@@ -83,13 +83,11 @@ responses:
   utter_faq/osm_alternatives:
   - text: The advantage of using OpenStreetMap is that the data is copyrighted and owned by Google/whoever and sometimes data itself powering this services is not available at all, or blocked by unfriendly licensing or extreme fees whle OSM is always fexible and free to users.
   utter_faq/osm_data_accuracy:
-  - text: OpenStreetMap follows wiki style process. The essence of a wiki-style process is that all users have a stake in having accurate data. If one person puts in inaccurate data, maliciously or accidentally, the other 99.9% of people can check it, fix it, or get rid of it.
+  - text: OpenStreetMap is a free editable map of the whole world. It is made by people like you. Which means the database will always be subject to the whims, experimentation, and mistakes of the community; this is precisely OSM's strength since, among other things, it allows our data to quickly accommodate changes in the physical world. OpenStreetMap follows wiki style process. The essence of a wiki-style process is that all users have a stake in having accurate data. If one person puts in inaccurate data or delete accurate data, maliciously or accidentally, the other 99.9% of people can check it, fix it, or get rid of it.
   utter_faq/osm_data_creator:
-  - text: The data is collected from many keen contributors, and sporadic imports of data from open-licensed sources. In areas where there are no such data sources (most areas) we have to start from a blank slate, and head out there to survey the streets ourselves.
+  - text: The data is collected from many keen contributors, and sporadic imports of data from open-licensed sources. In areas where there are no such data sources (most areas) we have to start from a blank slate, and head out there to survey the streets ourselves. More than seven million contributors make OpenStreetMap possible.
   utter_faq/osm_owner:
-  - text: You. The data and software is owned by you, the contributors. There is an organisation called the OpenStreetMap Foundation which exists to protect, promote, and support the project, but does not own the data.
-  utter_faq/osm_data_consistency:
-  - text: OpenStreetMap is a free editable map of the whole world. It is made by people like you. Which means the database will always be subject to the whims, experimentation, and mistakes of the community; this is precisely OSM's strength since, among other things, it allows our data to quickly accommodate changes in the physical world.
+  - text: The data and software is owned by you, the contributors. There is an organisation called the OpenStreetMap Foundation which exists to protect, promote, and support the project, but does not own the data.
   utter_faq/osm_communicate:
   - text: The OpenStreetMap community is large, spread across many locations, speak different languages, and focus on different areas of interest. There is a help center at help.openstreetmap.org and forum at forum.openstreetmap.org to get started.
   utter_faq/osm_see_changes:
@@ -128,7 +126,10 @@ responses:
   utter_faq/osm_map_download:
   - text: Use the 'Share' button to download in PNG, JPEG, SVG or PDF format. If you need other formats, see the https://wiki.openstreetmap.org/wiki/Export page.
   utter_faq/osm_download_data:
-  - text: There are two ways you can get data out of the OSM database. One is by using Overpass, a separate API with a powerful query language. The second is to download the OpenStreetMap data dump and filter it according to your needs.
+  - text: |- 
+        There are two ways you can get data out of the OSM database. One is by using Overpass, a separate API with a powerful query language. The second is to download the OpenStreetMap data dump and filter it according to your needs.
+        If you wanty to download or share map instead of data, use the 'Share' button on [openstreetmap.org](https://opestreetmap.org) (currently on bottom right corner) to download in PNG, JPEG, SVG or PDF format.
+        For more info about downloading OSM data visit [Dowloading data Wiki] (https://wiki.openstreetmap.org/wiki/Downloading_data)
 #   utter_faq/how_to_map:
 #   - buttons:
 #     - payload: How to create OSM account?

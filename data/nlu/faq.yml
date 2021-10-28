@@ -112,14 +112,6 @@ nlu:
     - Why choose OSM over Google?
     - Why should we use OSM?
     - why is osm important
-- intent: faq/osm_data_accuracy
-  examples: |
-    - How can a project like this create accurate maps?
-    - How OpenStreetMap creates accurate maps?
-    - How accurate is OpenStreetMap?
-    - How accurate is OpenStreetMap data?
-    - How OSM creates accurate maps?
-    - How OpenStreetMap creates accurate data?
 - intent: faq/osm_data_creator
   examples: |
     - Where did existing map data come from?
@@ -137,8 +129,14 @@ nlu:
     - Who owns OpenStreetMap data?
     - Owner of OpenStreetMap
     - who owns osm data?
-- intent: faq/osm_data_consistency
+- intent: faq/osm_data_accuracy
   examples: |
+    - How can a project like this create accurate maps?
+    - How OpenStreetMap creates accurate maps?
+    - How accurate is OpenStreetMap?
+    - How accurate is OpenStreetMap data?
+    - How OSM creates accurate maps?
+    - How OpenStreetMap creates accurate data?
     - Why is the data sometimes inconsistent?
     - Why is OSM data inaccurate sometimes?
     - Why is OpenStreetMap data inaccurate sometimes?
@@ -192,15 +190,13 @@ nlu:
     - Is there other satellite imagery that I can use that has more detail?
     - Which satellite imagery to use?
     - Which is more detailed satellite imagery?
-- intent: faq/osm_map_download
+- intent: faq/osm_download_data
   examples: |
     - How can I download a map?
     - How can i download desired map?
     - How can i share my map?
     - How can i share OSM map?
     - How can i download OSM map?
-- intent: faq/osm_download_data
-  examples: |
     - How can I extract information from OpenStreetMap?
     - How can i extract POI from OpenStreetMap?
     - How can i download data from OpenStreetMap?
