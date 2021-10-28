@@ -33,6 +33,14 @@ nlu:
     - What osm?
     - Tell me about OSM
     - What OSM?
+    - Is it OpenStreetMap or Open Street Maps?
+    - Is OpenStreetMap correct?
+    - What is the full form of OSM?
+    - What is trademark of OSM?
+    - What is the correct spelling of openstreetmap?
+    - Can you tell me spelling of open street map?
+    - How do i write open street map?
+    - what is spelling of osm?
 - intent: faq/osm_motive
   examples: |
     - Why was OpenStreetMap created?
@@ -51,14 +59,28 @@ nlu:
     - what is the purpose of creating osm?
     - Why was openstreetmap created?
     - What is the aim of creating OSM?
-    - Is it OpenStreetMap or Open Street Maps?
-    - Is OpenStreetMap correct?
-    - What is the full form of OSM?
-    - What is trademark of OSM?
-    - What is the correct spelling of openstreetmap?
-    - Can you tell me spelling of open street map?
-    - How do i write open street map?
-    - what is spelling of osm?
+    - Why not just use Google maps or others?
+    - Why don't you just use Google Maps/whoever for your data?
+    - Why not just use Safari maps?
+    - Why not just use Google maps?
+    - What is OSM different from other maps?
+    - Why OpenStreetMap?
+    - Benefits of using OpenStreetMap than other maps
+    - Benefits of using OpenStreetMap
+    - What is the benefit of using OpenStreetMap?
+    - Why to use OpenStreetMap?
+    - Why to use OSM?
+    - Why to use open street map?
+    - Can you tell me difference between OSM and other maps.
+    - Could you tell me difference between OpenStreetMap and other maps.
+    - why use osm instead of google
+    - osm versus google maps
+    - why osm
+    - why OSM?
+    - Why not google?
+    - Why choose OSM over Google?
+    - Why should we use OSM?
+    - why is osm important
 - intent: faq/osm_founder
   examples: |
     - Who founded OSM?
@@ -88,30 +110,6 @@ nlu:
     - OSM founded region?
     - Where is OSM?
     - when was OSM started?
-- intent: faq/osm_alternatives
-  examples: |
-    - Why not just use Google maps or others?
-    - Why don't you just use Google Maps/whoever for your data?
-    - Why not just use Safari maps?
-    - Why not just use Google maps?
-    - What is OSM different from other maps?
-    - Why OpenStreetMap?
-    - Benefits of using OpenStreetMap than other maps
-    - Benefits of using OpenStreetMap
-    - What is the benefit of using OpenStreetMap?
-    - Why to use OpenStreetMap?
-    - Why to use OSM?
-    - Why to use open street map?
-    - Can you tell me difference between OSM and other maps.
-    - Could you tell me difference between OpenStreetMap and other maps.
-    - why use osm instead of google
-    - osm versus google maps
-    - why osm
-    - why OSM?
-    - Why not google?
-    - Why choose OSM over Google?
-    - Why should we use OSM?
-    - why is osm important
 - intent: faq/osm_data_creator
   examples: |
     - Where did existing map data come from?
