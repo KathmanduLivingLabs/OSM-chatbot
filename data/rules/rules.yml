@@ -91,8 +91,8 @@ rules:
   - action: action_reset_tag_slot
 - rule: What is tag?
   steps:
-  - intent: what_is_tag
-  - action: utter_what_is_tag
+  - intent: tags
+  - action: utter_tag
   - action: utter_did_that_help
 - rule: Provide OSM events
   steps:
