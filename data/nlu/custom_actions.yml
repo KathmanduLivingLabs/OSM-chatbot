@@ -73,6 +73,17 @@ nlu:
     - Can you provide me stats of [Aadesh Baral](username)
     - Can you provide me stats of [Aadesh Baral](username)?
     - Can you provide me stats of [Manoj Thapa](username)?
+    - show me my user contributions
+    - show me my osm contributions
+    - How do we check our contribution in OpenStreetMap?
+    - how was my mapping contribution in OSM?
+    - how did I contribute to OSM?
+    - show me my mapping stats
+    - Can you provide [Bhawak](username) contribution?
+    - my contribution
+    - check my contribution
+    - Contribution in OpenStreetMap?
+    - What is Samyoga's contribution in OpenStreetMap?
 - intent: tag_info
   examples: |
     - What tag can i use in [buildings](tag)?
@@ -93,7 +104,13 @@ nlu:
     - what tags are available for cowshed?
     - provide me tag info
     - can you help me get available tags?
-
+    - what tags are available for [hospital](tag)?
+    - what are tags for [hospital](tag)?
+    - What are some relevant OSM tags while mapping [buildings](tag)?
+    - what are different tags for [buildings](tag)?
+    - what are different tags for [hospitals](tag)
+    - What could be the relevant tags for [highway](tag) in OSM?
+    - what are tags for [roads](tag)?
 - intent: tags
   examples: |
     - What are keys and values?
@@ -109,7 +126,10 @@ nlu:
     - Help me understand tags, keys and values
     - how to add tags in osm?
     - what are tags in osm?
-
+    - how about OSM tags?
+    - tags
+    - What are OSM tags ?
+    - What are tags?
 - intent: events_info
   examples: |
     - what events are near me?
@@ -122,3 +142,4 @@ nlu:
     - give me information about OpenStreetMap events near me
     - what OpenStreetMap events are happening in [USA](country)?
     - what are OSM events that are happening in coming days?
+    - can you tell me the events that happening around

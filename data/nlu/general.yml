@@ -419,6 +419,7 @@ nlu:
     - ok great thanks
     - yes it was
     - a little bit
+    - yes sure
 - intent: deny
   examples: |
     - I don't want to
@@ -804,4 +805,7 @@ nlu:
     - Who is your gaurdian?
     - Who is your guardian?
     - who is this
-
+    - who developed this chatbot
+    - who developed this chatbot ?
+    - who is the developer of this chatbot?
+    - Who is the developer of this chatbot?

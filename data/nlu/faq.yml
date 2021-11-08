@@ -81,6 +81,7 @@ nlu:
     - Why choose OSM over Google?
     - Why should we use OSM?
     - why is osm important
+    - goggle map vs osm
 - intent: faq/osm_founder
   examples: |
     - Who founded OSM?
@@ -110,6 +111,7 @@ nlu:
     - OSM founded region?
     - Where is OSM?
     - when was OSM started?
+    - who developed chatbot?
 - intent: faq/osm_data_creator
   examples: |
     - Where did existing map data come from?
@@ -129,7 +131,6 @@ nlu:
     - Who owns OpenStreetMap data?
     - Owner of OpenStreetMap
     - who owns osm data?
-    - Who is the owner of OSM?
 - intent: faq/osm_data_accuracy
   examples: |
     - How can a project like this create accurate maps?
@@ -296,7 +297,9 @@ nlu:
     - How can I contribute to OSM?
     - how can I contribute to this?
     - how to contribute in osm?
-
+    - how to use osm?
+    - how to tag [river](tag) in osm
+    - how to osm
 - intent: faq/osm_users
   examples: |
     - Who uses OSM?
@@ -352,6 +355,9 @@ nlu:
     - can i use osm data?
     - what about osm licenses?
     - Can I use OpenStreetMap in a commercial product?
+    - What is ODBL ?
+    - What is odbl ?
+    - What is Open Database License ?
 - intent: faq/josm_intro
   examples: |
     - What is JOSM?
@@ -394,6 +400,8 @@ nlu:
     - I want to learn JOSM.
     - how to use josm?
     - How can I learn JOSM?
+    - How to use JOSM ?
+    - how to get started with JOSM?
 - intent: faq/HOT
   examples: |
     - What is HOT?
@@ -445,6 +453,7 @@ nlu:
     - I want to learn writing overpass query.
     - Which language overpass use?
     - Can i download data of any region using overpass?
+    - What format does OSM use for api ?
 - intent: faq/mapping_party
   examples: |
     - What is mapping party?
