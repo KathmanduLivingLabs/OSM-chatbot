@@ -87,6 +87,7 @@ responses:
   - text: Hi, How can i help you?
   utter_happy_to_help:
   - text: I am glad, I could help you. 🤓
+  - text: Thank God! I was able to help. 🤓
   utter_sorry:
   - text: I apologize, I promise that i will do my best to help you next time.
   - text: I am sorry, I will try my best next time.
@@ -115,7 +116,7 @@ responses:
   - text: Is there anything else I can help you? 😊
   - text: Is there anything else you want to know about OpenStreetMap?😊
   utter_feedback_thanks:
-  - text: Thankyou for your feedback. It keeps making me better.
+  - text: Thankyou for your feedback. It keeps making me better. Our developers will review this conversation and make necessary changes.
   utter_ask_response_feedback_message:
   - text: Please enter your feedback.
   utter_ask_about:
@@ -204,7 +205,7 @@ responses:
   - text: Rasa Open Source is a conversational AI framework for that provides machine learning tools for building contextual assistants. You can read more about it here in the docs or on [website](https://rasa.com/).
   utter_chitchat/kll_intro:
   - text: Kathmandu Living Labs (KLL) is a leading civic-tech company based out of Nepal. It was founded in 2013, primarily, to advance the Open Mapping movement. KLL is a non-profit organization that works to harness local knowledge, develop open data and promote civic technologies especially around OpenStreetMap (OSM).For more info about Kathmandu Living Labs visit www.kathmandulivinglabs.org.
-  utter_tag:
+  utter_what_is_tag:
   - text: |-
       Tags describe specific features of map elements (nodes, ways, or relations) or changesets.A tag consists of two items, a key and a value.  Conventions are agreed on the meaning and use of tags.
       OpenStreetMap uses tags of the form key=value to add meaning to geographic objects. The key, therefore, is used to describe a topic, category, or type of feature. The value provides detail for the key-specified feature.
@@ -214,19 +215,25 @@ responses:
       For more information visit https://wiki.openstreetmap.org/wiki/Tags
   utter_faq/osm_intro:
   - text: |-
-      OpenStreetMap is a free digital map of the world, created by an ever growing community of mappers. It can be accessed through www.openstreetmap.org. The official trademark is OpenStreetMap.
-      For more information about OpenStreetMap visit [wiki page](https://wiki.openstreetmap.org/wiki/About_OpenStreetMap)
+      OpenStreetMap is a free digital map of the world, created by an ever growing community of mappers. It can be accessed through www.openstreetmap.org.
+      For more information visit [website](https://wiki.openstreetmap.org/wiki/About_OpenStreetMap)
   utter_faq/osm_motive:
-  - text: The creation and growth of OpenSteetMap has been motivated by restrictions on use or availability of map data across much of the world.  The advantage of using OpenStreetMap is that the data is copyrighted and owned by Google/whoever and sometimes data itself powering this services is not available at all, or blocked by unfriendly licensing or extreme fees whle OSM is always fexible and free to users.
-  - text: OpenStreetMap(OSM) was established to encourage the growth, development and distribution of free geospatial data and to provide geospatial data for anybody to use and share​.  The advantage of using OpenStreetMap is that the data is copyrighted and owned by Google/whoever and sometimes data itself powering this services is not available at all, or blocked by unfriendly licensing or extreme fees whle OSM is always fexible and free to users.
+  - text: The creation and growth of OSM has been motivated by restrictions on use or availability of map data across much of the world.
+  - text: OpenStreetMap(OSM) was established to encourage the growth, development and distribution of free geospatial data and to provide geospatial data for anybody to use and share​.
+  utter_faq/osm_spelling:
+  - text: OpenStreetMap is the correct spelling. One word, three capital letters, one map. OpenStreetMap is also a Trademark.
   utter_faq/osm_founder:
   - text: Steve Coast founded the OpenStreetMap project in 2004, initially focusing on mapping the United Kingdom
+  utter_faq/osm_alternatives:
+  - text: The advantage of using OpenStreetMap is that the data is copyrighted and owned by Google/whoever and sometimes data itself powering this services is not available at all, or blocked by unfriendly licensing or extreme fees whle OSM is always fexible and free to users.
   utter_faq/osm_data_accuracy:
-  - text: OpenStreetMap is a free editable map of the whole world. It is made by people like you. Which means the database will always be subject to the whims, experimentation, and mistakes of the community; this is precisely OSM's strength since, among other things, it allows our data to quickly accommodate changes in the physical world. OpenStreetMap follows wiki style process. The essence of a wiki-style process is that all users have a stake in having accurate data. If one person puts in inaccurate data or delete accurate data, maliciously or accidentally, the other 99.9% of people can check it, fix it, or get rid of it.
+  - text: OpenStreetMap follows wiki style process. The essence of a wiki-style process is that all users have a stake in having accurate data. If one person puts in inaccurate data, maliciously or accidentally, the other 99.9% of people can check it, fix it, or get rid of it.
   utter_faq/osm_data_creator:
-  - text: The data is collected from many keen contributors, and sporadic imports of data from open-licensed sources. In areas where there are no such data sources (most areas) we have to start from a blank slate, and head out there to survey the streets ourselves. More than seven million contributors make OpenStreetMap possible.
+  - text: The data is collected from many keen contributors, and sporadic imports of data from open-licensed sources. In areas where there are no such data sources (most areas) we have to start from a blank slate, and head out there to survey the streets ourselves.
   utter_faq/osm_owner:
-  - text: The data and software is owned by you, the contributors. There is an organisation called the OpenStreetMap Foundation which exists to protect, promote, and support the project, but does not own the data.
+  - text: You. The data and software is owned by you, the contributors. There is an organisation called the OpenStreetMap Foundation which exists to protect, promote, and support the project, but does not own the data.
+  utter_faq/osm_data_consistency:
+  - text: OpenStreetMap is a free editable map of the whole world. It is made by people like you. Which means the database will always be subject to the whims, experimentation, and mistakes of the community; this is precisely OSM's strength since, among other things, it allows our data to quickly accommodate changes in the physical world.
   utter_faq/osm_communicate:
   - text: The OpenStreetMap community is large, spread across many locations, speak different languages, and focus on different areas of interest. There is a help center at help.openstreetmap.org and forum at forum.openstreetmap.org to get started.
   utter_faq/osm_see_changes:
@@ -262,25 +269,44 @@ responses:
       In OSM, there are three types of elements, which includes nodes, i.e.points, ways are lines that represent linear features such as roads and the third main type of element is a relation, which can act as a collection of nodes, ways, or even other relations defined in a membership or relationship in a given grouping.
   utter_faq/osm_satellite_image_resolution:
   - text: OpenStreetMap neither controls nor owns the satellite imagery. The Aerial Imagery is from a variety of sources that we have permission to use - Bing and Maxar are the most popular and have the largest coverage. So we cannot make or request updates.
+  utter_faq/osm_map_download:
+  - text: Use the 'Share' button to download in PNG, JPEG, SVG or PDF format. If you need other formats, see the https://wiki.openstreetmap.org/wiki/Export page.
   utter_faq/osm_download_data:
-  - text: |-
-      There are two ways you can get data out of the OSM database. One is by using Overpass, a separate API with a powerful query language. The second is to download the OpenStreetMap data dump and filter it according to your needs.
-      If you wanty to download or share map instead of data, use the 'Share' button on [openstreetmap.org](https://opestreetmap.org) (currently on bottom right corner) to download in PNG, JPEG, SVG or PDF format.
-      For more info about downloading OSM data visit [Dowloading data Wiki] (https://wiki.openstreetmap.org/wiki/Downloading_data)
+  - text: There are two ways you can get data out of the OSM database. One is by using Overpass, a separate API with a powerful query language. The second is to download the OpenStreetMap data dump and filter it according to your needs.
+  utter_faq/how_to_map:
+  - buttons:
+    - payload: How to create OSM account?
+      title: How to create OSM account?
+    - payload: What is iD editor?
+      title: What is iD editor?
+    - payload: How to edit map using iD editor?
+      title: How to edit map using iD editor?
+    text: You can create an account at openstreetmap.org and start editing using iD editor or any other editor of your choice.
   utter_faq/create_osm_account:
   - image: https://static.packt-cdn.com/products/9781847197504/graphics/7504_02_02.jpg
     text: To register, go to http://www.openstreetmap.org/, and choose sign up in the top right-hand corner. This will take you to the following registration form.
+  utter_faq/ideditor_info:
+  - text: The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on top left corner.
+  utter_faq/add_features:
+  - text: |-
+      To add a feature on OpenStreetMap: 
+      • Open openstreetmap.org and login to your account. 
+      • Pan and zoom the location where you wnat to add a feature. 
+      • Click on edit button at top left corner. 
+      • Click on point/line/area icon present on top center. (Click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 
+      • Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point) 
+      • To finish tracing an area/line double click on the last point. 
+      • Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 
+      • Now save your changes with changeset comment to see the changes. 
+      In this way you can add features into OpenStreetMap using iD editor, you can also use other editors like JOSM to add and edit features.
   utter_faq/learn_osm:
   - text: |-
-      You can create an account at [openstreetmap.org](https://openstreetmap.org) and start editing data using iD editor or other editor of your choice to contribute in OSM. The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary.
-      There is a built-in tutorial in iDeditor. To access it:
-      • Log in or Sign up (on the OpenStreetMap.org homepage).
-      • Start iD (on the OpenStreetMap.org homepage click the "Edit" button or, if you have set another default editor in your user preferences, click "iD" inside the "Edit ▼" menu),
-      • Click the help icon (currently in the right panel, bottom),
-      • Click the big "Start the Walkthrough" button buttom at the list of help chapters
-      Note that this is mainly a tutorial to use iD. We also have other editors like JOSM, Potlatch and more. Other tutorials would be Beginners' guide in [Begineers' guide Wiki](https://wiki.openstreetmap.org/wiki/Beginners%27_guide) or [Learn OSM](https://learnosm.org/en/).
+      If you are a beginner, refer to the following guides to learn mapping in OSM.
+      • https://learnosm.org/en
+      • https://www.youtube.com/watch?v=Ir-3K0pjwOI
+      • https://youtu.be/L0-a3bFBxek
   utter_faq/osm_users:
-  - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit https://welcome.openstreetmap.org/about-osm-community/consumers.
+  - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.
   utter_faq/osm_license:
   - text: |-
       Data extracted from OpenStreetMap is licensed on terms of the Open Database License, "ODbL" 1.0.
@@ -294,7 +320,7 @@ responses:
       • Offline editing: save your partially completed work locally, work with your private GPS tracks or photographs without having to upload them
       • Customization: customize keyboard shortcuts, pick from high-quality plugins for specialized tasks, enable UI dialogs for experimental features, change how the editor's map rendering looks
       • Cutting-edge mapping: get tool support for emerging mapping topics like lane mapping, 3D mapping or indoor mapping
-      For more queries related to JOSM visit: https://help.openstreetmap.org/tags/josm/?sort=mostvoted
+      For more info visit https://josm.openstreetmap.de/wiki/Introduction
       If you want to compare editors visit: https://wiki.openstreetmap.org/wiki/Comparison_of_editors
   utter_faq/josm_edit:
   - text: |-
@@ -312,7 +338,7 @@ responses:
   - text: |-
       The HOT Tasking Manager is an intuitive tool developed by Humanitarian OpenStreetMap Team (HOT) that mappers can use to sort an area into a grid, and work together to map an area in an organized way.
       The purpose of creating tasking manager is to allow mappers throughout the world to assist in mapping a defined region with a minimum risk of overlapping work areas, and also allows people both on the ground and working remotely to collaborate effectively, rapidly, and avoid accidental rework being required due to conflicts.
-      For more info about tasking manager visit https://learnosm.org/en/coordination/tasking-manager/
+      For getting started with tasking manager visit https://learnosm.org/en/coordination/tasking-manager/
   utter_faq/overpass-turbo:
   - text: |-
       Overpass turbo is a web based data mining tool for OpenStreetMap. It runs any kind of Overpass API query and shows the results on an interactive map. You can view, share and download data in desired formats using overpass turbo.
