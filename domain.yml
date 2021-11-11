@@ -87,7 +87,6 @@ responses:
   - text: Hi, How can i help you?
   utter_happy_to_help:
   - text: I am glad, I could help you. 🤓
-  - text: Thank God! I was able to help. 🤓
   utter_sorry:
   - text: I apologize, I promise that i will do my best to help you next time.
   - text: I am sorry, I will try my best next time.
@@ -263,48 +262,23 @@ responses:
       In OSM, there are three types of elements, which includes nodes, i.e.points, ways are lines that represent linear features such as roads and the third main type of element is a relation, which can act as a collection of nodes, ways, or even other relations defined in a membership or relationship in a given grouping.
   utter_faq/osm_satellite_image_resolution:
   - text: OpenStreetMap neither controls nor owns the satellite imagery. The Aerial Imagery is from a variety of sources that we have permission to use - Bing and Maxar are the most popular and have the largest coverage. So we cannot make or request updates.
-  # utter_faq/osm_map_download:
-  # - text: Use the 'Share' button to download in PNG, JPEG, SVG or PDF format. If you need other formats, see the https://wiki.openstreetmap.org/wiki/Export page.
   utter_faq/osm_download_data:
-  - text: |- 
-        There are two ways you can get data out of the OSM database. One is by using Overpass, a separate API with a powerful query language. The second is to download the OpenStreetMap data dump and filter it according to your needs.
-        If you wanty to download or share map instead of data, use the 'Share' button on [openstreetmap.org](https://opestreetmap.org) (currently on bottom right corner) to download in PNG, JPEG, SVG or PDF format.
-        For more info about downloading OSM data visit [Dowloading data Wiki] (https://wiki.openstreetmap.org/wiki/Downloading_data)
-#   utter_faq/how_to_map:
-#   - buttons:
-#     - payload: How to create OSM account?
-#       title: How to create OSM account?
-#     - payload: What is iD editor?
-#       title: What is iD editor?
-#     - payload: How to edit map using iD editor?
-#       title: How to edit map using iD editor?
-#     text: You can create an account at openstreetmap.org and start editing using iD editor or any other editor of your choice.
+  - text: |-
+      There are two ways you can get data out of the OSM database. One is by using Overpass, a separate API with a powerful query language. The second is to download the OpenStreetMap data dump and filter it according to your needs.
+      If you wanty to download or share map instead of data, use the 'Share' button on [openstreetmap.org](https://opestreetmap.org) (currently on bottom right corner) to download in PNG, JPEG, SVG or PDF format.
+      For more info about downloading OSM data visit [Dowloading data Wiki] (https://wiki.openstreetmap.org/wiki/Downloading_data)
   utter_faq/create_osm_account:
   - image: https://static.packt-cdn.com/products/9781847197504/graphics/7504_02_02.jpg
     text: To register, go to http://www.openstreetmap.org/, and choose sign up in the top right-hand corner. This will take you to the following registration form.
-#   utter_faq/ideditor_info:
-#   - text: The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on top left corner.
-#   utter_faq/add_features:
-#   - text: |-
-#      To add a feature on OpenStreetMap: 
-#      • Open openstreetmap.org and login to your account. 
-#      • Pan and zoom the location where you wnat to add a feature. 
-#      • Click on edit button at top left corner. 
-#      • Click on point/line/area icon present on top center. (Click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 
-#      • Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point) 
-#      • To finish tracing an area/line double click on the last point. 
-#      • Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 
-#      • Now save your changes with changeset comment to see the changes. 
-#      In this way you can add features into OpenStreetMap using iD editor, you can also use other editors like JOSM to add and edit features.
   utter_faq/learn_osm:
   - text: |-
-        You can create an account at [openstreetmap.org](https://openstreetmap.org) and start editing data using iD editor or other editor of your choice to contribute in OSM. The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary.
-        There is a built-in tutorial in iDeditor. To access it:
-        • Log in or Sign up (on the OpenStreetMap.org homepage).
-        • Start iD (on the OpenStreetMap.org homepage click the "Edit" button or, if you have set another default editor in your user preferences, click "iD" inside the "Edit ▼" menu),
-        • Click the help icon (currently in the right panel, bottom),
-        • Click the big "Start the Walkthrough" button buttom at the list of help chapters
-        Note that this is mainly a tutorial to use iD. We also have other editors like JOSM, Potlatch and more. Other tutorials would be Beginners' guide in [Begineers' guide Wiki](https://wiki.openstreetmap.org/wiki/Beginners%27_guide) or [Learn OSM](https://learnosm.org/en/).
+      You can create an account at [openstreetmap.org](https://openstreetmap.org) and start editing data using iD editor or other editor of your choice to contribute in OSM. The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary.
+      There is a built-in tutorial in iDeditor. To access it:
+      • Log in or Sign up (on the OpenStreetMap.org homepage).
+      • Start iD (on the OpenStreetMap.org homepage click the "Edit" button or, if you have set another default editor in your user preferences, click "iD" inside the "Edit ▼" menu),
+      • Click the help icon (currently in the right panel, bottom),
+      • Click the big "Start the Walkthrough" button buttom at the list of help chapters
+      Note that this is mainly a tutorial to use iD. We also have other editors like JOSM, Potlatch and more. Other tutorials would be Beginners' guide in [Begineers' guide Wiki](https://wiki.openstreetmap.org/wiki/Beginners%27_guide) or [Learn OSM](https://learnosm.org/en/).
   utter_faq/osm_users:
   - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit https://welcome.openstreetmap.org/about-osm-community/consumers.
   utter_faq/osm_license:
@@ -323,7 +297,7 @@ responses:
       For more queries related to JOSM visit: https://help.openstreetmap.org/tags/josm/?sort=mostvoted
       If you want to compare editors visit: https://wiki.openstreetmap.org/wiki/Comparison_of_editors
   utter_faq/josm_edit:
-  - text: |- 
+  - text: |-
       Following resources could be useful to getting started with JOSM:
       • https://josm.openstreetmap.de/wiki/Introduction
       • https://learnosm.org/en/josm/
@@ -348,16 +322,16 @@ responses:
   - text: A "Mapping Party" is when a group of people comes together to map something. It usually involves going out to collect data, adding it to the database afterwards and of course just having fun together. Those events are often organized by experienced mappers to help people who are interested in OpenStreetMap to get to know the process of mapping and the project in general, or to simply map a region that is yet very uncomplete.
   utter_faq/osmosis:
   - text: |-
-        Osmosis is a command line Java application for processing OSM data. Some examples of the things it can currently do are:
-        • Generate planet dumps from a database
-        • Load planet dumps into a database
-        • Produce change sets using database history tables
-        • Apply change sets to a local database
-        • Compare two planet dump files and produce a change set
-        • Re-sort the data contained in planet dump files
-        • Extract data inside a bounding box or polygon
-        For more info about osmosis visit: https://wiki.openstreetmap.org/wiki/Osmosis
-        For more queries related to osmosis visit: https://help.openstreetmap.org/tags/osmosis/
+      Osmosis is a command line Java application for processing OSM data. Some examples of the things it can currently do are:
+      • Generate planet dumps from a database
+      • Load planet dumps into a database
+      • Produce change sets using database history tables
+      • Apply change sets to a local database
+      • Compare two planet dump files and produce a change set
+      • Re-sort the data contained in planet dump files
+      • Extract data inside a bounding box or polygon
+      For more info about osmosis visit: https://wiki.openstreetmap.org/wiki/Osmosis
+      For more queries related to osmosis visit: https://help.openstreetmap.org/tags/osmosis/
 actions:
 - action_user_info
 - action_reset_username_slot
