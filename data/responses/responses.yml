@@ -15,12 +15,11 @@ responses:
   - text: Pleased to meet you too!
   - text: It's always a pleasure to meet new people!
   utter_chitchat/telljoke:
-  - text: What's a tree's favorite drink? - Root beer!
-  - text: Why are eggs not very much into jokes? - Because they could crack up.
-  - text: Why did the robot get angry? - Because someone kept pushing its buttons.
-  - text: What do you call a pirate droid? - Arrrr-2-D2
-  - text: Why did the robot cross the road? - Because he was programmed to.
-  - text: Why do the French like to eat snails so much? - They can't stand fast food.
+  - text: Did you hear about the man who memorized all the symbols on a map? He was a legend 
+  - text: I met a cartographer who was a spider. He made web-based maps. 
+  - text: I finally found my book of maps. Atlast. 
+  - text: Is a place that stores maps called...a wherehouse? 
+  - text: Why are latitude and longitude so smart?-Because they've got so many degrees. 
   utter_chitchat/ask_about:
   - text: I am good! serving users with OpenStreetMap queries.
   - text: I'm great! Thanks for asking.
