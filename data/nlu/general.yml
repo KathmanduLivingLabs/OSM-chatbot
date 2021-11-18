@@ -2,6 +2,11 @@ version: "2.0"
 nlu:
 - intent: greet
   examples: |
+    - Hello OSM chatbot
+    - Hello Chatbot
+    - Hello OSM
+    - Hi OSM chatbot
+    - Hi chatbot
     - Bom dia
     - Bonjour
     - Good Morning
