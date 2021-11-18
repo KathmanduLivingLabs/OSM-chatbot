@@ -192,3 +192,6 @@ responses:
       • Extract data inside a bounding box or polygon
       For more info about osmosis visit: https://wiki.openstreetmap.org/wiki/Osmosis
       For more queries related to osmosis visit: https://help.openstreetmap.org/tags/osmosis/
+  utter_faq/osm_changesets:
+  - text: A changeset is a group of edits to the OSM database by a single user at a time. Changesets are 'opened' at the beginning of an editing session, and 'closed' at the end, explicitly by user or after an inactivity for more than an hour. 
+ 

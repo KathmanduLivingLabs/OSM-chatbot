@@ -493,3 +493,10 @@ nlu:
     - what is the purpose of osmosis?
     - how can i download data using osmosis?
     - what is osmosis?
+- intent: faq/osm_changesets
+  examples: |
+    - What is changesets in OSM?
+    - What do you mean by changesets?
+    - Can you tell me about changesets?
+    - What is changset?
+    - Tell me about changeset.
