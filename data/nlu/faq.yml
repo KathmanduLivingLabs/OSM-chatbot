@@ -147,15 +147,16 @@ nlu:
     - Why there is no data in some place?
     - Why the map is blanck at some places?
     - Why the map s black at some regions?
-    - Who checks data in osm is right or wrong? 
+    - Who checks data in osm is right or wrong?
     - How is data validated on OSM?
     - Who validates OSM data?
-    - How osm handles vandalism? 
+    - How osm handles vandalism?
     - What can i do if someone keeps deleting my edits?
     - How is vandalism handled on OSM?
+    - Who checks data in osm is right or wrong?
 - intent: faq/osm_common_errors
   examples: |
-    - If i make residential road and not connect with main one should it be fair? 
+    - If i make residential road and not connect with main one should it be fair?
     - What are the most common errors people make on OSM?
     - What happens if i make road above building?
     - What are errors on OSM?
@@ -420,6 +421,8 @@ nlu:
     - How can I learn JOSM?
     - How to use JOSM ?
     - how to get started with JOSM?
+    - How can we download JOSM for mapping?
+    - How to download JOSM?
 - intent: faq/HOT
   examples: |
     - What is HOT?
