@@ -1,7 +1,7 @@
 version: "2.0"
 responses:
   utter_faq/osm_data_accuracy:
-  - text: OpenStreetMap is a free editable map of the whole world. It is made by people like you. This means the database will always be subject to the whims, experimentation, and mistakes of the community; this is precisely OSM's strength since, among other things, it allows our data to quickly accommodate changes in the physical world. OpenStreetMap follows wiki-style process. The essence of a wiki-style process is that all users have a stake in having accurate data. If one person puts in inaccurate data or deletes accurate data, maliciously or accidentally, the other 99.9% of people can check it, fix it, or get rid of it. There is also an error reporting mechanism on OpenStreetMap. For more info about error reporting visit https://wiki.openstreetmap.org/wiki/Error_reporting.
+  - text: OpenStreetMap is a free editable map of the whole world. It is made by people like you. This means the database will always be subject to the whims, experimentation, and mistakes of the community; this is precisely OSM's strength since, among other things, it allows our data to quickly accommodate changes in the physical world. OpenStreetMap follows wiki-style process. The essence of a wiki-style process is that all users have a stake in having accurate data. If one person puts in inaccurate data or deletes accurate data, maliciously or accidentally, the other 99.9% of people can check it, fix it, or get rid of it. There is also an error reporting mechanism on OpenStreetMap. For more info about reporting errors visit https://wiki.openstreetmap.org/wiki/Error_reporting.
   utter_out_of_scope/non_english:
   - text: I only understand English, I'm sorry. You can visit specific country community at https://forum.openstreetmap.org inorder to post query in your preferred language.
   utter_out_of_scope/others:
@@ -75,6 +75,8 @@ responses:
   - text: |-
       OpenStreetMap is a free digital map of the world, created by an ever growing community of mappers. It can be accessed through www.openstreetmap.org. The official trademark is OpenStreetMap.
       For more information about OpenStreetMap visit [wiki page](https://wiki.openstreetmap.org/wiki/About_OpenStreetMap)
+  utter_faq/osm_spelling:
+  - text: OpenStreetMap is the correct spelling. One word, three capital letters, one map. OpenStreetMap is also a Trademark.
   utter_faq/osm_motive:
   - text: The creation and growth of OpenSteetMap has been motivated by restrictions on use or availability of map data across much of the world.  The advantage of using OpenStreetMap is that the data is copyrighted and owned by Google/whoever and sometimes data itself powering this services is not available at all, or blocked by unfriendly licensing or extreme fees whle OSM is always fexible and free to users.
   - text: OpenStreetMap(OSM) was established to encourage the growth, development and distribution of free geospatial data and to provide geospatial data for anybody to use and share​.  The advantage of using OpenStreetMap is that the data is copyrighted and owned by Google/whoever and sometimes data itself powering this services is not available at all, or blocked by unfriendly licensing or extreme fees whle OSM is always fexible and free to users.

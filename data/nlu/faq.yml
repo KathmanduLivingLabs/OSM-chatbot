@@ -33,6 +33,8 @@ nlu:
     - What osm?
     - Tell me about OSM
     - What OSM?
+- intent: faq/osm_spelling
+  examples: |
     - Is it OpenStreetMap or Open Street Maps?
     - Is OpenStreetMap correct?
     - What is the full form of OSM?
