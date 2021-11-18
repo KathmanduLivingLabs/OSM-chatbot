@@ -332,6 +332,10 @@ nlu:
     - which organizations uses osm?
     - what organizations use osm
     - who use osm?
+    - How many users osm have? 
+    - Total no of users in OSM
+    - How is osm being used? 
+
 - intent: faq/interesting_facts
   examples: |
     - What else can you say about OSM?
@@ -397,6 +401,8 @@ nlu:
     - iDeditor vs josm
     - id editor vs josm
     - What are the main things that I'm missing out by using the iD editor instead of JOSM?
+    - potlatch vs JOSM
+
 - intent: faq/josm_edit
   examples: |
     - Help me edit map using JOSM.
@@ -500,3 +506,27 @@ nlu:
     - Can you tell me about changesets?
     - What is changset?
     - Tell me about changeset.
+- intent: faq/osm_editors
+  examples: |
+    - what are various tools to edit OSM data? 
+    - What are the alternatives for iDeditor?
+    - What editors are available for editing maps?
+    - What are different types of editor?
+    - What are different types of editors in OSM?
+    - Tell me types of OSM map editors.
+- intent: faq/potlatch
+  examples: |
+    - What is potlatch?
+    - Tell me about potlatch.
+    - give me short description about potlatch.
+    - describe potlatch
+    - What do you mean by potlatch?
+
+- intent: faq/josm_plugin
+  examples: |
+    - What do you mean by JOSM plugin?
+    - What is plugin?
+    - How to add plugin on JOSM?
+    - I want to add plugin on jsom
+    - What do you mean by plugin?
+    - What plugins are available on JOSM?

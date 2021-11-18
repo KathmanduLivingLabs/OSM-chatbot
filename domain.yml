@@ -364,6 +364,12 @@ responses:
       • Extract data inside a bounding box or polygon
       For more info about osmosis visit: https://wiki.openstreetmap.org/wiki/Osmosis
       For more queries related to osmosis visit: https://help.openstreetmap.org/tags/osmosis/
+  utter_faq/osm_changesets:
+  - text: A changeset is a group of edits to the OSM database by a single user at a time. Changesets are 'opened' at the beginning of an editing session, and 'closed' at the end, explicitly by user or after an inactivity for more than an hour. 
+  utter_faq/osm_editors:
+  - text: iDeditor, MAPS. ME, JOSM, Street complete, Potlach are some of the top editors used to edit data in OSM. Have a look at this link for finding out more choices of editor available in OSM.  https://wiki.openstreetmap.org/wiki/Editors.
+  utter_faq/potlatch:
+  - text: Potlatch is the classic OpenStreetMap editor, combining an efficient user interface with attractive presentation and a number of powerful features. Until 2020, Potlatch was available on the Edit tab of openstreetmap.org. Now that the lifetime of Flash Player has come to an end, Potlatch (version 3) is now available as a downloadable app for Mac and Windows. 
 actions:
 - action_user_info
 - action_reset_username_slot
