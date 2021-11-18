@@ -127,9 +127,15 @@ responses:
   - text: Bye Bye! have a great day!!
   - text: Good Bye! have a good day!!
   utter_ask_username:
-  - text: Please provide your username
+  - buttons:
+    - payload: /restart
+      title: Ask for something else
+    text: Please provide your username or click the button below to ask another question
   utter_ask_tag:
-  - text: I couldn't find tag in your query. Please provide tag you want to query about.
+  - buttons:
+    - payload: /restart
+      title: Ask for something else
+    text: what feature are you exactly trying to map? Can you provide the specific feature name like building, shop, water, etc? Or click the button below to ask another question.
   utter_iamabot:
   - text: I am OSM Chatbot, developed by Kathmandu Living Labs.
   utter_please_rephrase:
