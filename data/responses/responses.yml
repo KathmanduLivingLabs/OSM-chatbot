@@ -1,7 +1,9 @@
 version: "2.0"
 responses:
+  utter_faq/osm_data_accuracy:
+  - text: OpenStreetMap is a free editable map of the whole world. It is made by people like you. This means the database will always be subject to the whims, experimentation, and mistakes of the community; this is precisely OSM's strength since, among other things, it allows our data to quickly accommodate changes in the physical world. OpenStreetMap follows wiki-style process. The essence of a wiki-style process is that all users have a stake in having accurate data. If one person puts in inaccurate data or deletes accurate data, maliciously or accidentally, the other 99.9% of people can check it, fix it, or get rid of it. There is also an error reporting mechanism on OpenStreetMap. For more info about error reporting visit https://wiki.openstreetmap.org/wiki/Error_reporting.
   utter_out_of_scope/non_english:
-  - text: "I only understand English, I'm sorry. You can visit specific country community at https://forum.openstreetmap.org inorder to post query in your preferred language."
+  - text: I only understand English, I'm sorry. You can visit specific country community at https://forum.openstreetmap.org inorder to post query in your preferred language.
   utter_out_of_scope/others:
   - text: I can't help you with that, I'm sorry. Please rephrase your query or post it at https://help.openstreetmap.org or https://forum.openstreetmap.org .
   - text: Sorry, I can't handle that request at this moment. Please rephrase your query or post it at https://help.openstreetmap.org or https://forum.openstreetmap.org .
@@ -21,10 +23,10 @@ responses:
   - text: Why do the French like to eat snails so much? - They can't stand fast food.
   utter_chitchat/ask_about:
   - text: I am good! serving users with OpenStreetMap queries.
-  - text: "I'm great! Thanks for asking."
+  - text: I'm great! Thanks for asking.
   utter_chitchat/ask_howhelp:
   - text: I can help you in answering your OpenStreetMap queries.
-  - text: "You can ask me about how to get started with OpenStreetMap."
+  - text: You can ask me about how to get started with OpenStreetMap.
   utter_chitchat/ask_howold:
   - text: '42'
   - text: Old enough to be a bot!
@@ -51,24 +53,22 @@ responses:
   - text: I was born in the coolest city on Earth, in Kathmandu.
   - text: My developers come from all over the world!
   utter_chitchat/ask_howbuilt:
-  - text: "I was built with a lot of love and patience. To be honest Rasa opensource is my engine."
-  - text: "They always ask how I was built, but never how I am..."
-  - text: "I was made using Rasa, but i am constantly learning... even at this current moment while talking with you."
-  - text: "I'm building myself every day. I've been working out, did you notice?"
+  - text: I was built with a lot of love and patience. To be honest Rasa opensource is my engine.
+  - text: They always ask how I was built, but never how I am...
+  - text: I was made using Rasa, but i am constantly learning... even at this current moment while talking with you.
+  - text: I'm building myself every day. I've been working out, did you notice?
   utter_chitchat/ask_languagesbot:
-  - text: "I can spell baguette in French, but unfortunately at this moment English is the only language I can answer you in."
-  - text: "I am in the process of learning, but at this moment I can only speak English."
-  - text: "Binary code and the language of love. And English."
-  - text: "I was written in Python, but for your convenience I'll translate to English."
+  - text: I can spell baguette in French, but unfortunately at this moment English is the only language I can answer you in.
+  - text: I am in the process of learning, but at this moment I can only speak English.
+  - text: Binary code and the language of love. And English.
+  - text: I was written in Python, but for your convenience I'll translate to English.
   utter_chitchat/ask_whoami:
-  - text: "I hope you are being yourself."
-  - text: "Unfortunately I haven't been programmed with the amount of necessary philosophy knowledge to answer that."
-  - text: "It's probably the one that your parents chose for you."
-  - text: "Believe it or not, I actually am not spying on your personal information."
+  - text: I hope you are being yourself.
+  - text: Unfortunately I haven't been programmed with the amount of necessary philosophy knowledge to answer that.
+  - text: It's probably the one that your parents chose for you.
+  - text: Believe it or not, I actually am not spying on your personal information.
   utter_chitchat/ask_whatisrasa:
-  - text: "Rasa Open Source is a conversational AI framework for that provides machine learning tools for
-      building contextual assistants. You can read more about it here in the docs or on
-      [website](https://rasa.com/)."
+  - text: Rasa Open Source is a conversational AI framework for that provides machine learning tools for building contextual assistants. You can read more about it here in the docs or on [website](https://rasa.com/).
   utter_chitchat/kll_intro:
   - text: Kathmandu Living Labs (KLL) is a leading civic-tech company based out of Nepal. It was founded in 2013, primarily, to advance the Open Mapping movement. KLL is a non-profit organization that works to harness local knowledge, develop open data and promote civic technologies especially around OpenStreetMap (OSM).For move info about Kathmandu Living Labs visit https://www.kathmandulivinglabs.org.
   utter_faq/osm_intro:
@@ -80,8 +80,6 @@ responses:
   - text: OpenStreetMap(OSM) was established to encourage the growth, development and distribution of free geospatial data and to provide geospatial data for anybody to use and share​.  The advantage of using OpenStreetMap is that the data is copyrighted and owned by Google/whoever and sometimes data itself powering this services is not available at all, or blocked by unfriendly licensing or extreme fees whle OSM is always fexible and free to users.
   utter_faq/osm_founder:
   - text: Steve Coast founded the OpenStreetMap project in 2004, initially focusing on mapping the United Kingdom.
-  utter_faq/osm_data_accuracy:
-  - text: OpenStreetMap is a free editable map of the whole world. It is made by people like you. Which means the database will always be subject to the whims, experimentation, and mistakes of the community; this is precisely OSM's strength since, among other things, it allows our data to quickly accommodate changes in the physical world. OpenStreetMap follows wiki style process. The essence of a wiki-style process is that all users have a stake in having accurate data. If one person puts in inaccurate data or delete accurate data, maliciously or accidentally, the other 99.9% of people can check it, fix it, or get rid of it.
   utter_faq/osm_data_creator:
   - text: More than seven million contributors make OpenStreetMap possible. The data is collected from many keen contributors through remote and field mappings, and also through sporadic imports of data from open-licensed sources.
   utter_faq/osm_owner:
@@ -121,48 +119,25 @@ responses:
       In OSM, there are three types of elements, which includes nodes, i.e.points, ways are lines that represent linear features such as roads and the third main type of element is a relation, which can act as a collection of nodes, ways, or even other relations defined in a membership or relationship in a given grouping.
   utter_faq/osm_satellite_image_resolution:
   - text: OpenStreetMap neither controls nor owns the satellite imagery. The Aerial Imagery is from a variety of sources that we have permission to use - Bing and Maxar are the most popular and have the largest coverage. So we cannot make or request updates.
-#   utter_faq/osm_map_download:
-#   - text: Use the 'Share' button to download in PNG, JPEG, SVG or PDF format. If you need other formats, see the https://wiki.openstreetmap.org/wiki/Export page.
   utter_faq/osm_download_data:
-  - text: |- 
-        There are two ways you can get data out of the OSM database. One is by using Overpass, a separate API with a powerful query language. The second is to download the OpenStreetMap data dump and filter it according to your needs.
-        If you wanty to download or share map instead of data, use the 'Share' button on [openstreetmap.org](https://opestreetmap.org) (currently on bottom right corner) to download in PNG, JPEG, SVG or PDF format.
-        For more info about downloading OSM data visit [Dowloading data Wiki] (https://wiki.openstreetmap.org/wiki/Downloading_data)
-#   utter_faq/how_to_map:
-#   - buttons:
-#     - payload: How to create OSM account?
-#       title: How to create OSM account?
-#     - payload: What is iD editor?
-#       title: What is iD editor?
-#     - payload: How to edit map using iD editor?
-#       title: How to edit map using iD editor?
-#     text: You can create an account at openstreetmap.org and start editing using iD editor or any other editor of your choice.
+  - text: |-
+      There are two ways you can get data out of the OSM database. One is by using Overpass, a separate API with a powerful query language. The second is to download the OpenStreetMap data dump and filter it according to your needs.
+      If you wanty to download or share map instead of data, use the 'Share' button on [openstreetmap.org](https://opestreetmap.org) (currently on bottom right corner) to download in PNG, JPEG, SVG or PDF format.
+      For more info about downloading OSM data visit [Dowloading data Wiki] (https://wiki.openstreetmap.org/wiki/Downloading_data)
   utter_faq/create_osm_account:
   - image: https://static.packt-cdn.com/products/9781847197504/graphics/7504_02_02.jpg
-    text: To register, go to http://www.openstreetmap.org/, and click sign up on the top right-hand corner. This will take you to the following registration form. Fill up the form and you are ready to go. 
+    text: To register, go to http://www.openstreetmap.org/, and click sign up on the top right-hand corner. This will take you to the following registration form. Fill up the form and you are ready to go.
   utter_faq/ideditor_info:
-  - text: The iDeditor is the browser-based OpenStreetMap editor. It is fast and easy to use and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on the top left corner. 
-#   utter_faq/add_features:
-#   - text: |-
-#      To add a feature on OpenStreetMap: 
-#      • Open openstreetmap.org and login to your account. 
-#      • Pan and zoom the location where you wnat to add a feature. 
-#      • Click on edit button at top left corner. 
-#      • Click on point/line/area icon present on top center. (Click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 
-#      • Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point) 
-#      • To finish tracing an area/line double click on the last point. 
-#      • Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 
-#      • Now save your changes with changeset comment to see the changes. 
-#      In this way you can add features into OpenStreetMap using iD editor, you can also use other editors like JOSM to add and edit features.
+  - text: The iDeditor is the browser-based OpenStreetMap editor. It is fast and easy to use and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on the top left corner.
   utter_faq/learn_osm:
   - text: |-
-        You can create an account at [openstreetmap.org](https://openstreetmap.org) and start editing data using iD editor or other editor of your choice.
-        There is a built-in tutorial in iDeditor. To access it:
-        • Log in or Sign up (on the OpenStreetMap.org homepage).
-        • Start iD (on the OpenStreetMap.org homepage click the "Edit" button or, if you have set another default editor in your user preferences, click "iD" inside the "Edit ▼" menu),
-        • Click the help icon (currently in the right panel, bottom),
-        • Click the big "Start the Walkthrough" button buttom at the list of help chapters
-        Note that this is mainly a tutorial to use iD. We also have other editors like JOSM, Potlatch and more. Other tutorials would be Beginners' guide in [Begineers' guide Wiki](https://wiki.openstreetmap.org/wiki/Beginners%27_guide) or [Learn OSM](https://learnosm.org/en/).
+      You can create an account at [openstreetmap.org](https://openstreetmap.org) and start editing data using iD editor or other editor of your choice.
+      There is a built-in tutorial in iDeditor. To access it:
+      • Log in or Sign up (on the OpenStreetMap.org homepage).
+      • Start iD (on the OpenStreetMap.org homepage click the "Edit" button or, if you have set another default editor in your user preferences, click "iD" inside the "Edit ▼" menu),
+      • Click the help icon (currently in the right panel, bottom),
+      • Click the big "Start the Walkthrough" button buttom at the list of help chapters
+      Note that this is mainly a tutorial to use iD. We also have other editors like JOSM, Potlatch and more. Other tutorials would be Beginners' guide in [Begineers' guide Wiki](https://wiki.openstreetmap.org/wiki/Beginners%27_guide) or [Learn OSM](https://learnosm.org/en/).
   utter_faq/osm_users:
   - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.
   utter_faq/osm_license:
@@ -181,7 +156,7 @@ responses:
       For more queries related to JOSM visit: https://help.openstreetmap.org/tags/josm/?sort=mostvoted
       If you want to compare editors visit: https://wiki.openstreetmap.org/wiki/Comparison_of_editors
   utter_faq/josm_edit:
-  - text: |- 
+  - text: |-
       Following resources could be useful to getting started with JOSM:
       • https://josm.openstreetmap.de/wiki/Introduction
       • https://learnosm.org/en/josm/
@@ -206,13 +181,13 @@ responses:
   - text: A "Mapping Party" is when a group of people comes together to map something. It usually involves going out to collect data, adding it to the database afterwards and of course just having fun together. Those events are often organized by experienced mappers to help people who are interested in OpenStreetMap to get to know the process of mapping and the project in general, or to simply map a region that is yet very uncomplete.
   utter_faq/osmosis:
   - text: |-
-        Osmosis is a command line Java application for processing OSM data. Some examples of the things it can currently do are:
-        • Generate planet dumps from a database
-        • Load planet dumps into a database
-        • Produce change sets using database history tables
-        • Apply change sets to a local database
-        • Compare two planet dump files and produce a change set
-        • Re-sort the data contained in planet dump files
-        • Extract data inside a bounding box or polygon
-        For more info about osmosis visit: https://wiki.openstreetmap.org/wiki/Osmosis
-        For more queries related to osmosis visit: https://help.openstreetmap.org/tags/osmosis/
+      Osmosis is a command line Java application for processing OSM data. Some examples of the things it can currently do are:
+      • Generate planet dumps from a database
+      • Load planet dumps into a database
+      • Produce change sets using database history tables
+      • Apply change sets to a local database
+      • Compare two planet dump files and produce a change set
+      • Re-sort the data contained in planet dump files
+      • Extract data inside a bounding box or polygon
+      For more info about osmosis visit: https://wiki.openstreetmap.org/wiki/Osmosis
+      For more queries related to osmosis visit: https://help.openstreetmap.org/tags/osmosis/

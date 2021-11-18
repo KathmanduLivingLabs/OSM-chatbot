@@ -227,7 +227,7 @@ responses:
   utter_faq/osm_alternatives:
   - text: The advantage of using OpenStreetMap is that the data is copyrighted and owned by Google/whoever and sometimes data itself powering this services is not available at all, or blocked by unfriendly licensing or extreme fees whle OSM is always fexible and free to users.
   utter_faq/osm_data_accuracy:
-  - text: OpenStreetMap follows wiki style process. The essence of a wiki-style process is that all users have a stake in having accurate data. If one person puts in inaccurate data, maliciously or accidentally, the other 99.9% of people can check it, fix it, or get rid of it.
+  - text: OpenStreetMap follows wiki-style process. The essence of a wiki-style process is that all users have a stake in having accurate data. If one person puts in inaccurate data, maliciously or accidentally, the other 99.9% of people can check it, fix it, or get rid of it. There is also an error reporting mechanism on OpenStreetMap. For more info about error reporting visit https://wiki.openstreetmap.org/wiki/Error_reporting
   utter_faq/osm_data_creator:
   - text: The data is collected from many keen contributors, and sporadic imports of data from open-licensed sources. In areas where there are no such data sources (most areas) we have to start from a blank slate, and head out there to survey the streets ourselves.
   utter_faq/osm_owner:
