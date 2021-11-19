@@ -198,10 +198,14 @@ responses:
   - text: iDeditor, MAPS. ME, JOSM, Street complete, Potlach are some of the top editors used to edit data in OSM. Have a look at this link for finding out more choices of editor available in OSM.  https://wiki.openstreetmap.org/wiki/Editors.
   utter_faq/potlatch:
   - text: Potlatch is the classic OpenStreetMap editor, combining an efficient user interface with attractive presentation and a number of powerful features. Until 2020, Potlatch was available on the Edit tab of openstreetmap.org. Now that the lifetime of Flash Player has come to an end, Potlatch (version 3) is now available as a downloadable app for Mac and Windows. 
-  utter_faq/jsom_plugin:
+  utter_faq/josm_plugin:
   - text: |-
       Plugins are the additional features in JOSM that adds extra functionality to the software and helps to improve mapping in OSM.
       To install a new plugin:
       • Go to Edit>Preferenaces and click on Plugins tab in left side. If you don’t see a list of available plugins, click Download List. 
       • Now, to install a plugin of your interest, you simply check the box next to it and click OK at the bottom. 
       With some versions of JOSM you may have to restart JOSM when you install new plugin.
+
+  utter_faq/osm_common_errors:
+  - text: |-
+        You can have a look about common geometric errors while editing map at https://wiki.openstreetmap.org/wiki/Error_reporting and other most common errors user make at https://help.openstreetmap.org/questions/1022/what-are-the-most-common-mapping-mistakes-that-other-users-make?sort=votes&page=2
