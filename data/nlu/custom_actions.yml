@@ -101,7 +101,7 @@ nlu:
     - Which OSM tag and value is used to define a [building](tag) in OSM?
     - Which OSM tag and value are used to define [road](tag) in OSM?
     - Which OSM tag and value are used to define [wall](tag)?
-    - what tags are available for cowshed?
+    - what tags are available for [cowshed][tag]?
     - provide me tag info
     - can you help me get available tags?
     - what tags are available for [hospital](tag)?
@@ -111,6 +111,7 @@ nlu:
     - what are different tags for [hospitals](tag)
     - What could be the relevant tags for [highway](tag) in OSM?
     - what are tags for [roads](tag)?
+    - how to tag [river](tag) in osm
 - intent: tags
   examples: |
     - What are keys and values?
@@ -143,3 +144,84 @@ nlu:
     - what OpenStreetMap events are happening in [USA](country)?
     - what are OSM events that are happening in coming days?
     - can you tell me the events that happening around
+
+- intent: learn_osm
+  examples: |
+    - How do I get started with OpenStreetMap?
+    - Can I map?
+    - I am looking for some helpful tutorials
+    - any tutorials to learn about contribution to OSM
+    - any video tutorials?
+    - How can I get started mapping?
+    - How can i learn mapping.
+    - Where can we learn mapping?
+    - How to map?
+    - How can i start mapping?
+    - How can i get started mapping on OSM?
+    - How can i start mapping on OSM?
+    - I want to learn mapping. Can you help me?
+    - Help me learn editing maps on OSM.
+    - I want you to help me edit map on osm
+    - I want to learn OSM
+    - can you help me learn osm?
+    - no, I am looking for some helpful tutorials
+    - how can i edit map on OSM?
+    - Interactive tutorial to getting started editing OSM
+    - Are there instructional videos for new OpenStreetMap contributors?
+    - how to add features on OSM?
+    - how to add buildings on OSM?
+    - How do i update OSM data?
+    - How to create building?
+    - How can i add data to OSM?
+    - How to map buildings?
+    - How to create river on OSM?
+    - How to draw river on OSM?
+    - How to draw road on OSM?
+    - How to map road?
+    - How to edit road?
+    - I want to create road
+    - I want to create building
+    - I want to add school
+    - Can i add school?
+    - How to add hospital on OSM?
+    - I want to add my shop in OSM
+    - How to map farmland on OpenStreetMap?
+    - Can i add forest on OpenStreetMap?
+    - How to use iD editor?
+    - How can i use iD editor to edit map?
+    - Help me edit map using iD editor.
+    - How can i edit map using iDeditor.
+    - Help me edit map using ideditor.
+    - How to use ideditor?
+    - Can you help me using iD editor.
+    - I need help using iD editor.
+    - Can you help me to use ideditor.
+    - i need help using ideditor.
+    - how to edit map using id editor?
+    - how to add resendential area?
+    - how to make resendential area?
+    - how to make building?
+    - how to add building
+    - How to edit OSM map?
+    - How can i edit map?
+    - how can i edit map?
+    - how can i map in osm?
+    - How to map on OSM?
+    - How to add features using Id editor?
+    - How can I add my school on OSM?
+    - how to add buildings?
+    - how to make a building?
+    - can we add schools in OSM?
+    - how to edit OSM map?
+    - How to add a new place on the map?
+    - How can i get involved?
+    - How can i contribute to OSM?
+    - How can i get involved with OpenStreetMap?
+    - How can i contribute to OpenStreetMap?
+    - how can i help?
+    - who can contribute to osm
+    - How can I contribute to OSM?
+    - how can I contribute to this?
+    - how to contribute in osm?
+    - how to use osm?
+    - how to osm

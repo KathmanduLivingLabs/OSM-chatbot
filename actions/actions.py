@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 import lxml
 import requests
 from actions.api.rasaxapi import RasaXAPI
+import json
 
 class ResetUsernameSlot(Action):
     def name(self):
@@ -226,3 +227,30 @@ class EventInfo(Action):
     ) -> List[EventType]:
         dispatcher.utter_message(text="To veiw events regarding OpenStreetMap visit https://osmcal.org/")
         return []
+
+
+class AddFeatures(Action):
+    def name(self):
+        return "action_add_features"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: DomainDict,
+            ) -> List[EventType]:
+            text = tracker.latest_message['text']
+            file = open('features_mapping.json',)
+            response = json.load(file)
+            if 'building' in text:
+                if 'josm' in text:
+                    message = response['map_features']['building_josm']
+                else:
+                    message = response['map_features']['building']
+            elif ('road' in text) or ('waterways' in text) or ('line' in text):
+                if 'josm' in text:
+                    message = response['map_features']['line_josm']
+                else:
+                    message = response['map_features']['line']
+            else:
+                message = response['map_features']['no_features']
+            dispatcher.utter_message(text=message)

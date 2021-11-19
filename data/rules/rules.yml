@@ -98,3 +98,8 @@ rules:
   steps:
   - intent: events_info
   - action: action_event_info
+
+- rule: Provide add map features info
+  steps:
+  - intent: learn_osm
+  - action: action_add_features

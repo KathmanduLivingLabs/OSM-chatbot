@@ -293,24 +293,24 @@ responses:
     text: To register, go to http://www.openstreetmap.org/, and choose sign up in the top right-hand corner. This will take you to the following registration form.
   utter_faq/ideditor_info:
   - text: The iD editor is the browser-based OpenStreetMap editor. It is fast and easy to use, and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on top left corner.
-  utter_faq/add_features:
-  - text: |-
-      To add a feature on OpenStreetMap: 
-      • Open openstreetmap.org and login to your account. 
-      • Pan and zoom the location where you wnat to add a feature. 
-      • Click on edit button at top left corner. 
-      • Click on point/line/area icon present on top center. (Click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 
-      • Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point) 
-      • To finish tracing an area/line double click on the last point. 
-      • Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 
-      • Now save your changes with changeset comment to see the changes. 
-      In this way you can add features into OpenStreetMap using iD editor, you can also use other editors like JOSM to add and edit features.
-  utter_faq/learn_osm:
-  - text: |-
-      If you are a beginner, refer to the following guides to learn mapping in OSM.
-      • https://learnosm.org/en
-      • https://www.youtube.com/watch?v=Ir-3K0pjwOI
-      • https://youtu.be/L0-a3bFBxek
+  # utter_faq/add_features:
+  # - text: |-
+  #     To add a feature on OpenStreetMap: 
+  #     • Open openstreetmap.org and login to your account. 
+  #     • Pan and zoom the location where you wnat to add a feature. 
+  #     • Click on edit button at top left corner. 
+  #     • Click on point/line/area icon present on top center. (Click point if you want to add point of interests like shops, schools etc., line if you want to add road, rivers etc. and area if you want to add buildings, farmlands, forests etc.) 
+  #     • Draw a boundary line matching the shape of feature. (Click on exact location of POI incase of point) 
+  #     • To finish tracing an area/line double click on the last point. 
+  #     • Now search for feature type to tag your newly created feature on select feature type menu present on left side of your screen. 
+  #     • Now save your changes with changeset comment to see the changes. 
+  #     In this way you can add features into OpenStreetMap using iD editor, you can also use other editors like JOSM to add and edit features.
+  # utter_faq/learn_osm:
+  # - text: |-
+  #     If you are a beginner, refer to the following guides to learn mapping in OSM.
+  #     • https://learnosm.org/en
+  #     • https://www.youtube.com/watch?v=Ir-3K0pjwOI
+  #     • https://youtu.be/L0-a3bFBxek
   utter_faq/osm_users:
   - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more.  For me information about users of OpenStreetMap visit welcome.openstreetmap.org/about-osm-community/consumers.
   utter_faq/osm_license:
@@ -365,11 +365,18 @@ responses:
       For more info about osmosis visit: https://wiki.openstreetmap.org/wiki/Osmosis
       For more queries related to osmosis visit: https://help.openstreetmap.org/tags/osmosis/
   utter_faq/osm_changesets:
-  - text: A changeset is a group of edits to the OSM database by a single user at a time. Changesets are 'opened' at the beginning of an editing session, and 'closed' at the end, explicitly by user or after an inactivity for more than an hour. 
+  - text: A changeset is a group of edits to the OSM database by a single user at a time. Changesets are 'opened' at the beginning of an editing session, and 'closed' at the end, explicitly by user or after an inactivity for more than an hour.
   utter_faq/osm_editors:
   - text: iDeditor, MAPS. ME, JOSM, Street complete, Potlach are some of the top editors used to edit data in OSM. Have a look at this link for finding out more choices of editor available in OSM.  https://wiki.openstreetmap.org/wiki/Editors.
   utter_faq/potlatch:
-  - text: Potlatch is the classic OpenStreetMap editor, combining an efficient user interface with attractive presentation and a number of powerful features. Until 2020, Potlatch was available on the Edit tab of openstreetmap.org. Now that the lifetime of Flash Player has come to an end, Potlatch (version 3) is now available as a downloadable app for Mac and Windows. 
+  - text: Potlatch is the classic OpenStreetMap editor, combining an efficient user interface with attractive presentation and a number of powerful features. Until 2020, Potlatch was available on the Edit tab of openstreetmap.org. Now that the lifetime of Flash Player has come to an end, Potlatch (version 3) is now available as a downloadable app for Mac and Windows.
+  utter_faq/jsom_plugin:
+  - text: |-
+      Plugins are the additional features in JOSM that adds extra functionality to the software and helps to improve mapping in OSM.
+      To install a new plugin:
+      • Go to Edit>Preferenaces and click on Plugins tab in left side. If you don’t see a list of available plugins, click Download List. 
+      • Now, to install a plugin of your interest, you simply check the box next to it and click OK at the bottom. 
+      With some versions of JOSM you may have to restart JOSM when you install new plugin.
 actions:
 - action_user_info
 - action_reset_username_slot
@@ -379,6 +386,7 @@ actions:
 - action_tag_info
 - action_reset_tag_slot
 - action_event_info
+- action_add_features
 forms:
   username_form:
     required_slots:
