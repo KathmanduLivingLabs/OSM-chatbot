@@ -1,5 +1,10 @@
 version: "2.0"
 responses:
+  utter_faq/osm_motive:
+  - text: OpenStreetMap(OSM) was established to encourage the growth, development, and distribution of free geospatial data and to provide geospatial data for anybody to use and share​. Usually, data is copyrighted and owned by Google/whoever, and sometimes data itself powering these services is not available at all or blocked by unfriendly licensing or extreme fees while the advantage of OSM is that it is always free to users and flexible.
+  - text: OpenStreetMap(OSM) was established to encourage the growth, development and distribution of free geospatial data and to provide geospatial data for anybody to use and share​. Usually, data is copyrighted and owned by Google/whoever and sometimes data itself powering these services is not available at all, or blocked by unfriendly licensing or extreme fees while the advantages of OSM is that it is always free to users and flexible.
+  utter_faq/osm_founder:
+  - text: Steve Coast founded the OpenStreetMap project in 2004, initially focusing on mapping the United Kingdom.
   utter_faq/osm_data_accuracy:
   - text: OpenStreetMap is a free editable map of the whole world. It is made by people like you. This means the database will always be subject to the whims, experimentation, and mistakes of the community; this is precisely OSM's strength since, among other things, it allows our data to quickly accommodate changes in the physical world. OpenStreetMap follows wiki-style process. The essence of a wiki-style process is that all users have a stake in having accurate data. If one person puts in inaccurate data or deletes accurate data, maliciously or accidentally, the other 99.9% of people can check it, fix it, or get rid of it. There is also an error reporting mechanism on OpenStreetMap. For more info about reporting errors visit https://wiki.openstreetmap.org/wiki/Error_reporting.
   utter_out_of_scope/non_english:
@@ -15,11 +20,11 @@ responses:
   - text: Pleased to meet you too!
   - text: It's always a pleasure to meet new people!
   utter_chitchat/telljoke:
-  - text: Did you hear about the man who memorized all the symbols on a map? He was a legend 
-  - text: I met a cartographer who was a spider. He made web-based maps. 
-  - text: I finally found my book of maps. Atlast. 
-  - text: Is a place that stores maps called...a wherehouse? 
-  - text: Why are latitude and longitude so smart?-Because they've got so many degrees. 
+  - text: Did you hear about the man who memorized all the symbols on a map? He was a legend
+  - text: I met a cartographer who was a spider. He made web-based maps.
+  - text: Why are latitude and longitude so smart?-Because they've got so many degrees.
+  - text: I finally found my book of maps. Atlast.
+  - text: Is a place that stores maps called...a wherehouse?
   utter_chitchat/ask_about:
   - text: I am good! serving users with OpenStreetMap queries.
   - text: I'm great! Thanks for asking.
@@ -76,11 +81,6 @@ responses:
       For more information about OpenStreetMap visit [wiki page](https://wiki.openstreetmap.org/wiki/About_OpenStreetMap)
   utter_faq/osm_spelling:
   - text: OpenStreetMap is the correct spelling. One word, three capital letters, one map. OpenStreetMap is also a Trademark.
-  utter_faq/osm_motive:
-  - text: The creation and growth of OpenSteetMap has been motivated by restrictions on use or availability of map data across much of the world. Usually, data is copyrighted and owned by Google/whoever and sometimes data itself powering these services is not available at all, or blocked by unfriendly licensing or extreme fees while the advantages of OSM is that it is always free to users and flexible. 
-  - text: OpenStreetMap(OSM) was established to encourage the growth, development and distribution of free geospatial data and to provide geospatial data for anybody to use and share​. Usually, data is copyrighted and owned by Google/whoever and sometimes data itself powering these services is not available at all, or blocked by unfriendly licensing or extreme fees while the advantages of OSM is that it is always free to users and flexible. 
-  utter_faq/osm_founder:
-  - text: Steve Coast founded the OpenStreetMap project in 2004, initially focusing on mapping the United Kingdom.
   utter_faq/osm_data_creator:
   - text: More than seven million contributors make OpenStreetMap possible. The data is collected from many keen contributors through remote and field mappings, and also through sporadic imports of data from open-licensed sources.
   utter_faq/osm_owner:
@@ -130,23 +130,6 @@ responses:
     text: To register, go to http://www.openstreetmap.org/, and click sign up on the top right-hand corner. This will take you to the following registration form. Fill up the form and you are ready to go.
   utter_faq/ideditor_info:
   - text: The iDeditor is the browser-based OpenStreetMap editor. It is fast and easy to use and allows mapping from various data sources such as satellite and aerial imageries, GPS, Field Papers or Mapillary. It can be accessed on openstreetmap.org by clicking the edit button on the top left corner.
-#   utter_faq/learn_osm:
-#   - text: |-
-#       You can create an account at [openstreetmap.org](https://openstreetmap.org) and start editing data using iD editor or other editor of your choice.
-#       There is a built-in tutorial in iDeditor. To access it:
-#       • Log in or Sign up (on the OpenStreetMap.org homepage).
-#       • Start iD (on the OpenStreetMap.org homepage click the "Edit" button or, if you have set another default editor in your user preferences, click "iD" inside the "Edit ▼" menu),
-#       • Click the help icon (currently in the right panel, bottom),
-#       • Click the big "Start the Walkthrough" button buttom at the list of help chapters
-#       Note that this is mainly a tutorial to use iD. We also have other editors like JOSM, Potlatch and more. Other tutorials would be Beginners' guide in [Begineers' guide Wiki](https://wiki.openstreetmap.org/wiki/Beginners%27_guide) or [Learn OSM](https://learnosm.org/en/).
-  utter_faq/osm_users:
-  - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more. There are more than 7.5 million registered users in OSM as of today. For more information about users of OpenStreetMap visit https://welcome.openstreetmap.org/about-osm-community/consumers 
-  utter_faq/osm_license:
-  - text: |-
-      Data extracted from OpenStreetMap is licensed on terms of the Open Database License, "ODbL" 1.0.
-      The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use this Database while maintaining this same freedom for others. Many databases are covered by copyright, and therefore this document licenses these rights.
-      That means users are free share, modify, and use this Database while maintaining this same freedom for others.
-      For more info visit https://wiki.osmfoundation.org/wiki/Licence#What_is_the_license.2C_how_can_I_use_it.3F
   utter_faq/josm_intro:
   - text: |-
       JOSM is an opensource extensible editor for ​OpenStreetMap. The benefits of working with JOSM include:
@@ -156,11 +139,8 @@ responses:
       • Cutting-edge mapping: get tool support for emerging mapping topics like lane mapping, 3D mapping or indoor mapping
       For more queries related to JOSM visit: https://help.openstreetmap.org/tags/josm/?sort=mostvoted
       If you want to compare editors visit: https://wiki.openstreetmap.org/wiki/Comparison_of_editors
-  utter_faq/josm_edit:
-  - text: |-
-      Following resources could be useful to getting started with JOSM:
-      • https://josm.openstreetmap.de/wiki/Introduction
-      • https://learnosm.org/en/josm/
+  utter_faq/osm_users:
+  - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more. There are more than 7.5 million registered users in OSM as of today. For more information about users of OpenStreetMap visit https://welcome.openstreetmap.org/about-osm-community/consumers
   utter_faq/HOT:
   - text: |-
       Humanitarian OpenStreetMap Team (HOT) is an international team dedicated to humanitarian action and community development through open mapping.
@@ -180,6 +160,30 @@ responses:
       Writing overpass queries can be quite technical. Beginners can may find wizard a good place to start. If you want to generate overpass query using natural language visit https://nlmaps.gorgor.de/
   utter_faq/mapping_party:
   - text: A "Mapping Party" is when a group of people comes together to map something. It usually involves going out to collect data, adding it to the database afterwards and of course just having fun together. Those events are often organized by experienced mappers to help people who are interested in OpenStreetMap to get to know the process of mapping and the project in general, or to simply map a region that is yet very uncomplete.
+  utter_faq/osm_license:
+  - text: |-
+      Data extracted from OpenStreetMap is licensed on terms of the Open Database License, "ODbL" 1.0.
+      The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use this Database while maintaining this same freedom for others. Many databases are covered by copyright, and therefore this document licenses these rights.
+      That means users are free share, modify, and use this Database while maintaining this same freedom for others.
+      For more info visit https://wiki.osmfoundation.org/wiki/Licence#What_is_the_license.2C_how_can_I_use_it.3F
+  utter_faq/osm_editors:
+  - text: iDeditor, MAPS. ME, JOSM, Street complete, Potlach are some of the top editors used to edit data in OSM. Have a look at this link for finding out more choices of editor available in OSM.  https://wiki.openstreetmap.org/wiki/Editors.
+  utter_faq/potlatch:
+  - text: Potlatch is the classic OpenStreetMap editor, combining an efficient user interface with attractive presentation and a number of powerful features. Until 2020, Potlatch was available on the Edit tab of openstreetmap.org. Now that the lifetime of Flash Player has come to an end, Potlatch (version 3) is now available as a downloadable app for Mac and Windows.
+  utter_faq/josm_plugin:
+  - text: |-
+      Plugins are the additional features in JOSM that adds extra functionality to the software and helps to improve mapping in OSM.
+      To install a new plugin:
+      • Go to Edit>Preferenaces and click on Plugins tab in left side. If you don’t see a list of available plugins, click Download List. 
+      • Now, to install a plugin of your interest, you simply check the box next to it and click OK at the bottom. 
+      With some versions of JOSM you may have to restart JOSM when you install new plugin.
+  utter_faq/osm_common_errors:
+  - text: You can have a look about common geometric errors while editing map at https://wiki.openstreetmap.org/wiki/Error_reporting and other most common errors user make at https://help.openstreetmap.org/questions/1022/what-are-the-most-common-mapping-mistakes-that-other-users-make?sort=votes&page=2
+  utter_faq/josm_edit:
+  - text: |-
+      Following resources could be useful to getting started with JOSM:
+      • https://josm.openstreetmap.de/wiki/Introduction
+      • https://learnosm.org/en/josm/
   utter_faq/osmosis:
   - text: |-
       Osmosis is a command line Java application for processing OSM data. Some examples of the things it can currently do are:
@@ -193,19 +197,4 @@ responses:
       For more info about osmosis visit: https://wiki.openstreetmap.org/wiki/Osmosis
       For more queries related to osmosis visit: https://help.openstreetmap.org/tags/osmosis/
   utter_faq/osm_changesets:
-  - text: A changeset is a group of edits to the OSM database by a single user at a time. Changesets are 'opened' at the beginning of an editing session, and 'closed' at the end, explicitly by user or after an inactivity for more than an hour. 
-  utter_faq/osm_editors:
-  - text: iDeditor, MAPS. ME, JOSM, Street complete, Potlach are some of the top editors used to edit data in OSM. Have a look at this link for finding out more choices of editor available in OSM.  https://wiki.openstreetmap.org/wiki/Editors.
-  utter_faq/potlatch:
-  - text: Potlatch is the classic OpenStreetMap editor, combining an efficient user interface with attractive presentation and a number of powerful features. Until 2020, Potlatch was available on the Edit tab of openstreetmap.org. Now that the lifetime of Flash Player has come to an end, Potlatch (version 3) is now available as a downloadable app for Mac and Windows. 
-  utter_faq/josm_plugin:
-  - text: |-
-      Plugins are the additional features in JOSM that adds extra functionality to the software and helps to improve mapping in OSM.
-      To install a new plugin:
-      • Go to Edit>Preferenaces and click on Plugins tab in left side. If you don’t see a list of available plugins, click Download List. 
-      • Now, to install a plugin of your interest, you simply check the box next to it and click OK at the bottom. 
-      With some versions of JOSM you may have to restart JOSM when you install new plugin.
-
-  utter_faq/osm_common_errors:
-  - text: |-
-        You can have a look about common geometric errors while editing map at https://wiki.openstreetmap.org/wiki/Error_reporting and other most common errors user make at https://help.openstreetmap.org/questions/1022/what-are-the-most-common-mapping-mistakes-that-other-users-make?sort=votes&page=2
+  - text: A changeset is a group of edits to the OSM database by a single user at a time. Changesets are 'opened' at the beginning of an editing session, and 'closed' at the end, explicitly by user or after an inactivity for more than an hour.
