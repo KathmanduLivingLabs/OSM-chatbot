@@ -89,7 +89,6 @@ responses:
   - text: Hi, How can i help you?
   utter_happy_to_help:
   - text: I am glad, I could help you. 🤓
-  - text: I am glad, I could help you. 🤓
   utter_sorry:
   - text: I apologize, I promise that i will do my best to help you next time.
   - text: I am sorry, I will try my best next time.
@@ -226,7 +225,6 @@ responses:
       For more information visit [website](https://wiki.openstreetmap.org/wiki/About_OpenStreetMap)
   utter_faq/osm_motive:
   - text: The creation and growth of OpenStreetMap have been motivated by restrictions on the use or availability of map data across much of the world. Usually, data is copyrighted and owned by Google/whoever, and sometimes data itself powering these services is not available at all, or blocked by unfriendly licensing or extreme fees while the advantage of OSM is that it is always free to users and flexible.
-  - text: OpenStreetMap(OSM) was established to encourage the growth, development and distribution of free geospatial data and to provide geospatial data for anybody to use and share​.
   utter_faq/osm_spelling:
   - text: OpenStreetMap is the correct spelling. One word, three capital letters, one map. OpenStreetMap is also a Trademark.
   utter_faq/osm_founder:
