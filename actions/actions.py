@@ -239,7 +239,7 @@ class AddFeatures(Action):
             domain: DomainDict,
             ) -> List[EventType]:
             text = tracker.latest_message['text']
-            file = open('features_mapping.json',)
+            file = open('actions/features_mapping.json',)
             response = json.load(file)
             if 'building' in text:
                 if 'josm' in text:

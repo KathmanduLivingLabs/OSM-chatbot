@@ -89,7 +89,6 @@ responses:
   - text: Hi, How can i help you?
   utter_happy_to_help:
   - text: I am glad, I could help you. 🤓
-  - text: I am glad, I could help you. 🤓
   utter_sorry:
   - text: I apologize, I promise that i will do my best to help you next time.
   - text: I am sorry, I will try my best next time.
