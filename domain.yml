@@ -361,9 +361,6 @@ responses:
       • Go to Edit>Preferenaces and click on Plugins tab in left side. If you don’t see a list of available plugins, click Download List. 
       • Now, to install a plugin of your interest, you simply check the box next to it and click OK at the bottom. 
       With some versions of JOSM you may have to restart JOSM when you install new plugin.
-utter_faq/osm_common_errors:
-  - text: |-
-        You can have a look about common geometric errors while editing map at https://wiki.openstreetmap.org/wiki/Error_reporting and other most common errors user make at https://help.openstreetmap.org/questions/1022/what-are-the-most-common-mapping-mistakes-that-other-users-make?sort=votes&page=2
 actions:
 - action_user_info
 - action_reset_username_slot
