@@ -1,8 +1,15 @@
 version: "2.0"
 responses:
+  utter_faq/osm_common_errors:
+  - text: You can have a look about common geometric errors while editing map at https://wiki.openstreetmap.org/wiki/Error_reporting and other most common errors user make at https://help.openstreetmap.org/questions/1022/what-are-the-most-common-mapping-mistakes-that-other-users-make?sort=votes&page=2
+  utter_faq/josm_edit:
+  - text: |-
+      Following resources could be useful to getting started with JOSM:
+      • https://josm.openstreetmap.de/wiki/Introduction
+      • https://learnosm.org/en/josm/
   utter_faq/osm_motive:
+  - text: The creation and growth of OpenStreetMap have been motivated by restrictions on the use or availability of map data across much of the world. Usually, data is copyrighted and owned by Google/whoever, and sometimes data itself powering these services is not available at all or blocked by unfriendly licensing or extreme fees while the advantage of OSM is that it is always free to users and flexible.
   - text: OpenStreetMap(OSM) was established to encourage the growth, development, and distribution of free geospatial data and to provide geospatial data for anybody to use and share​. Usually, data is copyrighted and owned by Google/whoever, and sometimes data itself powering these services is not available at all or blocked by unfriendly licensing or extreme fees while the advantage of OSM is that it is always free to users and flexible.
-  - text: OpenStreetMap(OSM) was established to encourage the growth, development and distribution of free geospatial data and to provide geospatial data for anybody to use and share​. Usually, data is copyrighted and owned by Google/whoever and sometimes data itself powering these services is not available at all, or blocked by unfriendly licensing or extreme fees while the advantages of OSM is that it is always free to users and flexible.
   utter_faq/osm_founder:
   - text: Steve Coast founded the OpenStreetMap project in 2004, initially focusing on mapping the United Kingdom.
   utter_faq/osm_data_accuracy:
@@ -177,13 +184,6 @@ responses:
       • Go to Edit>Preferenaces and click on Plugins tab in left side. If you don’t see a list of available plugins, click Download List. 
       • Now, to install a plugin of your interest, you simply check the box next to it and click OK at the bottom. 
       With some versions of JOSM you may have to restart JOSM when you install new plugin.
-  utter_faq/osm_common_errors:
-  - text: You can have a look about common geometric errors while editing map at https://wiki.openstreetmap.org/wiki/Error_reporting and other most common errors user make at https://help.openstreetmap.org/questions/1022/what-are-the-most-common-mapping-mistakes-that-other-users-make?sort=votes&page=2
-  utter_faq/josm_edit:
-  - text: |-
-      Following resources could be useful to getting started with JOSM:
-      • https://josm.openstreetmap.de/wiki/Introduction
-      • https://learnosm.org/en/josm/
   utter_faq/osmosis:
   - text: |-
       Osmosis is a command line Java application for processing OSM data. Some examples of the things it can currently do are:
