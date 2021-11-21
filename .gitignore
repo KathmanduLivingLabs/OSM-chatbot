@@ -2,3 +2,5 @@
 /.vscode
 *.db
 events.*
+rasa.db-shm
+rasa.db-wal
