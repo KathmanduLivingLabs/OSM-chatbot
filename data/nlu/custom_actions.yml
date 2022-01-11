@@ -131,6 +131,7 @@ nlu:
     - What are the available tags for [forest](tag)?
     - What are the tags for [heritage sites](tag)?
     - tag for [vegetable](tag)
+    - what tags are available for mapping a [drainage](tag)
 
 - intent: tags
   examples: |
@@ -153,6 +154,7 @@ nlu:
     - What are tags?
     - i need help with tags
     - can you help me with tags?
+
 - intent: events_info
   examples: |
     - what events are near me?
