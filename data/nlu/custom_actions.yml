@@ -112,6 +112,7 @@ nlu:
     - What could be the relevant tags for [highway](tag) in OSM?
     - what are tags for [roads](tag)?
     - how to tag [river](tag) in osm
+    - tag for [vegetable](tag)
 - intent: tags
   examples: |
     - What are keys and values?
@@ -144,7 +145,6 @@ nlu:
     - what OpenStreetMap events are happening in [USA](country)?
     - what are OSM events that are happening in coming days?
     - can you tell me the events that happening around
-
 - intent: learn_osm
   examples: |
     - How do I get started with OpenStreetMap?
