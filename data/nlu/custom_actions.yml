@@ -112,6 +112,11 @@ nlu:
     - What could be the relevant tags for [highway](tag) in OSM?
     - what are tags for [roads](tag)?
     - how to tag [river](tag) in osm
+    - what tags are available for mapping a [pond](tag)?
+    - what tags are available for mapping a [river](tag)?
+    - What tags are available for [tourism](tag)?
+    - What tags are available for[ Intermittent stream](tag)?
+    - What are the available tags for [forest](tag)?
 - intent: tags
   examples: |
     - What are keys and values?
@@ -131,6 +136,7 @@ nlu:
     - tags
     - What are OSM tags ?
     - What are tags?
+    - What are the tags for [heritage sites](tag)?
 - intent: events_info
   examples: |
     - what events are near me?
@@ -144,7 +150,6 @@ nlu:
     - what OpenStreetMap events are happening in [USA](country)?
     - what are OSM events that are happening in coming days?
     - can you tell me the events that happening around
-
 - intent: learn_osm
   examples: |
     - How do I get started with OpenStreetMap?
