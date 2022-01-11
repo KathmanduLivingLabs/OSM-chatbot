@@ -119,7 +119,12 @@ nlu:
     - What are the available tags for [forest](tag)?
     - What are the tags for [heritage sites](tag)?
     - tag for [vegetable](tag)
-    
+    - what would be tag for open [gyms](tag)?
+    - Tags for crossing between [highway](tag) and [railway](tag)?
+    - Tag for Crossing between [path](tag) and [highway](tag)?
+    - tag for [clinic](tag)
+    - what tags are available for [pond](tag)?
+    - what tags are available for mapping a [drainage](tag)
 - intent: tags
   examples: |
     - What are keys and values?
@@ -139,7 +144,6 @@ nlu:
     - tags
     - What are OSM tags ?
     - What are tags?
-
 - intent: events_info
   examples: |
     - what events are near me?
