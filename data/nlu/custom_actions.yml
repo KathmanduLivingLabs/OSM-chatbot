@@ -117,6 +117,7 @@ nlu:
     - What tags are available for [tourism](tag)?
     - What tags are available for[ Intermittent stream](tag)?
     - What are the available tags for [forest](tag)?
+    - What are the tags for [heritage sites](tag)?
 - intent: tags
   examples: |
     - What are keys and values?
@@ -136,7 +137,7 @@ nlu:
     - tags
     - What are OSM tags ?
     - What are tags?
-    - What are the tags for [heritage sites](tag)?
+
 - intent: events_info
   examples: |
     - what events are near me?
