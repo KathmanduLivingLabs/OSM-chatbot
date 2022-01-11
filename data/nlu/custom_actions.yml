@@ -111,8 +111,15 @@ nlu:
     - what are different tags for [hospitals](tag)
     - What could be the relevant tags for [highway](tag) in OSM?
     - what are tags for [roads](tag)?
-    - how to tag [river](tag) in osm
+    - how to tag [river](tag) in osm?
+    - what tags are available for mapping a [pond](tag)?
+    - what tags are available for mapping a [river](tag)?
+    - What tags are available for [tourism](tag)?
+    - What tags are available for[ Intermittent stream](tag)?
+    - What are the available tags for [forest](tag)?
+    - What are the tags for [heritage sites](tag)?
     - tag for [vegetable](tag)
+    
 - intent: tags
   examples: |
     - What are keys and values?
@@ -132,6 +139,7 @@ nlu:
     - tags
     - What are OSM tags ?
     - What are tags?
+
 - intent: events_info
   examples: |
     - what events are near me?
