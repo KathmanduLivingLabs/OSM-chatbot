@@ -18,7 +18,7 @@ To contribute to this project you can add/update Natural Language Understanding 
 
 Clone this project
 ```bash
-git clone https://github.com/Aadesh-Baral/OSM-chatbot.git
+git clone https://github.com/KathmanduLivingLabs/OSM-chatbot.git
 ```
 Go to the project directory
 ```bash
