@@ -123,6 +123,15 @@ nlu:
     - what tags are available for [nursery](tag)
     - tag for [phone](tag)
     - what tags are available for [pond](tag)?
+    - how to tag [river](tag) in osm?
+    - what tags are available for mapping a [pond](tag)?
+    - what tags are available for mapping a [river](tag)?
+    - What tags are available for [tourism](tag)?
+    - What tags are available for[ Intermittent stream](tag)?
+    - What are the available tags for [forest](tag)?
+    - What are the tags for [heritage sites](tag)?
+    - tag for [vegetable](tag)
+
 - intent: tags
   examples: |
     - What are keys and values?
