@@ -40,7 +40,7 @@ To add training data you must have to add intent on one of the nlu files inside 
 Clone the project
 
 ```bash
-  git clone https://github.com/Aadesh-Baral/OSM-chatbot.git
+  git clone https://github.com/KathmanduLivingLabs/OSM-chatbot.git
 ```
 
 Go to the project directory
