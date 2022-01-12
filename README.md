@@ -82,6 +82,8 @@ Custom action server are required to fetch dynamic response from api's or web sc
 
 To run custom action server
 ```bash
+  cd actions
+  pip install -r requirements.txt
   rasa run actions
 ```
 To run on interactive mode on web browser:
