@@ -4,7 +4,7 @@ A chatbot that answers OpenStreetMap related queries. It is powered by Rasa Open
 
 Have a look at our blog post: https://blog.kathmandulivinglabs.org/introducing-a-new-member-to-the-openstreetmap-community/
 
-Have a live conversation with chatbot at: https://www.facebook.com/osmchatbot
+Have a conversation with chatbot at: https://www.facebook.com/osmchatbot
 
 ## Acknowledgements
 [RASA](https://rasa.com/)
