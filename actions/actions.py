@@ -166,7 +166,10 @@ class TagInformation(Action):
         except:
             key_label = top_tag.find('a', id='keyLabel_1').text
             wiki_link = top_tag.find('a', id='keyLabel_1').get('href')
-        image = top_tag.find('a', id='depiction').get('href')
+        try:
+            image = top_tag.find('a', id='depiction').get('href')
+        except:
+            image = 'https://tagfinder.herokuapp.com/static/img/kv200_150_gray.png'
         description = top_tag.find('p', id='descriptionEN_1').text
         dispatcher.utter_message(text="Found {found} OpenStreetMap tag(s) that matched your query. The top match was: \n \
 {key_label} \n \
