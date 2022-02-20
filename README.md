@@ -53,7 +53,7 @@ Go to the project directory
 ```
 Create virtual environment
 ```bash
-    python3 -m venv 
+    python3 -m venv ./venv
 ```
 Activate environment
 ```bash
