@@ -1,48 +1,27 @@
 version: '2.0'
-config:
-  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet:
-    use_entities: true
-- goodbye:
-    use_entities: true
-- affirm:
-    use_entities: true
-- deny:
-    use_entities: true
-- user_info:
-    use_entities: true
-- out_of_scope:
-    use_entities: true
-- bot_challenge:
-    use_entities: true
-- faq:
-    use_entities: true
-- chitchat:
-    use_entities: true
-- react_positive:
-    use_entities: true
-- react_negative:
-    use_entities: true
-- nlu_fallback:
-    use_entities: true
-- adjust_response:
-    use_entities: true
-- wrong_cannot_help:
-    use_entities: true
-- tag_info:
-    use_entities: true
-- what_is_tag:
-    use_entities: true
-- events_info:
-    use_entities: true
-- tags:
-    use_entities: true
-- learn_osm:
-    use_entities: true
+- greet
+- goodbye
+- affirm
+- deny
+- user_info
+- out_of_scope
+- bot_challenge
+- faq
+- chitchat
+- react_positive
+- react_negative
+- nlu_fallback
+- adjust_response
+- wrong_cannot_help
+- tag_info
+- what_is_tag
+- events_info
+- tags
+- learn_osm
 entities:
 - username
 - location
@@ -54,24 +33,16 @@ entities:
 - country
 slots:
   username:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
+    type: text
     influence_conversation: false
   response_feedback_message:
-    type: rasa.shared.core.slots.AnySlot
-    initial_value: null
-    auto_fill: true
+    type: any
     influence_conversation: false
   tag:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
+    type: text
     influence_conversation: false
   requested_slot:
-    type: rasa.shared.core.slots.UnfeaturizedSlot
-    initial_value: null
-    auto_fill: true
+    type: unfeaturized
     influence_conversation: false
 responses:
   utter_greet_guide:
@@ -382,4 +353,3 @@ forms:
     required_slots:
       tag:
       - type: from_text
-e2e_actions: []

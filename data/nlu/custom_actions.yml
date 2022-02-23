@@ -128,11 +128,11 @@ nlu:
     - what tags are available for mapping a [river](tag)?
     - What tags are available for [tourism](tag)?
     - What tags are available for[ Intermittent stream](tag)?
-    - What are the available tags for [forest](tag)?
     - What are the tags for [heritage sites](tag)?
     - tag for [vegetable](tag)
     - what tags are available for mapping a [drainage](tag)
-
+    - what will be the tag for [road divider](tag)?
+    - what is the tag for [road divider](tag)
 - intent: tags
   examples: |
     - What are keys and values?
@@ -154,7 +154,6 @@ nlu:
     - What are tags?
     - i need help with tags
     - can you help me with tags?
-
 - intent: events_info
   examples: |
     - what events are near me?
