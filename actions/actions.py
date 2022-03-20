@@ -67,10 +67,10 @@ class ActionUserStats(Action):
         # else:
         user_page = user_page.text  
         user_soup = BeautifulSoup(user_page, 'lxml')
-        user_image= user_soup.find("img", class_= "user_image_no_margins")
-        user_image = user_image.get("src")
-        if "/assets" in user_image:
-            user_image = 'https://github.com/Aadesh-Baral/OSM-chatbot/blob/main/images/blanck_profile_pic.png'
+        # user_image= user_soup.find("img", class_= "user_image_no_margins")
+        # user_image = user_image.get("src")
+        # if "/assets" in user_image:
+          #  user_image = 'https://github.com/Aadesh-Baral/OSM-chatbot/blob/main/images/blanck_profile_pic.png'
         raw_data = requests.get('https://osm-stats-production-api.azurewebsites.net/users/{user_name}'.format(user_name=user_name)).json()
         building_edits = raw_data['total_building_count_add'] + raw_data['total_building_count_mod']
         changesets = raw_data['changesets']
@@ -92,8 +92,7 @@ For more information about {user} visit https://www.missingmaps.org/users/#/{use
     name=username, mapping_since=mapping_since, 
     total_edits=total_edits, country_count=country_count, changesets=changesets,
     building_edits=building_edits, roads=roads, waterways=waterways,
-    point_of_interest=point_of_interest, user=username, user_name=user_name), 
-    image=user_image)
+    point_of_interest=point_of_interest, user=username, user_name=user_name))
         return []
 
 
@@ -242,18 +241,23 @@ class AddFeatures(Action):
             domain: DomainDict,
             ) -> List[EventType]:
             text = tracker.latest_message['text']
-            file = open('actions/features_mapping.json',)
-            response = json.load(file)
+            features_mapping =  {"map_features": {
+                "building": "To map the building: \n Press the Area button and trace an area around the outline of the building by clicking on each corner of the building. \n Click or press Space to place a starting node on one of the corners of the building. \n Finally, add the tag 'building=yes' to this feature. \n Buildings should be traced around their footprint as accurately as possible.",
+                "building_josm": "To map the building: \n Select “Draw nodes” tool or keyboard shortcut “A” and trace an area around the outline of the building by clicking on each corner of the building. \n Ensure that it loops back on itself to create a closed area. \n Finally, add the tag “building=yes” to this feature. \n Buildings should be traced around their footprint as accurately as possible. \n If you draw a lot of buildings, 'buildings_tools' plugin will make the process faster and easier in JOSM. \n To know more how to use this plugin to draw buildings, visit: https://learnosm.org/en/josm/josm-more-plugins/#the-buildings-tools-plugin",
+                "line": "To map the line features like roads, waterways in id-editor: \n Press the line button and trace the feature by creating the nodes along the linear feature. \n When you're finished, click the last node again or press Enter. \n Finally, add the respective tag.",
+                "line_josm": "To map the line features like roads, waterways in JOSM: \n Select 'Draw nodes' tool or keyboard shortcut 'A' and trace the feature by creating the nodes along the linear feature. \n When you're finished, click the last node again or press Enter. \n Finally, add the respective tag. \n If you draw a lot of linear features, 'fast_draw' plugin will make the process faster and easier in JOSM. \n To know more how to use this plugin to draw buildings, visit: https://wiki.openstreetmap.org/wiki/JOSM/Plugins/FastDraw  ",
+                "no_features": " You can create an account at [openstreetmap.org](https://openstreetmap.org) and start editing data using iD editor or other editor of your choice. There is a built-in tutorial in iDeditor. To access it: \n • Log in or Sign up (on the OpenStreetMap.org homepage). \n • Start iD (on the OpenStreetMap.org homepage click the 'Edit' button or, if you have set another default editor in your user preferences, click 'iD' inside the 'Edit ▼' menu) \n • Click the help icon (currently in the right panel, bottom) \n • Click the big 'Start the Walkthrough' button buttom at the list of help chaptersNote that this is mainly a tutorial to use iD. \n We also have other editors like JOSM, Potlatch and more. \n  Other tutorials would be Beginners' guide in [Begineers' guide Wiki](https://wiki.openstreetmap.org/wiki/Beginners%27_guide) or [Learn OSM](https://learnosm.org/en/)."
+                }}
             if 'building' in text:
                 if 'josm' in text:
-                    message = response['map_features']['building_josm']
+                    message = features_mapping['map_features']['building_josm']
                 else:
-                    message = response['map_features']['building']
+                    message = features_mapping['map_features']['building']
             elif ('road' in text) or ('waterways' in text) or ('line' in text):
                 if 'josm' in text:
-                    message = response['map_features']['line_josm']
+                    message = features_mapping['map_features']['line_josm']
                 else:
-                    message = response['map_features']['line']
+                    message = features_mapping['map_features']['line']
             else:
-                message = response['map_features']['no_features']
+                message = features_mapping['map_features']['no_features']
             dispatcher.utter_message(text=message)
