@@ -112,6 +112,27 @@ nlu:
     - What could be the relevant tags for [highway](tag) in OSM?
     - what are tags for [roads](tag)?
     - how to tag [river](tag) in osm
+    - tag for [clinic](tag)
+    - what tags are there for mapping [highways](tag)>
+    - what tags are available for [hospitals](tag)?
+    - what would be tag for open [gyms](tag)?
+    - Tags for crossing between [highway](tag) and [railway](tag)?
+    - Tag for Crossing between [path](tag) and [highway](tag)?
+    - What are the available tags for [forest](tag)?
+    - what tags are available for [greenhouse](tag)
+    - what tags are available for [nursery](tag)
+    - tag for [phone](tag)
+    - what tags are available for [pond](tag)?
+    - how to tag [river](tag) in osm?
+    - what tags are available for mapping a [pond](tag)?
+    - what tags are available for mapping a [river](tag)?
+    - What tags are available for [tourism](tag)?
+    - What tags are available for[ Intermittent stream](tag)?
+    - What are the tags for [heritage sites](tag)?
+    - tag for [vegetable](tag)
+    - what tags are available for mapping a [drainage](tag)
+    - what will be the tag for [road divider](tag)?
+    - what is the tag for [road divider](tag)
 - intent: tags
   examples: |
     - What are keys and values?
@@ -131,6 +152,8 @@ nlu:
     - tags
     - What are OSM tags ?
     - What are tags?
+    - i need help with tags
+    - can you help me with tags?
 - intent: events_info
   examples: |
     - what events are near me?
@@ -144,7 +167,6 @@ nlu:
     - what OpenStreetMap events are happening in [USA](country)?
     - what are OSM events that are happening in coming days?
     - can you tell me the events that happening around
-
 - intent: learn_osm
   examples: |
     - How do I get started with OpenStreetMap?

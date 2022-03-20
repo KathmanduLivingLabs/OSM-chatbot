@@ -2,6 +2,9 @@
 # OSM Chatbot
 A chatbot that answers OpenStreetMap related queries. It is powered by Rasa Open Source.
 
+Have a look at our blog post: https://blog.kathmandulivinglabs.org/introducing-a-new-member-to-the-openstreetmap-community/
+
+Have a conversation with chatbot at: https://www.facebook.com/osmchatbot
 
 ## Acknowledgements
 [RASA](https://rasa.com/)
@@ -18,7 +21,7 @@ To contribute to this project you can add/update Natural Language Understanding 
 
 Clone this project
 ```bash
-git clone https://github.com/Aadesh-Baral/OSM-chatbot.git
+git clone https://github.com/KathmanduLivingLabs/OSM-chatbot.git
 ```
 Go to the project directory
 ```bash
@@ -40,7 +43,7 @@ To add training data you must have to add intent on one of the nlu files inside 
 Clone the project
 
 ```bash
-  git clone https://github.com/Aadesh-Baral/OSM-chatbot.git
+  git clone https://github.com/KathmanduLivingLabs/OSM-chatbot.git
 ```
 
 Go to the project directory
@@ -50,7 +53,7 @@ Go to the project directory
 ```
 Create virtual environment
 ```bash
-    python3 -m venv 
+    python3 -m venv ./venv
 ```
 Activate environment
 ```bash
@@ -82,6 +85,8 @@ Custom action server are required to fetch dynamic response from api's or web sc
 
 To run custom action server
 ```bash
+  cd actions
+  pip install -r requirements.txt
   rasa run actions
 ```
 To run on interactive mode on web browser:
