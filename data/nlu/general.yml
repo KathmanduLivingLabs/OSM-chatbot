@@ -144,6 +144,9 @@ nlu:
     - hy
     - ting tong
     - Good Afternoon
+    - are you back?
+    - Good afternoon
+    - Good evening
 - intent: goodbye
   examples: |
     - Bye
@@ -190,6 +193,7 @@ nlu:
     - byr
     - have a good day dost
     - bye la
+    - Have a nice day
 - intent: affirm
   examples: |
     - Accept
@@ -426,6 +430,7 @@ nlu:
     - yes it was
     - a little bit
     - yes sure
+    - no problem
 - intent: deny
   examples: |
     - I don't want to
@@ -638,6 +643,7 @@ nlu:
     - yes thanks
     - thanks for your information
     - thanks f
+    - All good
 - intent: react_negative
   examples: |
     - I am feeling bad

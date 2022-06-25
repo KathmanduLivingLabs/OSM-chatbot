@@ -34,6 +34,7 @@ nlu:
     - What osm?
     - Tell me about OSM
     - What OSM?
+    - osm server
 - intent: faq/osm_spelling
   examples: |
     - Is it OpenStreetMap or Open Street Maps?
@@ -115,6 +116,7 @@ nlu:
     - Where is OSM?
     - when was OSM started?
     - who developed chatbot?
+    - Who created osm?
 - intent: faq/osm_data_creator
   examples: |
     - Where did existing map data come from?
@@ -154,7 +156,6 @@ nlu:
     - How osm handles vandalism?
     - What can i do if someone keeps deleting my edits?
     - How is vandalism handled on OSM?
-    - Who checks data in osm is right or wrong?
 - intent: faq/osm_common_errors
   examples: |
     - If i make residential road and not connect with main one should it be fair?
@@ -239,6 +240,7 @@ nlu:
     - What do you mean by ID editor?
     - Describe id editor.
     - Tell me about ideditor.
+    - Tell me about iD Editor
 - intent: faq/osm_users
   examples: |
     - Who uses OSM?
@@ -252,9 +254,9 @@ nlu:
     - which organizations uses osm?
     - what organizations use osm
     - who use osm?
-    - How many users osm have? 
+    - How many users osm have?
     - Total no of users in OSM
-    - How is osm being used? 
+    - How is osm being used?
 - intent: faq/interesting_facts
   examples: |
     - What else can you say about OSM?
@@ -321,7 +323,7 @@ nlu:
     - id editor vs josm
     - What are the main things that I'm missing out by using the iD editor instead of JOSM?
     - potlatch vs JOSM
-
+    - Josm again
 - intent: faq/josm_edit
   examples: |
     - Help me edit map using JOSM.
@@ -348,6 +350,8 @@ nlu:
     - how to get started with JOSM?
     - How can we download JOSM for mapping?
     - How to download JOSM?
+    - how to map building in josm?
+    - Yes, how to learn josm?
 - intent: faq/HOT
   examples: |
     - What is HOT?
@@ -384,6 +388,7 @@ nlu:
     - Why tasking manager?
     - what is the benefit of using tasking manager?
     - what is tasking manager?
+    - what is tasking manager
 - intent: faq/overpass-turbo
   examples: |
     - How can I create a personalized map choosing the layers that I want
@@ -427,7 +432,7 @@ nlu:
     - Tell me about changeset.
 - intent: faq/osm_editors
   examples: |
-    - what are various tools to edit OSM data? 
+    - what are various tools to edit OSM data?
     - What are the alternatives for iDeditor?
     - What editors are available for editing maps?
     - What are different types of editor?
@@ -440,7 +445,6 @@ nlu:
     - give me short description about potlatch.
     - describe potlatch
     - What do you mean by potlatch?
-
 - intent: faq/josm_plugin
   examples: |
     - What do you mean by JOSM plugin?
@@ -449,3 +453,5 @@ nlu:
     - I want to add plugin on jsom
     - What do you mean by plugin?
     - What plugins are available on JOSM?
+    - install JOSM plugin
+    - reverter plugin

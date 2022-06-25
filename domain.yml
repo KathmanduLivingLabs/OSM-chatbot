@@ -31,6 +31,7 @@ entities:
 - company
 - tag
 - country
+- category
 slots:
   username:
     type: text

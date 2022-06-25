@@ -84,6 +84,9 @@ nlu:
     - check my contribution
     - Contribution in OpenStreetMap?
     - What is Samyoga's contribution in OpenStreetMap?
+    - Cool, show my contributon
+    - Search user: mdgabriel in OSM
+    - show my osm profile
 - intent: tag_info
   examples: |
     - What tag can i use in [buildings](tag)?
@@ -133,6 +136,11 @@ nlu:
     - what tags are available for mapping a [drainage](tag)
     - what will be the tag for [road divider](tag)?
     - what is the tag for [road divider](tag)
+    - what is the osm tag for [municipality](tag)?
+    - possible tags for [governmental office](tag)
+    - tags for [financial institutions](tag)
+    - [School](tag) tag in osm
+    - What tags are available for [road crossing](tag)?
 - intent: tags
   examples: |
     - What are keys and values?
@@ -154,6 +162,8 @@ nlu:
     - What are tags?
     - i need help with tags
     - can you help me with tags?
+    - key
+    - keys
 - intent: events_info
   examples: |
     - what events are near me?
@@ -167,6 +177,7 @@ nlu:
     - what OpenStreetMap events are happening in [USA](country)?
     - what are OSM events that are happening in coming days?
     - can you tell me the events that happening around
+    - latest osm events
 - intent: learn_osm
   examples: |
     - How do I get started with OpenStreetMap?
@@ -247,3 +258,7 @@ nlu:
     - how to contribute in osm?
     - how to use osm?
     - how to osm
+    - how to get started with OpenStreetMap
+    - how to map buildings?
+    - How do I get involved in OSM
+    - How to draw buildings in iD Editor?
