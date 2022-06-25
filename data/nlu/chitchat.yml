@@ -240,6 +240,7 @@ nlu:
     - what you can
     - what are your capabilities?
     - what are you capabilities?
+    - How can I use osm chat bot?
 - intent: chitchat/ask_howold
   examples: |
     - How long have you been alive?
@@ -759,3 +760,13 @@ nlu:
     - i want to know about kathmandu living labs
     - what is kll
     - Say something about KLL?
+- intent: faq/osm_contributor_counts
+  examples: |
+    - OSM Contributor number
+    - how many osm contributor?
+- intent: faq/osmf
+  examples: |
+    - OSM Foundation
+- intent: faq/tasking-manager-projects
+  examples: |
+    - could you provide some [latest](category) hot osm task related to [nepal](country)
