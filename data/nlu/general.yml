@@ -147,6 +147,9 @@ nlu:
     - are you back?
     - Good afternoon
     - Good evening
+    - hi i am [aadesh](username)
+    - hi I am [jasna](PERSON)
+    - hi this is [aadesh](username)
 - intent: goodbye
   examples: |
     - Bye
