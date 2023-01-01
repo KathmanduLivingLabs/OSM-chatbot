@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.1"
 responses:
   utter_faq/osm_common_errors:
   - text: You can have a look about common geometric errors while editing map at https://wiki.openstreetmap.org/wiki/Error_reporting and other most common errors user make at https://help.openstreetmap.org/questions/1022/what-are-the-most-common-mapping-mistakes-that-other-users-make?sort=votes&page=2
