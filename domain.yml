@@ -352,13 +352,10 @@ actions:
 forms:
   username_form:
     required_slots:
-      username:
-      - type: from_text
+        - username
   response_feedback_form:
     required_slots:
-      response_feedback_message:
-      - type: from_text
+        - response_feedback_message
   tag_form:
     required_slots:
-      tag:
-      - type: from_text
+        - tag
