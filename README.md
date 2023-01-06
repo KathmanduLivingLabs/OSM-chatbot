@@ -1,7 +1,7 @@
 
 # OSM Chatbot
 A chatbot that answers OpenStreetMap related queries. It is powered by Rasa Open Source.
-
+### 🙌 🙌 Now OSM Chatbot is also integrated on [OSM Nepal Tasking Manager](https://tasks.klldev.org/learn) .
 Have a look at our blog post: https://blog.kathmandulivinglabs.org/introducing-a-new-member-to-the-openstreetmap-community/
 
 Have a conversation with chatbot at: https://www.facebook.com/osmchatbot
