@@ -136,8 +136,18 @@ responses:
   - text: I am good! serving users with OpenStreetMap queries.
   - text: I'm great! Thanks for asking.
   utter_chitchat/ask_howhelp:
-  - text: I can help you in answering your OpenStreetMap queries.
-  - text: You can ask me about how to get started with OpenStreetMap.
+  - buttons:
+    - payload: adjust_response
+      title: Provide feedback
+    text: I can help you in answering your OpenStreetMap queries. I can also provide OSM statistics by username as well as information regarding OSM tags. Click on provide feedback button below share your feedback if there is anything else you would like me to do.
+  - buttons:
+    - payload: adjust_response
+      title: Provide feedback
+    text: You can ask me about how to get started with OpenStreetMap. I can also provide OSM statistics by username as well as information regarding OSM tags. Click on provide feedback button below share your feedback if there is anything else you would like me to do.
+  - buttons:
+    - payload: adjust_response
+      title: Provide feedback
+    text: You are welcome to ask me any question about OpenStreetMap. I will do my best to assist you. I can also provide OSM statistics by username as well as information regarding OSM tags. Click on provide feedback button below share your feedback if there is anything else you would like me to do.
   utter_chitchat/ask_howold:
   - text: '42'
   - text: Old enough to be a bot!

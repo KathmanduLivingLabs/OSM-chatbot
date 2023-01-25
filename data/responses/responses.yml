@@ -1,5 +1,30 @@
 version: "2.0"
 responses:
+  utter_chitchat/ask_howhelp:
+  - buttons:
+    - payload: adjust_response
+      title: Provide feedback
+    text: You can ask me about how to get started with OpenStreetMap. I can also provide OSM statistics by username as well as information regarding OSM tags. Click on provide feedback button below share your feedback if there is anything else you would like me to do.
+  - buttons:
+    - payload: adjust_response
+      title: Provide feedback
+    text: I can help you in answering your OpenStreetMap queries. I can also provide OSM statistics by username as well as information regarding OSM tags. Click on provide feedback button below share your feedback if there is anything else you would like me to do.
+  utter_chitchat/telljoke:
+  - text: I finally found my book of maps. Atlast.
+  - text: Is a place that stores maps called...a wherehouse?
+  - text: Did you hear about the man who memorized all the symbols on a map? He was a legend
+  - text: I met a cartographer who was a spider. He made web-based maps.
+  - text: Why are latitude and longitude so smart?-Because they've got so many degrees.
+  utter_chitchat/ask_about:
+  - text: I am good! serving users with OpenStreetMap queries.
+  - text: I'm great! Thanks for asking.
+  utter_chitchat/ask_howold:
+  - text: '42'
+  - text: Old enough to be a bot!
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter.
+  - text: My first git commit was many moons ago.
+  - text: Why do you ask? Are my wrinkles showing?
+  - text: I've hit the age where I actively try to forget how old I am.
   utter_faq/osm_common_errors:
   - text: You can have a look about common geometric errors while editing map at https://wiki.openstreetmap.org/wiki/Error_reporting and other most common errors user make at https://help.openstreetmap.org/questions/1022/what-are-the-most-common-mapping-mistakes-that-other-users-make?sort=votes&page=2
   utter_faq/josm_edit:
@@ -26,25 +51,6 @@ responses:
   - text: It is nice to meet you too!
   - text: Pleased to meet you too!
   - text: It's always a pleasure to meet new people!
-  utter_chitchat/telljoke:
-  - text: Did you hear about the man who memorized all the symbols on a map? He was a legend
-  - text: I met a cartographer who was a spider. He made web-based maps.
-  - text: Why are latitude and longitude so smart?-Because they've got so many degrees.
-  - text: I finally found my book of maps. Atlast.
-  - text: Is a place that stores maps called...a wherehouse?
-  utter_chitchat/ask_about:
-  - text: I am good! serving users with OpenStreetMap queries.
-  - text: I'm great! Thanks for asking.
-  utter_chitchat/ask_howhelp:
-  - text: I can help you in answering your OpenStreetMap queries.
-  - text: You can ask me about how to get started with OpenStreetMap.
-  utter_chitchat/ask_howold:
-  - text: '42'
-  - text: Old enough to be a bot!
-  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter.
-  - text: My first git commit was many moons ago.
-  - text: Why do you ask? Are my wrinkles showing?
-  - text: I've hit the age where I actively try to forget how old I am.
   utter_chitchat/ask_time:
   - text: It's five o'clock somewhere!
   - text: Time is a human construct, you'll have to tell me.
@@ -148,6 +154,8 @@ responses:
       If you want to compare editors visit: https://wiki.openstreetmap.org/wiki/Comparison_of_editors
   utter_faq/osm_users:
   - text: OpenStreetMap is used by people all over the world – From big companies like Amazon, Apple to medium and small businesses, individuals, volunteers, nonprofits, governments, organizations and more. There are more than 7.5 million registered users in OSM as of today. For more information about users of OpenStreetMap visit https://welcome.openstreetmap.org/about-osm-community/consumers
+  utter_faq/potlatch:
+  - text: Potlatch is the classic OpenStreetMap editor, combining an efficient user interface with attractive presentation and a number of powerful features. Until 2020, Potlatch was available on the Edit tab of openstreetmap.org. Now that the lifetime of Flash Player has come to an end, Potlatch (version 3) is now available as a downloadable app for Mac and Windows.
   utter_faq/HOT:
   - text: |-
       Humanitarian OpenStreetMap Team (HOT) is an international team dedicated to humanitarian action and community development through open mapping.
@@ -175,8 +183,6 @@ responses:
       For more info visit https://wiki.osmfoundation.org/wiki/Licence#What_is_the_license.2C_how_can_I_use_it.3F
   utter_faq/osm_editors:
   - text: iDeditor, MAPS. ME, JOSM, Street complete, Potlach are some of the top editors used to edit data in OSM. Have a look at this link for finding out more choices of editor available in OSM.  https://wiki.openstreetmap.org/wiki/Editors.
-  utter_faq/potlatch:
-  - text: Potlatch is the classic OpenStreetMap editor, combining an efficient user interface with attractive presentation and a number of powerful features. Until 2020, Potlatch was available on the Edit tab of openstreetmap.org. Now that the lifetime of Flash Player has come to an end, Potlatch (version 3) is now available as a downloadable app for Mac and Windows.
   utter_faq/josm_plugin:
   - text: |-
       Plugins are the additional features in JOSM that adds extra functionality to the software and helps to improve mapping in OSM.
