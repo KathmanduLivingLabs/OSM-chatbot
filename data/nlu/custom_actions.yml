@@ -87,6 +87,7 @@ nlu:
     - Cool, show my contributon
     - Search user: mdgabriel in OSM
     - show my osm profile
+    - my osm stats
 - intent: tag_info
   examples: |
     - What tag can i use in [buildings](tag)?
@@ -141,6 +142,8 @@ nlu:
     - tags for [financial institutions](tag)
     - [School](tag) tag in osm
     - What tags are available for [road crossing](tag)?
+    - tags for [buildings](tag)
+    - presets for [fastfood](tag)
 - intent: tags
   examples: |
     - What are keys and values?
@@ -262,3 +265,4 @@ nlu:
     - how to map buildings?
     - How do I get involved in OSM
     - How to draw buildings in iD Editor?
+    - You can ask me about how to get started with OpenStreetMap.

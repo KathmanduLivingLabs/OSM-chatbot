@@ -241,6 +241,10 @@ nlu:
     - what are your capabilities?
     - what are you capabilities?
     - How can I use osm chat bot?
+    - What else can u do
+    - Is there anything else I can help you? 😊
+    - what should i ask?
+    - you can help me?
 - intent: chitchat/ask_howold
   examples: |
     - How long have you been alive?
@@ -665,6 +669,7 @@ nlu:
     - who am i
     - who are I ?
     - who may i ?
+    - who is hell
 - intent: chitchat/ask_whatisrasa
   examples: |
     - Can you brief me about rasa
@@ -760,6 +765,7 @@ nlu:
     - i want to know about kathmandu living labs
     - what is kll
     - Say something about KLL?
+    - who is kll
 - intent: faq/osm_contributor_counts
   examples: |
     - OSM Contributor number
@@ -770,3 +776,6 @@ nlu:
 - intent: faq/tasking-manager-projects
   examples: |
     - could you provide some [latest](category) hot osm task related to [nepal](country)
+- intent: chitchat/status
+  examples: |
+    - Test

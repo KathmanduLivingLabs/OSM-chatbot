@@ -536,6 +536,7 @@ nlu:
     - stop it, i do not care!!!
     - none of them
     - I don't agree
+    - sorry?
 - intent: react_positive
   examples: |
     - cool beans
@@ -647,6 +648,7 @@ nlu:
     - thanks for your information
     - thanks f
     - All good
+    - I am glad, I could help you. 🤓
 - intent: react_negative
   examples: |
     - I am feeling bad
