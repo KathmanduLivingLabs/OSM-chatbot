@@ -2,13 +2,13 @@ version: "2.0"
 responses:
   utter_chitchat/ask_howhelp:
   - buttons:
-    - payload: adjust_response
-      title: Provide feedback
-    text: You can ask me about how to get started with OpenStreetMap. I can also provide OSM statistics by username as well as information regarding OSM tags. Click on provide feedback button below share your feedback if there is anything else you would like me to do.
-  - buttons:
-    - payload: adjust_response
+    - payload: /adjust_response
       title: Provide feedback
     text: I can help you in answering your OpenStreetMap queries. I can also provide OSM statistics by username as well as information regarding OSM tags. Click on provide feedback button below share your feedback if there is anything else you would like me to do.
+  - buttons:
+    - payload: /adjust_response
+      title: Provide feedback
+    text: You can ask me about how to get started with OpenStreetMap. I can also provide OSM statistics by username as well as information regarding OSM tags. Click on provide feedback button below share your feedback if there is anything else you would like me to do.
   utter_chitchat/telljoke:
   - text: I finally found my book of maps. Atlast.
   - text: Is a place that stores maps called...a wherehouse?
