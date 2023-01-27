@@ -137,8 +137,8 @@ responses:
   - text: I'm great! Thanks for asking.
   utter_chitchat/ask_howhelp:
   - buttons:
-    - payload: adjust_response
-      title: Provide feedback
+    - payload: /adjust_response
+      title: Provide_feedback
     text: I can help you in answering your OpenStreetMap queries. I can also provide OSM statistics by username as well as information regarding OSM tags. Click on provide feedback button below share your feedback if there is anything else you would like me to do.
   - buttons:
     - payload: adjust_response
