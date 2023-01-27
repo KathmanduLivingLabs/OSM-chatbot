@@ -1,5 +1,8 @@
 /venv
 /models
+/model
+/.config
+/.keras
 /.vscode
 *.db
 events.*
