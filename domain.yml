@@ -1,4 +1,4 @@
-version: '2.0'
+version: '3.1'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -35,16 +35,24 @@ entities:
 slots:
   username:
     type: text
+    mappings:
+    - type: from_text
     influence_conversation: false
   response_feedback_message:
     type: any
+    mappings:
+    - type: from_text
     influence_conversation: false
   tag:
     type: text
+    mappings:
+    - type: from_text
     influence_conversation: false
   requested_slot:
-    type: unfeaturized
+    type: any
     influence_conversation: false
+    mappings:
+    - type: custom
 responses:
   utter_greet_guide:
   - buttons:
@@ -357,13 +365,10 @@ actions:
 forms:
   username_form:
     required_slots:
-      username:
-      - type: from_text
+        - username
   response_feedback_form:
     required_slots:
-      response_feedback_message:
-      - type: from_text
+        - response_feedback_message
   tag_form:
     required_slots:
-      tag:
-      - type: from_text
+        - tag
